@@ -75,4 +75,24 @@ namespace CargarBDDPokemon
             this.total = total;
         }
     }
+    public class tablaNormal
+    {
+        public int id_poke;
+        public string nombre_poke;
+        public int codigo;
+        public int id_tipo;
+        public int id_habilidades;
+        public int id_datos_generales;
+        public int id_att;
+        public tablaNormal (int id_poke, string nombre_poke, int codigo, int id_tipo, int id_habilidades, int id_datos_generales, int id_att)
+        {
+            this.id_poke = id_poke;
+            this.nombre_poke = nombre_poke;
+            this.codigo = codigo;
+            this.id_tipo = id_tipo;
+            this.id_habilidades = id_habilidades;
+            this.id_datos_generales = id_datos_generales;
+            this.id_att = id_att;
+        }
+    }
 }

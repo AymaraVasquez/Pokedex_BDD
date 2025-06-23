@@ -31,6 +31,9 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            button4 = new Button();
+            VerPokimon = new Button();
+            CargarRela = new Button();
             SuspendLayout();
             // 
             // button1
@@ -45,7 +48,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(24, 144);
+            button2.Location = new Point(24, 140);
             button2.Name = "button2";
             button2.Size = new Size(155, 29);
             button2.TabIndex = 1;
@@ -63,11 +66,44 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+            // button4
+            // 
+            button4.Location = new Point(24, 189);
+            button4.Name = "button4";
+            button4.Size = new Size(155, 29);
+            button4.TabIndex = 3;
+            button4.Text = "Cargar Tabla General";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
+            // VerPokimon
+            // 
+            VerPokimon.Location = new Point(589, 140);
+            VerPokimon.Name = "VerPokimon";
+            VerPokimon.Size = new Size(180, 29);
+            VerPokimon.TabIndex = 4;
+            VerPokimon.Text = "VerPokimons";
+            VerPokimon.UseVisualStyleBackColor = true;
+            VerPokimon.Click += VerPokimon_Click;
+            // 
+            // CargarRela
+            // 
+            CargarRela.Location = new Point(24, 240);
+            CargarRela.Name = "CargarRela";
+            CargarRela.Size = new Size(155, 29);
+            CargarRela.TabIndex = 5;
+            CargarRela.Text = "Cargar Tablas Rela";
+            CargarRela.UseVisualStyleBackColor = true;
+            CargarRela.Click += CargarRela_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(CargarRela);
+            Controls.Add(VerPokimon);
+            Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -82,5 +118,8 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private Button button4;
+        private Button VerPokimon;
+        private Button CargarRela;
     }
 }

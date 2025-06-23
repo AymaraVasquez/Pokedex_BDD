@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CargarBDDPokemon")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3931d0d9b51c7c497eb4e716a26e716301b79da5")]
 [assembly: System.Reflection.AssemblyProductAttribute("CargarBDDPokemon")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CargarBDDPokemon")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

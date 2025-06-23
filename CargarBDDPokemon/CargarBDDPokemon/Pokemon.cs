@@ -13,6 +13,7 @@ namespace CargarBDDPokemon
         public static string RutaEspero = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "pokemon.csv");
         public int id;
         public int codigo;
+        public int code_poke;
         public string nombre;
         public string tipo1;
         public string tipo2;
@@ -32,7 +33,7 @@ namespace CargarBDDPokemon
         public int defensaEspecial;
         public int velocidad;
         public int total;
-        public Pokemon(int id, int codigo, string nombre, string tipo1, string tipo2, string habilidad1, string habilidad2, string habilidadOculta, int generacion, int legendario, int megaEvolucion, double altura, double peso, int vida, int ataque, int defensa, int ataqueEspecial, int defensaEspecial, int velocidad, int totales)
+        public Pokemon(int id, int codigo, int codePoke, string nombre, string tipo1, string tipo2, string habilidad1, string habilidad2, string habilidadOculta, int generacion, int legendario, int megaEvolucion, double altura, double peso, int vida, int ataque, int defensa, int ataqueEspecial, int defensaEspecial, int velocidad, int totales)
         {
             this.id = id;
             this.codigo = codigo;
@@ -54,6 +55,7 @@ namespace CargarBDDPokemon
             this.defensaEspecial = defensaEspecial;
             this.velocidad = velocidad;
             this.total = totales;
+            this.code_poke = codePoke;
         }
         public Pokemon()
         {
@@ -72,13 +74,14 @@ namespace CargarBDDPokemon
                         string? linea;
                         while ((linea = leyendo.ReadLine()) != null)
                         {
-                            string[] columnas = linea.Split(',');
+                            string[] columnas = linea.Split('.');
                             if (columnas.Length == 22)
                             {
                                 Pokemon user = new Pokemon
                                 {
                                     id = int.Parse(columnas[0]),
                                     codigo = int.Parse(columnas[1]),
+                                    code_poke = int.Parse(columnas[2]),
                                     nombre = columnas[3],
                                     tipo1 = columnas[4],
                                     tipo2 = columnas[5],

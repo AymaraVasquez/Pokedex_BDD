@@ -21,7 +21,10 @@ namespace CargarBDDPokemon
                 Coneccion.ConnectionString = conect;
                 Coneccion.Open();
             }
-            else
+        }
+        public void desconectar()
+        {
+            if ((Coneccion.State == ConnectionState.Open))
             {
                 Coneccion.Close();
             }
