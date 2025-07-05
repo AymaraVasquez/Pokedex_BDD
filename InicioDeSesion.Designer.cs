@@ -33,8 +33,8 @@
             label1 = new Label();
             linkRegistrate = new LinkLabel();
             btVerPass = new Button();
-            tbContrasena = new TextBox();
-            label3 = new Label();
+            tbPass = new TextBox();
+            lbVerPass = new Label();
             tbNombre = new TextBox();
             btIniciarSesion = new Button();
             label4 = new Label();
@@ -95,27 +95,28 @@
             btVerPass.Size = new Size(16, 15);
             btVerPass.TabIndex = 24;
             btVerPass.UseVisualStyleBackColor = true;
+            btVerPass.Click += btVerPass_Click;
             // 
-            // tbContrasena
+            // tbPass
             // 
-            tbContrasena.Location = new Point(33, 142);
-            tbContrasena.Name = "tbContrasena";
-            tbContrasena.PasswordChar = '*';
-            tbContrasena.Size = new Size(302, 27);
-            tbContrasena.TabIndex = 20;
-            tbContrasena.UseSystemPasswordChar = true;
+            tbPass.Location = new Point(33, 142);
+            tbPass.Name = "tbPass";
+            tbPass.PasswordChar = '*';
+            tbPass.Size = new Size(302, 27);
+            tbPass.TabIndex = 20;
+            tbPass.UseSystemPasswordChar = true;
             // 
-            // label3
+            // lbVerPass
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.FromArgb(204, 0, 0);
-            label3.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(59, 186);
-            label3.Name = "label3";
-            label3.Size = new Size(95, 17);
-            label3.TabIndex = 23;
-            label3.Text = "Ver contraseña";
+            lbVerPass.AutoSize = true;
+            lbVerPass.BackColor = Color.FromArgb(204, 0, 0);
+            lbVerPass.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbVerPass.ForeColor = Color.White;
+            lbVerPass.Location = new Point(59, 186);
+            lbVerPass.Name = "lbVerPass";
+            lbVerPass.Size = new Size(95, 17);
+            lbVerPass.TabIndex = 23;
+            lbVerPass.Text = "Ver contraseña";
             // 
             // tbNombre
             // 
@@ -168,10 +169,10 @@
             panel1.Controls.Add(btVerPass);
             panel1.Controls.Add(tbNombre);
             panel1.Controls.Add(label5);
-            panel1.Controls.Add(tbContrasena);
+            panel1.Controls.Add(tbPass);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(btIniciarSesion);
-            panel1.Controls.Add(label3);
+            panel1.Controls.Add(lbVerPass);
             panel1.Location = new Point(614, 141);
             panel1.Name = "panel1";
             panel1.Size = new Size(366, 322);
@@ -257,8 +258,8 @@
         private Label label1;
         private LinkLabel linkRegistrate;
         private Button btVerPass;
-        private TextBox tbContrasena;
-        private Label label3;
+        private TextBox tbPass;
+        private Label lbVerPass;
         private TextBox tbNombre;
         private Button btIniciarSesion;
         private Label label4;

@@ -34,21 +34,23 @@
             panel2 = new Panel();
             label6 = new Label();
             panel1 = new Panel();
-            pictureBox3 = new PictureBox();
-            domainUpDown1 = new DomainUpDown();
+            numericUpDown1 = new NumericUpDown();
+            pbFotoUsu = new PictureBox();
+            dUpDoIcono = new DomainUpDown();
             label2 = new Label();
-            textBox3 = new TextBox();
-            button2 = new Button();
-            label5 = new Label();
+            tbNombre = new TextBox();
+            btVerPass = new Button();
+            lbVerPass = new Label();
             label4 = new Label();
-            textBox2 = new TextBox();
+            tbPass = new TextBox();
             label3 = new Label();
-            textBox1 = new TextBox();
-            button1 = new Button();
+            tbUsu = new TextBox();
+            btCrearUsu = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbFotoUsu).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -79,7 +81,7 @@
             panel2.Controls.Add(label6);
             panel2.Controls.Add(panel1);
             panel2.Controls.Add(label1);
-            panel2.Controls.Add(button1);
+            panel2.Controls.Add(btCrearUsu);
             panel2.Location = new Point(228, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(427, 724);
@@ -99,41 +101,50 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(204, 0, 0);
-            panel1.Controls.Add(pictureBox3);
-            panel1.Controls.Add(domainUpDown1);
+            panel1.Controls.Add(numericUpDown1);
+            panel1.Controls.Add(pbFotoUsu);
+            panel1.Controls.Add(dUpDoIcono);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(label5);
+            panel1.Controls.Add(tbNombre);
+            panel1.Controls.Add(btVerPass);
+            panel1.Controls.Add(lbVerPass);
             panel1.Controls.Add(label4);
-            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(tbPass);
             panel1.Controls.Add(label3);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(tbUsu);
             panel1.ForeColor = Color.Red;
             panel1.Location = new Point(20, 122);
             panel1.Name = "panel1";
             panel1.Size = new Size(370, 478);
             panel1.TabIndex = 4;
             // 
-            // pictureBox3
+            // numericUpDown1
             // 
-            pictureBox3.Image = Properties.Resources.ashicon_removebg_preview;
-            pictureBox3.Location = new Point(36, 317);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(142, 133);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 5;
-            pictureBox3.TabStop = false;
+            numericUpDown1.Location = new Point(193, 406);
+            numericUpDown1.Name = "numericUpDown1";
+            numericUpDown1.Size = new Size(21, 27);
+            numericUpDown1.TabIndex = 13;
+            numericUpDown1.ValueChanged += numericUpDown1_ValueChanged;
             // 
-            // domainUpDown1
+            // pbFotoUsu
             // 
-            domainUpDown1.BackColor = Color.White;
-            domainUpDown1.Location = new Point(191, 373);
-            domainUpDown1.Name = "domainUpDown1";
-            domainUpDown1.Size = new Size(23, 27);
-            domainUpDown1.TabIndex = 0;
-            domainUpDown1.Text = "domainUpDown1";
-            domainUpDown1.SelectedItemChanged += domainUpDown1_SelectedItemChanged;
+            pbFotoUsu.Image = Properties.Resources.ashicon_removebg_preview;
+            pbFotoUsu.Location = new Point(36, 317);
+            pbFotoUsu.Name = "pbFotoUsu";
+            pbFotoUsu.Size = new Size(142, 133);
+            pbFotoUsu.SizeMode = PictureBoxSizeMode.Zoom;
+            pbFotoUsu.TabIndex = 5;
+            pbFotoUsu.TabStop = false;
+            // 
+            // dUpDoIcono
+            // 
+            dUpDoIcono.BackColor = Color.White;
+            dUpDoIcono.Location = new Point(191, 373);
+            dUpDoIcono.Name = "dUpDoIcono";
+            dUpDoIcono.Size = new Size(23, 27);
+            dUpDoIcono.TabIndex = 0;
+            dUpDoIcono.Text = "domainUpDown1";
+            dUpDoIcono.SelectedItemChanged += domainUpDown1_SelectedItemChanged;
             // 
             // label2
             // 
@@ -146,32 +157,33 @@
             label2.TabIndex = 12;
             label2.Text = "Ingrese su nombre";
             // 
-            // textBox3
+            // tbNombre
             // 
-            textBox3.Location = new Point(39, 43);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(302, 27);
-            textBox3.TabIndex = 11;
+            tbNombre.Location = new Point(39, 43);
+            tbNombre.Name = "tbNombre";
+            tbNombre.Size = new Size(302, 27);
+            tbNombre.TabIndex = 11;
             // 
-            // button2
+            // btVerPass
             // 
-            button2.Location = new Point(44, 239);
-            button2.Name = "button2";
-            button2.Size = new Size(16, 15);
-            button2.TabIndex = 10;
-            button2.UseVisualStyleBackColor = true;
+            btVerPass.Location = new Point(44, 239);
+            btVerPass.Name = "btVerPass";
+            btVerPass.Size = new Size(16, 15);
+            btVerPass.TabIndex = 10;
+            btVerPass.UseVisualStyleBackColor = true;
+            btVerPass.Click += btVerPass_Click;
             // 
-            // label5
+            // lbVerPass
             // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.FromArgb(204, 0, 0);
-            label5.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(66, 238);
-            label5.Name = "label5";
-            label5.Size = new Size(95, 17);
-            label5.TabIndex = 9;
-            label5.Text = "Ver contraseña";
+            lbVerPass.AutoSize = true;
+            lbVerPass.BackColor = Color.FromArgb(204, 0, 0);
+            lbVerPass.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbVerPass.ForeColor = Color.White;
+            lbVerPass.Location = new Point(66, 238);
+            lbVerPass.Name = "lbVerPass";
+            lbVerPass.Size = new Size(95, 17);
+            lbVerPass.TabIndex = 9;
+            lbVerPass.Text = "Ver contraseña";
             // 
             // label4
             // 
@@ -184,14 +196,14 @@
             label4.TabIndex = 7;
             label4.Text = "Ingrese su contraseña";
             // 
-            // textBox2
+            // tbPass
             // 
-            textBox2.Location = new Point(37, 193);
-            textBox2.Name = "textBox2";
-            textBox2.PasswordChar = '*';
-            textBox2.Size = new Size(302, 27);
-            textBox2.TabIndex = 6;
-            textBox2.UseSystemPasswordChar = true;
+            tbPass.Location = new Point(37, 193);
+            tbPass.Name = "tbPass";
+            tbPass.PasswordChar = '*';
+            tbPass.Size = new Size(302, 27);
+            tbPass.TabIndex = 6;
+            tbPass.UseSystemPasswordChar = true;
             // 
             // label3
             // 
@@ -204,27 +216,28 @@
             label3.TabIndex = 5;
             label3.Text = "Ingrese su nombre de usuario\r\n";
             // 
-            // textBox1
+            // tbUsu
             // 
-            textBox1.Location = new Point(41, 116);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(302, 27);
-            textBox1.TabIndex = 0;
+            tbUsu.Location = new Point(41, 116);
+            tbUsu.Name = "tbUsu";
+            tbUsu.Size = new Size(302, 27);
+            tbUsu.TabIndex = 0;
             // 
-            // button1
+            // btCrearUsu
             // 
-            button1.BackColor = Color.Red;
-            button1.FlatAppearance.BorderColor = Color.Red;
-            button1.FlatAppearance.BorderSize = 3;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(57, 606);
-            button1.Name = "button1";
-            button1.Size = new Size(304, 57);
-            button1.TabIndex = 8;
-            button1.Text = "Crear usuario";
-            button1.UseVisualStyleBackColor = false;
+            btCrearUsu.BackColor = Color.Red;
+            btCrearUsu.FlatAppearance.BorderColor = Color.Red;
+            btCrearUsu.FlatAppearance.BorderSize = 3;
+            btCrearUsu.FlatStyle = FlatStyle.Flat;
+            btCrearUsu.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btCrearUsu.ForeColor = Color.White;
+            btCrearUsu.Location = new Point(57, 606);
+            btCrearUsu.Name = "btCrearUsu";
+            btCrearUsu.Size = new Size(304, 57);
+            btCrearUsu.TabIndex = 8;
+            btCrearUsu.Text = "Crear usuario";
+            btCrearUsu.UseVisualStyleBackColor = false;
+            btCrearUsu.Click += btCrearUsu_Click;
             // 
             // RegistroDeUsuarios
             // 
@@ -239,12 +252,14 @@
             Name = "RegistroDeUsuarios";
             StartPosition = FormStartPosition.CenterParent;
             Text = "RegistroDeUsuarios";
+            Load += RegistroDeUsuarios_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbFotoUsu).EndInit();
             ResumeLayout(false);
         }
 
@@ -253,17 +268,18 @@
         private Label label1;
         private Panel panel2;
         private Panel panel1;
-        private Button button2;
-        private Label label5;
-        private Button button1;
+        private Button btVerPass;
+        private Label lbVerPass;
+        private Button btCrearUsu;
         private Label label4;
-        private TextBox textBox2;
+        private TextBox tbPass;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox tbUsu;
         private Label label2;
-        private TextBox textBox3;
+        private TextBox tbNombre;
         private Label label6;
-        private DomainUpDown domainUpDown1;
-        private PictureBox pictureBox3;
+        private DomainUpDown dUpDoIcono;
+        private PictureBox pbFotoUsu;
+        private NumericUpDown numericUpDown1;
     }
 }
