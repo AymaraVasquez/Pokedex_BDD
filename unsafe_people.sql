@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jun 28, 2025 at 10:06 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 06-07-2025 a las 22:01:11
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `unsafe_people`
+-- Base de datos: `unsafe_people (4)`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `datos_generales_pokes`
+-- Estructura de tabla para la tabla `datos_generales_pokes`
 --
 
 CREATE TABLE `datos_generales_pokes` (
@@ -38,7 +38,7 @@ CREATE TABLE `datos_generales_pokes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `datos_generales_pokes`
+-- Volcado de datos para la tabla `datos_generales_pokes`
 --
 
 INSERT INTO `datos_generales_pokes` (`id_datos_generales`, `generacion`, `altura`, `peso`, `color`, `legendario`, `mega`) VALUES
@@ -1013,7 +1013,7 @@ INSERT INTO `datos_generales_pokes` (`id_datos_generales`, `generacion`, `altura
 -- --------------------------------------------------------
 
 --
--- Table structure for table `estadisticas_pokes`
+-- Estructura de tabla para la tabla `estadisticas_pokes`
 --
 
 CREATE TABLE `estadisticas_pokes` (
@@ -1028,7 +1028,7 @@ CREATE TABLE `estadisticas_pokes` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `estadisticas_pokes`
+-- Volcado de datos para la tabla `estadisticas_pokes`
 --
 
 INSERT INTO `estadisticas_pokes` (`id_att`, `vida`, `ataque`, `defensa`, `ataque_especial`, `defensa_especial`, `velocidad`, `att_totales`) VALUES
@@ -2017,7 +2017,7 @@ INSERT INTO `estadisticas_pokes` (`id_att`, `vida`, `ataque`, `defensa`, `ataque
 -- --------------------------------------------------------
 
 --
--- Table structure for table `habilidades`
+-- Estructura de tabla para la tabla `habilidades`
 --
 
 CREATE TABLE `habilidades` (
@@ -2026,7 +2026,7 @@ CREATE TABLE `habilidades` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `habilidades`
+-- Volcado de datos para la tabla `habilidades`
 --
 
 INSERT INTO `habilidades` (`id_habilidad`, `habilidad`) VALUES
@@ -2305,7 +2305,7 @@ INSERT INTO `habilidades` (`id_habilidad`, `habilidad`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pokedex`
+-- Estructura de tabla para la tabla `pokedex`
 --
 
 CREATE TABLE `pokedex` (
@@ -2333,7 +2333,7 @@ CREATE TABLE `pokedex` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `pokedex`
+-- Volcado de datos para la tabla `pokedex`
 --
 
 INSERT INTO `pokedex` (`id`, `codigo`, `nombre`, `tipo1`, `tipo2`, `habilidad1`, `habilidad2`, `habilidad_oculta`, `generacion`, `legendario`, `mega_evolucion`, `altura`, `peso`, `vida`, `ataque`, `defensa`, `ataque_especial`, `defensa_especial`, `velocidad`, `att_totales`, `url_imagen`) VALUES
@@ -3493,7 +3493,7 @@ INSERT INTO `pokedex` (`id`, `codigo`, `nombre`, `tipo1`, `tipo2`, `habilidad1`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pokedex_normal`
+-- Estructura de tabla para la tabla `pokedex_normal`
 --
 
 CREATE TABLE `pokedex_normal` (
@@ -3506,7 +3506,7 @@ CREATE TABLE `pokedex_normal` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `pokedex_normal`
+-- Volcado de datos para la tabla `pokedex_normal`
 --
 
 INSERT INTO `pokedex_normal` (`id_poke`, `id_forma`, `nombre_poke`, `id_datos_generales`, `id_att`, `url_img`) VALUES
@@ -4166,9 +4166,9 @@ INSERT INTO `pokedex_normal` (`id_poke`, `id_forma`, `nombre_poke`, `id_datos_ge
 (5541, 1, 'Darumaka', 613, 612, 'https://drive.google.com/file/d/1eHLPYQ8m-4eUsc1si7_auDNS2LiGjG3p/view?usp=drive_link'),
 (5542, 2, 'Darumaka', 614, 612, 'https://drive.google.com/file/d/1dOkLCuYJ9zmWgoa6ERaH3TEriFIJCiq5/view?usp=drive_link'),
 (5551, 1, 'Darmanitan', 615, 613, 'https://drive.google.com/file/d/1IqTOy1zRFcvYtPoUnYStxfrlQZ7sl3iV/view?usp=drive_link'),
-(5552, 2, 'Darmanitan', 615, 614, ''),
-(5553, 3, 'Darmanitan', 616, 613, ''),
-(5554, 4, 'Darmanitan', 616, 615, ''),
+(5552, 2, 'Darmanitan', 615, 614, 'https://drive.google.com/file/d/1CXLJKNsfgqDqJyiZ3r2KB8XuZGButVcR/view?usp=sharing'),
+(5553, 3, 'Darmanitan', 616, 613, 'https://drive.google.com/file/d/1nI_AN8-UhBkO0CnSdgb0DFlI9DlaYZfp/view?usp=sharing'),
+(5554, 4, 'Darmanitan', 616, 615, 'https://drive.google.com/file/d/1kUHRfEkMAseA6TRhTGJX8CvhvT31_kjX/view?usp=sharing'),
 (5561, 1, 'Maractus', 616, 616, 'https://drive.google.com/file/d/1vfG-NPk44wLATx3nPn6Bvh9HjoCS0TWF/view?usp=drive_link'),
 (5571, 1, 'Dwebble', 617, 617, 'https://drive.google.com/file/d/14B-Dq5UlPdMv-61vtz387Mr35SHSgm1a/view?usp=drive_link'),
 (5581, 1, 'Crustle', 618, 618, 'https://drive.google.com/file/d/1HyYiJGkC6Jos8DZ_nfwVAcHhvmuTPfIZ/view?usp=drive_link'),
@@ -4200,13 +4200,13 @@ INSERT INTO `pokedex_normal` (`id_poke`, `id_forma`, `nombre_poke`, `id_datos_ge
 (5831, 1, 'Vanillish', 643, 644, 'https://drive.google.com/file/d/181l2ybhxWnl2bY_4uA5owxczIS8K_4q4/view?usp=drive_link'),
 (5841, 1, 'Vanilluxe', 644, 645, 'https://drive.google.com/file/d/1Yv9vTb-Sje90thlADzMoaoklTJMWEkVH/view?usp=drive_link'),
 (5851, 1, 'Deerling', 645, 646, 'https://drive.google.com/file/d/10wXoWS-q2ujZu35NZyaUl-V-pL2W15p6/view?usp=drive_link'),
-(5852, 2, 'Deerling', 645, 646, ''),
-(5853, 3, 'Deerling', 645, 646, ''),
-(5854, 4, 'Deerling', 645, 646, ''),
+(5852, 2, 'Deerling', 645, 646, 'https://drive.google.com/file/d/1MyhbyTKxXelV2xLXIZqJNeHaURPl7y06/view?usp=sharing'),
+(5853, 3, 'Deerling', 645, 646, 'https://drive.google.com/file/d/1jtw1GN5PiBi2BPJAEnCVmjO3tZPpCi6O/view?usp=drive_link'),
+(5854, 4, 'Deerling', 645, 646, 'https://drive.google.com/file/d/19e68kCebL0_UwFKqNjzEG3uxclqLDg4-/view?usp=drive_link'),
 (5861, 1, 'Sawsbuck', 646, 647, 'https://drive.google.com/file/d/1h4FW0F2bVrA_o0IGDaT_DrOlcOlCaK1-/view?usp=drive_link'),
-(5862, 2, 'Sawsbuck', 646, 647, ''),
-(5863, 3, 'Sawsbuck', 646, 647, ''),
-(5864, 4, 'Sawsbuck', 646, 647, ''),
+(5862, 2, 'Sawsbuck', 646, 647, 'https://drive.google.com/file/d/1IoDnk3xIooY59BErrRFbhBi9SLUdgNQn/view?usp=sharing'),
+(5863, 3, 'Sawsbuck', 646, 647, 'https://drive.google.com/file/d/16flZAf8MHKJFJh2zOye4MlJ5Qf7zXi1j/view?usp=drive_link'),
+(5864, 4, 'Sawsbuck', 646, 647, 'https://drive.google.com/file/d/1qhpHrup0arnsWRzpGObE6ejC1ADpgKca/view?usp=drive_link'),
 (5871, 1, 'Emolga', 647, 648, 'https://drive.google.com/file/d/1JKiGuRmgIC-gBjmcOEilYktC4a5ViFhB/view?usp=drive_link'),
 (5881, 1, 'Karrablast', 559, 649, 'https://drive.google.com/file/d/1jvKyAelLUwaLVWYTbBuxsp5BhxwhmjJE/view?usp=drive_link'),
 (5891, 1, 'Escavalier', 648, 650, 'https://drive.google.com/file/d/1yn120StkTOxm6tJa8oVEmjVcvwbsj5tL/view?usp=drive_link'),
@@ -4271,8 +4271,8 @@ INSERT INTO `pokedex_normal` (`id_poke`, `id_forma`, `nombre_poke`, `id_datos_ge
 (6451, 1, 'Landorus', 705, 708, 'https://drive.google.com/file/d/1HdAM3mc-IMEgmmRjP4f-qyFmkNm1emvM/view?usp=drive_link'),
 (6452, 2, 'Landorus', 706, 709, 'https://drive.google.com/file/d/1-zgQAYBCHCyJn872rI0b0CAoVdWm9Ndj/view?usp=drive_link'),
 (6461, 1, 'Kyurem', 707, 710, 'https://drive.google.com/file/d/1vZD9B367IMtnzTT18doW8yTVhycmwWXo/view?usp=drive_link'),
-(6462, 2, 'Kyurem', 708, 711, ''),
-(6463, 3, 'Kyurem', 709, 712, ''),
+(6462, 2, 'Kyurem', 708, 711, 'https://drive.google.com/file/d/1qLibU6I5VaxUVPiAAyoZ1kFzG_59q1ZJ/view?usp=drive_link'),
+(6463, 3, 'Kyurem', 709, 712, 'https://drive.google.com/file/d/1Rr57Etutn5eFwAs1-wY_iUlcO6ZftFUA/view?usp=drive_link'),
 (6471, 1, 'Keldeo', 710, 713, 'https://drive.google.com/file/d/1uM0KXlOab5BytiRfQn1PHSCZLo3P3lzA/view?usp=drive_link'),
 (6472, 2, 'Keldeo', 710, 713, 'https://drive.google.com/file/d/1JIYNCuzI6DNAW6I1L8zlQb1-VL96H8G9/view?usp=drive_link'),
 (6481, 1, 'Meloetta', 711, 714, 'https://drive.google.com/file/d/1Z2seehSagLX_VpZZPPPF3V_RedRWyS7_/view?usp=drive_link'),
@@ -4346,7 +4346,8 @@ INSERT INTO `pokedex_normal` (`id_poke`, `id_forma`, `nombre_poke`, `id_datos_ge
 (7103, 3, 'Pumpkaboo', 773, 781, 'https://drive.google.com/file/d/156-_a7ylfP1GzJy4z4Oc-0mhmiXsQQVT/view?usp=drive_link'),
 (7104, 4, 'Pumpkaboo', 774, 782, 'https://drive.google.com/file/d/156-_a7ylfP1GzJy4z4Oc-0mhmiXsQQVT/view?usp=drive_link'),
 (7111, 1, 'Gourgeist', 775, 783, 'https://drive.google.com/file/d/1iS4MORhswd3g_pW-QCWU5s1GsnxuThDc/view?usp=drive_link'),
-(7112, 2, 'Gourgeist', 776, 784, 'https://drive.google.com/file/d/1iS4MORhswd3g_pW-QCWU5s1GsnxuThDc/view?usp=drive_link'),
+(7112, 2, 'Gourgeist', 776, 784, 'https://drive.google.com/file/d/1iS4MORhswd3g_pW-QCWU5s1GsnxuThDc/view?usp=drive_link');
+INSERT INTO `pokedex_normal` (`id_poke`, `id_forma`, `nombre_poke`, `id_datos_generales`, `id_att`, `url_img`) VALUES
 (7113, 3, 'Gourgeist', 777, 785, 'https://drive.google.com/file/d/1iS4MORhswd3g_pW-QCWU5s1GsnxuThDc/view?usp=drive_link'),
 (7114, 4, 'Gourgeist', 778, 786, 'https://drive.google.com/file/d/1iS4MORhswd3g_pW-QCWU5s1GsnxuThDc/view?usp=drive_link'),
 (7121, 1, 'Bergmite', 779, 787, 'https://drive.google.com/file/d/1E0s6QgViLrbXWDsfu9Rqy9sYMWZMquiZ/view?usp=drive_link'),
@@ -4354,8 +4355,7 @@ INSERT INTO `pokedex_normal` (`id_poke`, `id_forma`, `nombre_poke`, `id_datos_ge
 (7141, 1, 'Noibat', 781, 789, 'https://drive.google.com/file/d/1OyJZjsfabXJomC3IEC5ZJBy_fcj3gYAa/view?usp=drive_link'),
 (7151, 1, 'Noivern', 782, 790, 'https://drive.google.com/file/d/14q1-7easskuo6iff8Iz4XNYQD2iXSIX8/view?usp=drive_link'),
 (7161, 1, 'Xerneas', 783, 791, 'https://drive.google.com/file/d/16qu2FyT47zUZf_yeK-UMec03o3odWg0J/view?usp=drive_link'),
-(7171, 1, 'Yveltal', 784, 791, 'https://drive.google.com/file/d/1G9mv4JLIhoLleoir6mnUwe_b86tCSTVj/view?usp=drive_link');
-INSERT INTO `pokedex_normal` (`id_poke`, `id_forma`, `nombre_poke`, `id_datos_generales`, `id_att`, `url_img`) VALUES
+(7171, 1, 'Yveltal', 784, 791, 'https://drive.google.com/file/d/1G9mv4JLIhoLleoir6mnUwe_b86tCSTVj/view?usp=drive_link'),
 (7181, 1, 'Zygarde', 785, 792, 'https://drive.google.com/file/d/1JNax2btyUoMpf8ziCxmfG5UbxNmOnEQ0/view?usp=drive_link'),
 (7182, 2, 'Zygarde', 786, 793, 'https://drive.google.com/file/d/18tgxeCCqxkFDEHZOZUxLwOCnn5rjGIx1/view?usp=drive_link'),
 (7183, 3, 'Zygarde', 787, 794, 'https://drive.google.com/file/d/13T2FhQ2iwagQ2jwHGv56b-gERb6yXPrO/view?usp=drive_link'),
@@ -4384,16 +4384,16 @@ INSERT INTO `pokedex_normal` (`id_poke`, `id_forma`, `nombre_poke`, `id_datos_ge
 (7391, 1, 'Crabrawler', 810, 817, 'https://drive.google.com/file/d/1KlXXpEdcSRfgyb_hhtzM_nGu8NNqaokw/view?usp=drive_link'),
 (7401, 1, 'Crabominable', 811, 818, 'https://drive.google.com/file/d/1S4b6PjEcrqUyVDiroPlosHpakJWinyuO/view?usp=drive_link'),
 (7411, 1, 'Oricorio', 812, 819, 'https://drive.google.com/file/d/1FWpSkeMXCGxwJrCmOT2eqOQ3qgS2nU3l/view?usp=drive_link'),
-(7412, 2, 'Oricorio', 812, 819, ''),
-(7413, 3, 'Oricorio', 812, 819, ''),
-(7414, 4, 'Oricorio', 812, 819, ''),
+(7412, 2, 'Oricorio', 812, 819, 'https://drive.google.com/file/d/1GRPnkuimXdAez1usI9IFXUMaL24JhBJb/view?usp=drive_link'),
+(7413, 3, 'Oricorio', 812, 819, 'https://drive.google.com/file/d/17bAZ-CEtj5wPx_aELvU9JIUWXF8imPHm/view?usp=drive_link'),
+(7414, 4, 'Oricorio', 812, 819, 'https://drive.google.com/file/d/1EtsgH7jL5iREvVWhE9zemOWAOAAoBw2j/view?usp=drive_link'),
 (7421, 1, 'Cutiefly', 813, 820, 'https://drive.google.com/file/d/1DBX54t9iwSg3SUUfwDV6_eLcvba1rFNx/view?usp=drive_link'),
 (7431, 1, 'Ribombee', 814, 821, 'https://drive.google.com/file/d/1bR0_irjBjRNjg5nOKpIqr-PGv1rzVV6j/view?usp=drive_link'),
 (7441, 1, 'Rockruff', 815, 822, 'https://drive.google.com/file/d/1Ctt87yVTb1Oy2w5yaYCS0pwLsSvt5AkS/view?usp=drive_link'),
 (7442, 2, 'Rockruff', 815, 822, 'https://drive.google.com/file/d/1Ctt87yVTb1Oy2w5yaYCS0pwLsSvt5AkS/view?usp=drive_link'),
 (7451, 1, 'Lycanroc', 816, 823, 'https://drive.google.com/file/d/1_K7K_CI05LGj5X7_9H74y3ML2Oo6K6uh/view?usp=drive_link'),
-(7452, 2, 'Lycanroc', 817, 824, ''),
-(7453, 3, 'Lycanroc', 816, 825, ''),
+(7452, 2, 'Lycanroc', 817, 824, 'https://drive.google.com/file/d/1hEjrmBAa7Cv6VqF7Npb7kaoBIG-Efyzo/view?usp=drive_link'),
+(7453, 3, 'Lycanroc', 816, 825, 'https://drive.google.com/file/d/1d5BMqV7g2nSeYf-JMAyR_crmtVd5t4_N/view?usp=drive_link'),
 (7461, 1, 'Wishiwashi', 818, 826, 'https://drive.google.com/file/d/1OwOqPJWZJYdZcyq7iMRJRK0NoAOOo2FM/view?usp=drive_link'),
 (7462, 2, 'Wishiwashi', 819, 827, 'https://drive.google.com/file/d/1E1n3OXlBlm0bp00gag--HK8djc_Q21JV/view?usp=drive_link'),
 (7471, 1, 'Mareanie', 820, 828, 'https://drive.google.com/file/d/1UiXuJKYRLeldKmoxK9sqY_a3cf7FpInP/view?usp=drive_link'),
@@ -4451,9 +4451,9 @@ INSERT INTO `pokedex_normal` (`id_poke`, `id_forma`, `nombre_poke`, `id_datos_ge
 (7981, 1, 'Kartana', 869, 880, 'https://drive.google.com/file/d/1gWQGDZ5M8PRTjsyK9aW9bNaqcxhKHASI/view?usp=drive_link'),
 (7991, 1, 'Guzzlord', 870, 881, 'https://drive.google.com/file/d/1Tm84Cj9AosMDEffR5XB63YLrXx1pX74b/view?usp=drive_link'),
 (8001, 1, 'Necrozma', 871, 882, 'https://drive.google.com/file/d/1SahvaZo7RTm4ofpGduT-2wQObjI4Can8/view?usp=drive_link'),
-(8002, 2, 'Necrozma', 872, 883, ''),
-(8003, 3, 'Necrozma', 873, 884, ''),
-(8004, 4, 'Necrozma', 874, 885, ''),
+(8002, 2, 'Necrozma', 872, 883, 'https://drive.google.com/file/d/18cGC84kZVAhotrWxk06uKFYAMortCxRD/view?usp=drive_link'),
+(8003, 3, 'Necrozma', 873, 884, 'https://drive.google.com/file/d/1UDZqe-Cvm_XGWQCJwEpKbN-Qrzd0HPwU/view?usp=drive_link'),
+(8004, 4, 'Necrozma', 874, 885, 'https://drive.google.com/file/d/1G4DdUjIXtOZBcWsHzMfzHAooUa-oogaX/view?usp=drive_link'),
 (8011, 1, 'Magearna', 875, 886, 'https://drive.google.com/file/d/19eRmS1mDGrrbxYzIXDRpRAKwProY_KV-/view?usp=sharing'),
 (8021, 1, 'Marshadow', 876, 887, 'https://drive.google.com/file/d/13KlATGn0v0jhtXdYT4MvChJ_aw4zGYge/view?usp=drive_link'),
 (8031, 1, 'Poipole', 877, 888, 'https://drive.google.com/file/d/1fDkpcQOCF1ey_kjZmgE6oJ5zleWGNtwS/view?usp=drive_link'),
@@ -4557,7 +4557,7 @@ INSERT INTO `pokedex_normal` (`id_poke`, `id_forma`, `nombre_poke`, `id_datos_ge
 -- --------------------------------------------------------
 
 --
--- Table structure for table `rela_pokes_tipo`
+-- Estructura de tabla para la tabla `rela_pokes_tipo`
 --
 
 CREATE TABLE `rela_pokes_tipo` (
@@ -4567,7 +4567,7 @@ CREATE TABLE `rela_pokes_tipo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `rela_pokes_tipo`
+-- Volcado de datos para la tabla `rela_pokes_tipo`
 --
 
 INSERT INTO `rela_pokes_tipo` (`id_rela`, `id_poke`, `id_tipo`) VALUES
@@ -6167,7 +6167,7 @@ INSERT INTO `rela_pokes_tipo` (`id_rela`, `id_poke`, `id_tipo`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `rela_poke_habilidad`
+-- Estructura de tabla para la tabla `rela_poke_habilidad`
 --
 
 CREATE TABLE `rela_poke_habilidad` (
@@ -6178,7 +6178,7 @@ CREATE TABLE `rela_poke_habilidad` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `rela_poke_habilidad`
+-- Volcado de datos para la tabla `rela_poke_habilidad`
 --
 
 INSERT INTO `rela_poke_habilidad` (`id_poke_hab`, `id_poke`, `id_habilidad`, `es_oculta`) VALUES
@@ -8567,7 +8567,7 @@ INSERT INTO `rela_poke_habilidad` (`id_poke_hab`, `id_poke`, `id_habilidad`, `es
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tipos`
+-- Estructura de tabla para la tabla `tipos`
 --
 
 CREATE TABLE `tipos` (
@@ -8576,7 +8576,7 @@ CREATE TABLE `tipos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `tipos`
+-- Volcado de datos para la tabla `tipos`
 --
 
 INSERT INTO `tipos` (`id_tipo`, `tipo`) VALUES
@@ -8600,29 +8600,29 @@ INSERT INTO `tipos` (`id_tipo`, `tipo`) VALUES
 (18, 'Ghost');
 
 --
--- Indexes for dumped tables
+-- Índices para tablas volcadas
 --
 
 --
--- Indexes for table `datos_generales_pokes`
+-- Indices de la tabla `datos_generales_pokes`
 --
 ALTER TABLE `datos_generales_pokes`
   ADD PRIMARY KEY (`id_datos_generales`);
 
 --
--- Indexes for table `estadisticas_pokes`
+-- Indices de la tabla `estadisticas_pokes`
 --
 ALTER TABLE `estadisticas_pokes`
   ADD PRIMARY KEY (`id_att`);
 
 --
--- Indexes for table `habilidades`
+-- Indices de la tabla `habilidades`
 --
 ALTER TABLE `habilidades`
   ADD PRIMARY KEY (`id_habilidad`);
 
 --
--- Indexes for table `pokedex_normal`
+-- Indices de la tabla `pokedex_normal`
 --
 ALTER TABLE `pokedex_normal`
   ADD PRIMARY KEY (`id_poke`),
@@ -8630,7 +8630,7 @@ ALTER TABLE `pokedex_normal`
   ADD KEY `id_att` (`id_att`);
 
 --
--- Indexes for table `rela_pokes_tipo`
+-- Indices de la tabla `rela_pokes_tipo`
 --
 ALTER TABLE `rela_pokes_tipo`
   ADD PRIMARY KEY (`id_rela`),
@@ -8638,7 +8638,7 @@ ALTER TABLE `rela_pokes_tipo`
   ADD KEY `id_tipo` (`id_tipo`);
 
 --
--- Indexes for table `rela_poke_habilidad`
+-- Indices de la tabla `rela_poke_habilidad`
 --
 ALTER TABLE `rela_poke_habilidad`
   ADD PRIMARY KEY (`id_poke_hab`),
@@ -8646,63 +8646,63 @@ ALTER TABLE `rela_poke_habilidad`
   ADD KEY `id_habilidad` (`id_habilidad`);
 
 --
--- Indexes for table `tipos`
+-- Indices de la tabla `tipos`
 --
 ALTER TABLE `tipos`
   ADD PRIMARY KEY (`id_tipo`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT for table `datos_generales_pokes`
+-- AUTO_INCREMENT de la tabla `datos_generales_pokes`
 --
 ALTER TABLE `datos_generales_pokes`
   MODIFY `id_datos_generales` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=968;
 
 --
--- AUTO_INCREMENT for table `estadisticas_pokes`
+-- AUTO_INCREMENT de la tabla `estadisticas_pokes`
 --
 ALTER TABLE `estadisticas_pokes`
   MODIFY `id_att` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=982;
 
 --
--- AUTO_INCREMENT for table `habilidades`
+-- AUTO_INCREMENT de la tabla `habilidades`
 --
 ALTER TABLE `habilidades`
   MODIFY `id_habilidad` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=272;
 
 --
--- AUTO_INCREMENT for table `pokedex_normal`
+-- AUTO_INCREMENT de la tabla `pokedex_normal`
 --
 ALTER TABLE `pokedex_normal`
   MODIFY `id_poke` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8932;
 
 --
--- AUTO_INCREMENT for table `rela_pokes_tipo`
+-- AUTO_INCREMENT de la tabla `rela_pokes_tipo`
 --
 ALTER TABLE `rela_pokes_tipo`
   MODIFY `id_rela` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1593;
 
 --
--- AUTO_INCREMENT for table `rela_poke_habilidad`
+-- AUTO_INCREMENT de la tabla `rela_poke_habilidad`
 --
 ALTER TABLE `rela_poke_habilidad`
   MODIFY `id_poke_hab` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2382;
 
 --
--- AUTO_INCREMENT for table `tipos`
+-- AUTO_INCREMENT de la tabla `tipos`
 --
 ALTER TABLE `tipos`
   MODIFY `id_tipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
--- Constraints for dumped tables
+-- Restricciones para tablas volcadas
 --
 
 --
--- Constraints for table `pokedex_normal`
+-- Filtros para la tabla `pokedex_normal`
 --
 ALTER TABLE `pokedex_normal`
   ADD CONSTRAINT `pokedex_normal_ibfk_1` FOREIGN KEY (`id_datos_generales`) REFERENCES `datos_generales_pokes` (`id_datos_generales`),
@@ -8710,14 +8710,14 @@ ALTER TABLE `pokedex_normal`
   ADD CONSTRAINT `pokedex_normal_ibfk_3` FOREIGN KEY (`id_att`) REFERENCES `estadisticas_pokes` (`id_att`);
 
 --
--- Constraints for table `rela_pokes_tipo`
+-- Filtros para la tabla `rela_pokes_tipo`
 --
 ALTER TABLE `rela_pokes_tipo`
   ADD CONSTRAINT `rela_pokes_tipo_ibfk_1` FOREIGN KEY (`id_poke`) REFERENCES `pokedex_normal` (`id_poke`),
   ADD CONSTRAINT `rela_pokes_tipo_ibfk_2` FOREIGN KEY (`id_tipo`) REFERENCES `tipos` (`id_tipo`);
 
 --
--- Constraints for table `rela_poke_habilidad`
+-- Filtros para la tabla `rela_poke_habilidad`
 --
 ALTER TABLE `rela_poke_habilidad`
   ADD CONSTRAINT `rela_poke_habilidad_ibfk_1` FOREIGN KEY (`id_poke`) REFERENCES `pokedex_normal` (`id_poke`),
