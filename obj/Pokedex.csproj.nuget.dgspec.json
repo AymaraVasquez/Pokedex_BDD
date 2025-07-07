@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aymar\\OneDrive\\Desktop\\UNI\\Pokedex\\Pokedex.csproj": {}
+    "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aymar\\OneDrive\\Desktop\\UNI\\Pokedex\\Pokedex.csproj": {
+    "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aymar\\OneDrive\\Desktop\\UNI\\Pokedex\\Pokedex.csproj",
+        "projectUniqueName": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex.csproj",
         "projectName": "Pokedex",
-        "projectPath": "C:\\Users\\aymar\\OneDrive\\Desktop\\UNI\\Pokedex\\Pokedex.csproj",
+        "projectPath": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex.csproj",
         "packagesPath": "C:\\Users\\aymar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aymar\\OneDrive\\Desktop\\UNI\\Pokedex\\obj\\",
+        "outputPath": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

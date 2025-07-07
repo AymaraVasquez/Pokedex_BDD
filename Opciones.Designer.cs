@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Opciones));
             panel1 = new Panel();
-            panel3 = new Panel();
-            label1 = new Label();
-            btVerEquipos = new Button();
-            btCrear = new Button();
             btPokedex = new Button();
-            pictureBox1 = new PictureBox();
+            btCrear = new Button();
+            btVerEquipos = new Button();
+            panel3 = new Panel();
             btManual = new Button();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -56,41 +56,21 @@
             panel1.Size = new Size(806, 568);
             panel1.TabIndex = 0;
             // 
-            // panel3
+            // btPokedex
             // 
-            panel3.BackColor = Color.Red;
-            panel3.Controls.Add(btManual);
-            panel3.Location = new Point(-1, -28);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(804, 89);
-            panel3.TabIndex = 7;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.FromArgb(204, 0, 0);
-            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(50, 91);
-            label1.Name = "label1";
-            label1.Size = new Size(317, 62);
-            label1.TabIndex = 4;
-            label1.Text = "Ahora escoge\r\n¿Qué quieres hacer primero?";
-            // 
-            // btVerEquipos
-            // 
-            btVerEquipos.BackColor = Color.FromArgb(255, 222, 0);
-            btVerEquipos.FlatAppearance.BorderColor = Color.FromArgb(255, 222, 0);
-            btVerEquipos.FlatAppearance.BorderSize = 5;
-            btVerEquipos.FlatStyle = FlatStyle.Flat;
-            btVerEquipos.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btVerEquipos.ForeColor = Color.Black;
-            btVerEquipos.Location = new Point(50, 192);
-            btVerEquipos.Name = "btVerEquipos";
-            btVerEquipos.Size = new Size(304, 57);
-            btVerEquipos.TabIndex = 23;
-            btVerEquipos.Text = "Ver mis equipos";
-            btVerEquipos.UseVisualStyleBackColor = false;
+            btPokedex.BackColor = Color.FromArgb(255, 222, 0);
+            btPokedex.FlatAppearance.BorderColor = Color.FromArgb(255, 222, 0);
+            btPokedex.FlatAppearance.BorderSize = 5;
+            btPokedex.FlatStyle = FlatStyle.Flat;
+            btPokedex.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btPokedex.ForeColor = Color.Black;
+            btPokedex.Location = new Point(50, 364);
+            btPokedex.Name = "btPokedex";
+            btPokedex.Size = new Size(304, 57);
+            btPokedex.TabIndex = 25;
+            btPokedex.Text = "Ver Pokedex";
+            btPokedex.UseVisualStyleBackColor = false;
+            btPokedex.Click += btPokedex_Click;
             // 
             // btCrear
             // 
@@ -106,31 +86,32 @@
             btCrear.TabIndex = 24;
             btCrear.Text = "Crear equipo pokemon";
             btCrear.UseVisualStyleBackColor = false;
+            btCrear.Click += btCrear_Click;
             // 
-            // btPokedex
+            // btVerEquipos
             // 
-            btPokedex.BackColor = Color.FromArgb(255, 222, 0);
-            btPokedex.FlatAppearance.BorderColor = Color.FromArgb(255, 222, 0);
-            btPokedex.FlatAppearance.BorderSize = 5;
-            btPokedex.FlatStyle = FlatStyle.Flat;
-            btPokedex.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btPokedex.ForeColor = Color.Black;
-            btPokedex.Location = new Point(50, 364);
-            btPokedex.Name = "btPokedex";
-            btPokedex.Size = new Size(304, 57);
-            btPokedex.TabIndex = 25;
-            btPokedex.Text = "Ver Pokedex";
-            btPokedex.UseVisualStyleBackColor = false;
+            btVerEquipos.BackColor = Color.FromArgb(255, 222, 0);
+            btVerEquipos.FlatAppearance.BorderColor = Color.FromArgb(255, 222, 0);
+            btVerEquipos.FlatAppearance.BorderSize = 5;
+            btVerEquipos.FlatStyle = FlatStyle.Flat;
+            btVerEquipos.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btVerEquipos.ForeColor = Color.Black;
+            btVerEquipos.Location = new Point(50, 192);
+            btVerEquipos.Name = "btVerEquipos";
+            btVerEquipos.Size = new Size(304, 57);
+            btVerEquipos.TabIndex = 23;
+            btVerEquipos.Text = "Ver mis equipos";
+            btVerEquipos.UseVisualStyleBackColor = false;
+            btVerEquipos.Click += btVerEquipos_Click;
             // 
-            // pictureBox1
+            // panel3
             // 
-            pictureBox1.Image = Properties.Resources.pikachuu;
-            pictureBox1.Location = new Point(396, 92);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(367, 338);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 26;
-            pictureBox1.TabStop = false;
+            panel3.BackColor = Color.Red;
+            panel3.Controls.Add(btManual);
+            panel3.Location = new Point(-1, -28);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(804, 89);
+            panel3.TabIndex = 7;
             // 
             // btManual
             // 
@@ -143,6 +124,28 @@
             btManual.TabIndex = 0;
             btManual.Text = "?";
             btManual.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(204, 0, 0);
+            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(50, 91);
+            label1.Name = "label1";
+            label1.Size = new Size(317, 62);
+            label1.TabIndex = 4;
+            label1.Text = "Ahora escoge\r\n¿Qué quieres hacer primero?";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.pikachuu;
+            pictureBox1.Location = new Point(393, 102);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(373, 319);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 26;
+            pictureBox1.TabStop = false;
             // 
             // Opciones
             // 
@@ -171,7 +174,7 @@
         private Button btPokedex;
         private Button btCrear;
         private Button btVerEquipos;
-        private PictureBox pictureBox1;
         private Button btManual;
+        private PictureBox pictureBox1;
     }
 }

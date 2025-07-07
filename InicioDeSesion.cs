@@ -18,5 +18,7 @@ namespace Pokedex
             Opciones opForm = new Opciones();
             opForm.ShowDialog();
         }
+
+        
     }
 }

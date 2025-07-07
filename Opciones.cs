@@ -16,5 +16,23 @@ namespace Pokedex
         {
             InitializeComponent();
         }
+
+        private void btVerEquipos_Click(object sender, EventArgs e)
+        {
+            Equipos equiposForm = new Equipos();
+            equiposForm.ShowDialog();
+        }
+
+        private void btCrear_Click(object sender, EventArgs e)
+        {
+            CrearEquipos crearEquipoForm = new CrearEquipos();  
+            crearEquipoForm.ShowDialog();
+        }
+
+        private void btPokedex_Click(object sender, EventArgs e)
+        {
+            Pokedexx pokedexForm = new Pokedexx();
+            pokedexForm.ShowDialog();
+        }
     }
 }
