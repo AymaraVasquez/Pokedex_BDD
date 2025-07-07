@@ -31,7 +31,8 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pokedexx));
             panel3 = new Panel();
-            pictureBox2 = new PictureBox();
+            labInstruccion = new Label();
+            pcbPokedex = new PictureBox();
             btManual = new Button();
             panel1 = new Panel();
             panel15 = new Panel();
@@ -138,7 +139,7 @@
             toolTip17 = new ToolTip(components);
             toolTip18 = new ToolTip(components);
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pcbPokedex).BeginInit();
             panel1.SuspendLayout();
             panel15.SuspendLayout();
             panel12.SuspendLayout();
@@ -182,22 +183,34 @@
             // panel3
             // 
             panel3.BackColor = Color.Red;
-            panel3.Controls.Add(pictureBox2);
+            panel3.Controls.Add(labInstruccion);
+            panel3.Controls.Add(pcbPokedex);
             panel3.Controls.Add(btManual);
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
             panel3.Size = new Size(1118, 64);
             panel3.TabIndex = 28;
             // 
-            // pictureBox2
+            // labInstruccion
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(532, 9);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(94, 50);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 30;
-            pictureBox2.TabStop = false;
+            labInstruccion.AutoSize = true;
+            labInstruccion.Font = new Font("Segoe UI", 22F);
+            labInstruccion.Location = new Point(67, 9);
+            labInstruccion.Name = "labInstruccion";
+            labInstruccion.Size = new Size(929, 50);
+            labInstruccion.TabIndex = 31;
+            labInstruccion.Text = "Selecciona los pokemones que quieras añadir al equipo";
+            labInstruccion.Visible = false;
+            // 
+            // pcbPokedex
+            // 
+            pcbPokedex.Image = (Image)resources.GetObject("pcbPokedex.Image");
+            pcbPokedex.Location = new Point(532, 9);
+            pcbPokedex.Name = "pcbPokedex";
+            pcbPokedex.Size = new Size(94, 50);
+            pcbPokedex.SizeMode = PictureBoxSizeMode.Zoom;
+            pcbPokedex.TabIndex = 30;
+            pcbPokedex.TabStop = false;
             // 
             // btManual
             // 
@@ -285,7 +298,7 @@
             label17.Name = "label17";
             label17.Size = new Size(119, 17);
             label17.TabIndex = 35;
-            label17.Text = "Barra de Busqueda";
+            label17.Text = "Barra de Búsqueda";
             // 
             // btBuscar
             // 
@@ -1248,8 +1261,10 @@
             Name = "Pokedexx";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Pokedex";
+            Load += Pokedexx_Load;
             panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pcbPokedex).EndInit();
             panel1.ResumeLayout(false);
             panel15.ResumeLayout(false);
             panel12.ResumeLayout(false);
@@ -1305,7 +1320,7 @@
 
         private Panel panel3;
         private Button btManual;
-        private PictureBox pictureBox2;
+        private PictureBox pcbPokedex;
         private Panel panel1;
         private Panel panel10;
         private Panel panel8;
@@ -1410,5 +1425,6 @@
         private PictureBox pbTipo5_2;
         private Label lbCodigo5;
         private Label lbNombre5;
+        private Label labInstruccion;
     }
 }

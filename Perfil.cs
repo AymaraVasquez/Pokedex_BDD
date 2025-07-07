@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Pokedex
 {
-    public partial class Equipos : Form
+    public partial class Perfil : Form
     {
-        public Equipos()
+        public Perfil()
         {
             InitializeComponent();
         }

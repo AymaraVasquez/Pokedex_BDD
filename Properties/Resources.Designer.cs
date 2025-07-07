@@ -103,6 +103,36 @@ namespace Pokedex.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ElimRed {
+            get {
+                object obj = ResourceManager.GetObject("ElimRed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FavCheck {
+            get {
+                object obj = ResourceManager.GetObject("FavCheck", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FavNoCheck {
+            get {
+                object obj = ResourceManager.GetObject("FavNoCheck", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Info {
             get {
                 object obj = ResourceManager.GetObject("Info", resourceCulture);
@@ -153,6 +183,26 @@ namespace Pokedex.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pokebola {
+            get {
+                object obj = ResourceManager.GetObject("pokebola", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PokebolaBuena {
+            get {
+                object obj = ResourceManager.GetObject("PokebolaBuena", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pokedez_Photoroom {
             get {
                 object obj = ResourceManager.GetObject("pokedez-Photoroom", resourceCulture);
@@ -166,6 +216,26 @@ namespace Pokedex.Properties {
         internal static System.Drawing.Bitmap pokefoto {
             get {
                 object obj = ResourceManager.GetObject("pokefoto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tarjeta_Entrenador {
+            get {
+                object obj = ResourceManager.GetObject("Tarjeta Entrenador", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tarjeta_Entrenador__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Tarjeta Entrenador (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

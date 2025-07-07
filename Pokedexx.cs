@@ -88,5 +88,17 @@ namespace Pokedex
             Stats statsForm = new Stats();
             statsForm.ShowDialog();
         }
+
+        private void Pokedexx_Load(object sender, EventArgs e)
+        {
+            if (CrearEquipos.anadirPokemon == true)
+            {
+                labInstruccion.Visible = true;
+            }
+            else
+            {
+                labInstruccion.Visible = false;
+            }
+        }
     }
 }

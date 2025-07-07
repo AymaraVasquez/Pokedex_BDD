@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Opciones));
             panel1 = new Panel();
+            pictureBox1 = new PictureBox();
             btPokedex = new Button();
             btCrear = new Button();
-            btVerEquipos = new Button();
+            btVerPerfil = new Button();
             panel3 = new Panel();
             btManual = new Button();
             label1 = new Label();
-            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
-            panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -48,13 +48,23 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(btPokedex);
             panel1.Controls.Add(btCrear);
-            panel1.Controls.Add(btVerEquipos);
+            panel1.Controls.Add(btVerPerfil);
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(label1);
             panel1.Location = new Point(-1, -5);
             panel1.Name = "panel1";
             panel1.Size = new Size(806, 568);
             panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.pikachuu;
+            pictureBox1.Location = new Point(393, 102);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(373, 319);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 26;
+            pictureBox1.TabStop = false;
             // 
             // btPokedex
             // 
@@ -88,21 +98,21 @@
             btCrear.UseVisualStyleBackColor = false;
             btCrear.Click += btCrear_Click;
             // 
-            // btVerEquipos
+            // btVerPerfil
             // 
-            btVerEquipos.BackColor = Color.FromArgb(255, 222, 0);
-            btVerEquipos.FlatAppearance.BorderColor = Color.FromArgb(255, 222, 0);
-            btVerEquipos.FlatAppearance.BorderSize = 5;
-            btVerEquipos.FlatStyle = FlatStyle.Flat;
-            btVerEquipos.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btVerEquipos.ForeColor = Color.Black;
-            btVerEquipos.Location = new Point(50, 192);
-            btVerEquipos.Name = "btVerEquipos";
-            btVerEquipos.Size = new Size(304, 57);
-            btVerEquipos.TabIndex = 23;
-            btVerEquipos.Text = "Ver mis equipos";
-            btVerEquipos.UseVisualStyleBackColor = false;
-            btVerEquipos.Click += btVerEquipos_Click;
+            btVerPerfil.BackColor = Color.FromArgb(255, 222, 0);
+            btVerPerfil.FlatAppearance.BorderColor = Color.FromArgb(255, 222, 0);
+            btVerPerfil.FlatAppearance.BorderSize = 5;
+            btVerPerfil.FlatStyle = FlatStyle.Flat;
+            btVerPerfil.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btVerPerfil.ForeColor = Color.Black;
+            btVerPerfil.Location = new Point(50, 192);
+            btVerPerfil.Name = "btVerPerfil";
+            btVerPerfil.Size = new Size(304, 57);
+            btVerPerfil.TabIndex = 23;
+            btVerPerfil.Text = "Ver Perfil";
+            btVerPerfil.UseVisualStyleBackColor = false;
+            btVerPerfil.Click += btVerPerfil_Click;
             // 
             // panel3
             // 
@@ -137,16 +147,6 @@
             label1.TabIndex = 4;
             label1.Text = "Ahora escoge\r\n¿Qué quieres hacer primero?";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.pikachuu;
-            pictureBox1.Location = new Point(393, 102);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(373, 319);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 26;
-            pictureBox1.TabStop = false;
-            // 
             // Opciones
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -161,8 +161,8 @@
             Text = "Opciones";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel3.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -173,7 +173,7 @@
         private Panel panel3;
         private Button btPokedex;
         private Button btCrear;
-        private Button btVerEquipos;
+        private Button btVerPerfil;
         private Button btManual;
         private PictureBox pictureBox1;
     }

@@ -17,15 +17,9 @@ namespace Pokedex
             InitializeComponent();
         }
 
-        private void btVerEquipos_Click(object sender, EventArgs e)
-        {
-            Equipos equiposForm = new Equipos();
-            equiposForm.ShowDialog();
-        }
-
         private void btCrear_Click(object sender, EventArgs e)
         {
-            CrearEquipos crearEquipoForm = new CrearEquipos();  
+            CrearEquipos crearEquipoForm = new CrearEquipos();
             crearEquipoForm.ShowDialog();
         }
 
@@ -33,6 +27,12 @@ namespace Pokedex
         {
             Pokedexx pokedexForm = new Pokedexx();
             pokedexForm.ShowDialog();
+        }
+
+        private void btVerPerfil_Click(object sender, EventArgs e)
+        {
+            Perfil equiposForm = new Perfil();
+            equiposForm.ShowDialog();
         }
     }
 }

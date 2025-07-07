@@ -60,7 +60,7 @@
             label2.Name = "label2";
             label2.Size = new Size(215, 20);
             label2.TabIndex = 3;
-            label2.Text = "¿Todavia no tienes una cuenta?";
+            label2.Text = "¿Todavía no tienes una cuenta?";
             // 
             // label1
             // 
@@ -85,7 +85,7 @@
             linkRegistrate.Size = new Size(76, 20);
             linkRegistrate.TabIndex = 4;
             linkRegistrate.TabStop = true;
-            linkRegistrate.Text = "Registrate";
+            linkRegistrate.Text = "Regístrate";
             linkRegistrate.LinkClicked += linkLabel1_LinkClicked;
             // 
             // btVerPass
@@ -136,7 +136,7 @@
             btIniciarSesion.Name = "btIniciarSesion";
             btIniciarSesion.Size = new Size(304, 57);
             btIniciarSesion.TabIndex = 22;
-            btIniciarSesion.Text = "Iniciar Sesion";
+            btIniciarSesion.Text = "Iniciar Sesión";
             btIniciarSesion.UseVisualStyleBackColor = false;
             btIniciarSesion.Click += btIniciarSesion_Click;
             // 

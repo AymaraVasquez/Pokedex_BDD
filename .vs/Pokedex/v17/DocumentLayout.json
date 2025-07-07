@@ -3,16 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|c:\\users\\aymar\\onedrive\\desktop\\pokedex\\pokedexx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:pokedexx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\equipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:equipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|c:\\users\\aymar\\onedrive\\desktop\\pokedex\\crearequipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:crearequipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\crearequipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:crearequipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|c:\\users\\aymar\\onedrive\\desktop\\pokedex\\perfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:perfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\pokedexx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:pokedexx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|c:\\users\\aymar\\onedrive\\desktop\\pokedex\\opciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:opciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|c:\\users\\aymar\\onedrive\\desktop\\pokedex\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\opciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:opciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\registrodeusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:registrodeusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|c:\\users\\aymar\\onedrive\\desktop\\pokedex\\pokedexx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:pokedexx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\iniciodesesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:iniciodesesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|c:\\users\\aymar\\onedrive\\desktop\\pokedex\\iniciodesesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:iniciodesesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +58,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "Stats.cs",
+              "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Stats.cs",
+              "RelativeDocumentMoniker": "Stats.cs",
+              "ToolTip": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Stats.cs",
+              "RelativeToolTip": "Stats.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAuwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T12:13:45.619Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Pokedexx.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedexx.cs",
               "RelativeDocumentMoniker": "Pokedexx.cs",
@@ -38,7 +88,44 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Stats.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Stats.cs",
+              "RelativeDocumentMoniker": "Stats.cs",
+              "ToolTip": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Stats.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Stats.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T13:37:07.035Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Perfil.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Perfil.cs",
+              "RelativeDocumentMoniker": "Perfil.cs",
+              "ToolTip": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Perfil.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Perfil.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T16:31:16.276Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CrearEquipos.cs",
+              "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\CrearEquipos.cs",
+              "RelativeDocumentMoniker": "CrearEquipos.cs",
+              "ToolTip": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\CrearEquipos.cs",
+              "RelativeToolTip": "CrearEquipos.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAuwJgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T19:07:48.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CrearEquipos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\CrearEquipos.cs",
               "RelativeDocumentMoniker": "CrearEquipos.cs",
@@ -50,15 +137,73 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Equipos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Equipos.cs",
-              "RelativeDocumentMoniker": "Equipos.cs",
-              "ToolTip": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Equipos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Equipos.cs [Dise\u00F1o]",
+              "DocumentIndex": 5,
+              "Title": "Opciones.cs",
+              "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Opciones.cs",
+              "RelativeDocumentMoniker": "Opciones.cs",
+              "ToolTip": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Opciones.cs",
+              "RelativeToolTip": "Opciones.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAkwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T16:31:16.276Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-07-07T19:47:59.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Opciones.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Opciones.cs",
+              "RelativeDocumentMoniker": "Opciones.cs",
+              "ToolTip": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Opciones.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Opciones.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T16:31:34.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Pokedexx.cs",
+              "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedexx.cs",
+              "RelativeDocumentMoniker": "Pokedexx.cs",
+              "ToolTip": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedexx.cs",
+              "RelativeToolTip": "Pokedexx.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAAGMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T16:42:19.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegistroDeUsuarios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\RegistroDeUsuarios.cs",
+              "RelativeDocumentMoniker": "RegistroDeUsuarios.cs",
+              "ToolTip": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\RegistroDeUsuarios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "RegistroDeUsuarios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T16:31:42.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "InicioDeSesion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\InicioDeSesion.cs",
+              "RelativeDocumentMoniker": "InicioDeSesion.cs",
+              "ToolTip": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\InicioDeSesion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "InicioDeSesion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T16:03:34.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InicioDeSesion.cs",
+              "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\InicioDeSesion.cs",
+              "RelativeDocumentMoniker": "InicioDeSesion.cs",
+              "ToolTip": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\InicioDeSesion.cs",
+              "RelativeToolTip": "InicioDeSesion.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAswBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T16:03:48.06Z"
             }
           ]
         }

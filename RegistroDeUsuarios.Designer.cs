@@ -94,7 +94,7 @@
             label6.Name = "label6";
             label6.Size = new Size(187, 20);
             label6.TabIndex = 13;
-            label6.Text = "Escoge tu icono de usuario";
+            label6.Text = "Escoge tu ícono de usuario";
             // 
             // panel1
             // 
