@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-07-2025 a las 22:01:11
+-- Tiempo de generación: 08-07-2025 a las 03:58:40
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `unsafe_people (4)`
+-- Base de datos: `unsafe people`
 --
 
 -- --------------------------------------------------------
@@ -8599,6 +8599,28 @@ INSERT INTO `tipos` (`id_tipo`, `tipo`) VALUES
 (17, 'Rock'),
 (18, 'Ghost');
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `id_usuario` int(11) NOT NULL,
+  `nombre` varchar(60) NOT NULL,
+  `usuario` varchar(60) NOT NULL,
+  `contrasena` varchar(20) NOT NULL,
+  `foto_perfil` tinyint(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id_usuario`, `nombre`, `usuario`, `contrasena`, `foto_perfil`) VALUES
+(1, 'Gabriel Vivas', 'GabrielVior', 'Pokedex', 0),
+(2, 'Jesus Vivas', 'Jevchay', 'pokedex123', 2);
+
 --
 -- Índices para tablas volcadas
 --
@@ -8652,6 +8674,13 @@ ALTER TABLE `tipos`
   ADD PRIMARY KEY (`id_tipo`);
 
 --
+-- Indices de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id_usuario`),
+  ADD UNIQUE KEY `usuario` (`usuario`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -8696,6 +8725,12 @@ ALTER TABLE `rela_poke_habilidad`
 --
 ALTER TABLE `tipos`
   MODIFY `id_tipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restricciones para tablas volcadas
