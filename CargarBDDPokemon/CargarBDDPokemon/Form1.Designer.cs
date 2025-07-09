@@ -34,6 +34,7 @@
             button4 = new Button();
             VerPokimon = new Button();
             CargarRela = new Button();
+            BtMovi = new Button();
             SuspendLayout();
             // 
             // button1
@@ -96,11 +97,22 @@
             CargarRela.UseVisualStyleBackColor = true;
             CargarRela.Click += CargarRela_Click;
             // 
+            // BtMovi
+            // 
+            BtMovi.Location = new Point(315, 89);
+            BtMovi.Name = "BtMovi";
+            BtMovi.Size = new Size(169, 29);
+            BtMovi.TabIndex = 6;
+            BtMovi.Text = "Cargar Movimientos";
+            BtMovi.UseVisualStyleBackColor = true;
+            BtMovi.Click += BtMovi_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(BtMovi);
             Controls.Add(CargarRela);
             Controls.Add(VerPokimon);
             Controls.Add(button4);
@@ -121,5 +133,6 @@
         private Button button4;
         private Button VerPokimon;
         private Button CargarRela;
+        private Button BtMovi;
     }
 }

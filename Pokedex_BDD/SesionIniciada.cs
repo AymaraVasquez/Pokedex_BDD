@@ -13,5 +13,6 @@ namespace Pokedex
         public static string NombreUsuario { get; set; } = string.Empty;
         public static int IdUsuario { get; set; } = 0;
         public static int FotoPerfil { get; set; } = 0;
+        public static int idPokeVer { get; set; } = 0;
     }
 }

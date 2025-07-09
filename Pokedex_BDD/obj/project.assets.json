@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabri\\Desktop\\Principal - copia - copia\\Pokedex_BDD\\Pokedex_BDD\\Pokedex.csproj",
+      "projectUniqueName": "C:\\Users\\gabri\\Desktop\\Pokedex\\Principal - copia - copia\\Pokedex_BDD\\Pokedex_BDD\\Pokedex.csproj",
       "projectName": "Pokedex",
-      "projectPath": "C:\\Users\\gabri\\Desktop\\Principal - copia - copia\\Pokedex_BDD\\Pokedex_BDD\\Pokedex.csproj",
+      "projectPath": "C:\\Users\\gabri\\Desktop\\Pokedex\\Principal - copia - copia\\Pokedex_BDD\\Pokedex_BDD\\Pokedex.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabri\\Desktop\\Principal - copia - copia\\Pokedex_BDD\\Pokedex_BDD\\obj\\",
+      "outputPath": "C:\\Users\\gabri\\Desktop\\Pokedex\\Principal - copia - copia\\Pokedex_BDD\\Pokedex_BDD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

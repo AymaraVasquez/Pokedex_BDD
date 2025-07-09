@@ -396,5 +396,46 @@ namespace CargarBDDPokemon
 
             }
         }
+
+        private void BtMovi_Click(object sender, EventArgs e)
+        {
+            string RutaEspero = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "movimientos.txt"); ;
+
+            try
+            {
+                if (File.Exists(RutaEspero))
+                {
+                    using (StreamReader leyendo = new StreamReader(RutaEspero))
+                    {
+                        string? linea;
+                        while ((linea = leyendo.ReadLine()) != null)
+                        {
+                            string[] columnas = linea.Split(',');
+                            if (columnas.Length == 15)
+                            {
+                                Conexion.conectar();
+
+                                string consulta = "insert into movimientos (id_movimiento, nombre_movimiento, potencia, poke_precision) Values (null, '" + columnas[2] + "'," + columnas[4] + " ," + columnas[7] + ")";
+
+                                using (MySqlCommand cmd = new MySqlCommand(consulta, Conex.Coneccion))
+                                {
+                                    cmd.Parameters.AddWithValue("nombre_movimiento", columnas[2]);
+                                    cmd.Parameters.AddWithValue("potencia", columnas[4]);
+                                    cmd.Parameters.AddWithValue("poke_precision", columnas[7]);
+
+                                    cmd.ExecuteNonQuery();
+                                }
+
+                                Conexion.desconectar();
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al leer el archivo: " + ex.Message);
+            }
+        }
     }
 }

@@ -264,6 +264,7 @@
             btSiguiente.TabIndex = 34;
             btSiguiente.Text = ">";
             btSiguiente.UseVisualStyleBackColor = false;
+            btSiguiente.Click += btSiguiente_Click;
             // 
             // btAtras
             // 
@@ -276,6 +277,7 @@
             btAtras.TabIndex = 33;
             btAtras.Text = "<";
             btAtras.UseVisualStyleBackColor = false;
+            btAtras.Click += btAtras_Click;
             // 
             // panel12
             // 
@@ -312,6 +314,7 @@
             btBuscar.TabIndex = 36;
             btBuscar.Text = "Buscar";
             btBuscar.UseVisualStyleBackColor = false;
+            btBuscar.Click += btBuscar_Click;
             // 
             // tbBarraBusqueda
             // 
@@ -355,6 +358,7 @@
             pbTipo8_1.Location = new Point(19, 182);
             pbTipo8_1.Name = "pbTipo8_1";
             pbTipo8_1.Size = new Size(49, 49);
+            pbTipo8_1.SizeMode = PictureBoxSizeMode.StretchImage;
             pbTipo8_1.TabIndex = 59;
             pbTipo8_1.TabStop = false;
             // 
@@ -373,6 +377,7 @@
             pbTipo8_2.Location = new Point(76, 182);
             pbTipo8_2.Name = "pbTipo8_2";
             pbTipo8_2.Size = new Size(49, 49);
+            pbTipo8_2.SizeMode = PictureBoxSizeMode.StretchImage;
             pbTipo8_2.TabIndex = 58;
             pbTipo8_2.TabStop = false;
             // 
@@ -432,6 +437,7 @@
             pbTipo7_1.Location = new Point(17, 182);
             pbTipo7_1.Name = "pbTipo7_1";
             pbTipo7_1.Size = new Size(49, 49);
+            pbTipo7_1.SizeMode = PictureBoxSizeMode.StretchImage;
             pbTipo7_1.TabIndex = 54;
             pbTipo7_1.TabStop = false;
             // 
@@ -450,6 +456,7 @@
             pbTipo7_2.Location = new Point(74, 182);
             pbTipo7_2.Name = "pbTipo7_2";
             pbTipo7_2.Size = new Size(49, 49);
+            pbTipo7_2.SizeMode = PictureBoxSizeMode.StretchImage;
             pbTipo7_2.TabIndex = 53;
             pbTipo7_2.TabStop = false;
             // 
@@ -509,6 +516,7 @@
             pbTipo6_1.Location = new Point(18, 182);
             pbTipo6_1.Name = "pbTipo6_1";
             pbTipo6_1.Size = new Size(49, 49);
+            pbTipo6_1.SizeMode = PictureBoxSizeMode.StretchImage;
             pbTipo6_1.TabIndex = 49;
             pbTipo6_1.TabStop = false;
             // 
@@ -527,6 +535,7 @@
             pbTipo6_2.Location = new Point(75, 182);
             pbTipo6_2.Name = "pbTipo6_2";
             pbTipo6_2.Size = new Size(49, 49);
+            pbTipo6_2.SizeMode = PictureBoxSizeMode.StretchImage;
             pbTipo6_2.TabIndex = 48;
             pbTipo6_2.TabStop = false;
             // 
@@ -586,6 +595,7 @@
             pbTipo5_1.Location = new Point(18, 184);
             pbTipo5_1.Name = "pbTipo5_1";
             pbTipo5_1.Size = new Size(49, 49);
+            pbTipo5_1.SizeMode = PictureBoxSizeMode.StretchImage;
             pbTipo5_1.TabIndex = 54;
             pbTipo5_1.TabStop = false;
             // 
@@ -604,6 +614,7 @@
             pbTipo5_2.Location = new Point(75, 184);
             pbTipo5_2.Name = "pbTipo5_2";
             pbTipo5_2.Size = new Size(49, 49);
+            pbTipo5_2.SizeMode = PictureBoxSizeMode.StretchImage;
             pbTipo5_2.TabIndex = 53;
             pbTipo5_2.TabStop = false;
             // 
@@ -663,6 +674,7 @@
             pbTipo4_1.Location = new Point(19, 185);
             pbTipo4_1.Name = "pbTipo4_1";
             pbTipo4_1.Size = new Size(49, 49);
+            pbTipo4_1.SizeMode = PictureBoxSizeMode.StretchImage;
             pbTipo4_1.TabIndex = 44;
             pbTipo4_1.TabStop = false;
             // 
@@ -681,6 +693,7 @@
             pbTipo4_2.Location = new Point(76, 185);
             pbTipo4_2.Name = "pbTipo4_2";
             pbTipo4_2.Size = new Size(49, 49);
+            pbTipo4_2.SizeMode = PictureBoxSizeMode.StretchImage;
             pbTipo4_2.TabIndex = 43;
             pbTipo4_2.TabStop = false;
             // 
@@ -740,6 +753,7 @@
             pbTipo3_1.Location = new Point(17, 185);
             pbTipo3_1.Name = "pbTipo3_1";
             pbTipo3_1.Size = new Size(49, 49);
+            pbTipo3_1.SizeMode = PictureBoxSizeMode.StretchImage;
             pbTipo3_1.TabIndex = 39;
             pbTipo3_1.TabStop = false;
             // 
@@ -758,6 +772,7 @@
             pbTipo3_2.Location = new Point(74, 185);
             pbTipo3_2.Name = "pbTipo3_2";
             pbTipo3_2.Size = new Size(49, 49);
+            pbTipo3_2.SizeMode = PictureBoxSizeMode.StretchImage;
             pbTipo3_2.TabIndex = 38;
             pbTipo3_2.TabStop = false;
             // 
@@ -817,6 +832,7 @@
             pbTipo2_1.Location = new Point(18, 185);
             pbTipo2_1.Name = "pbTipo2_1";
             pbTipo2_1.Size = new Size(49, 49);
+            pbTipo2_1.SizeMode = PictureBoxSizeMode.StretchImage;
             pbTipo2_1.TabIndex = 39;
             pbTipo2_1.TabStop = false;
             // 
@@ -835,6 +851,7 @@
             pbTipo2_2.Location = new Point(75, 185);
             pbTipo2_2.Name = "pbTipo2_2";
             pbTipo2_2.Size = new Size(49, 49);
+            pbTipo2_2.SizeMode = PictureBoxSizeMode.StretchImage;
             pbTipo2_2.TabIndex = 38;
             pbTipo2_2.TabStop = false;
             // 
@@ -904,6 +921,7 @@
             pbTipo1_2.Location = new Point(75, 185);
             pbTipo1_2.Name = "pbTipo1_2";
             pbTipo1_2.Size = new Size(49, 49);
+            pbTipo1_2.SizeMode = PictureBoxSizeMode.StretchImage;
             pbTipo1_2.TabIndex = 33;
             pbTipo1_2.TabStop = false;
             // 

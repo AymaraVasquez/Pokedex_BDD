@@ -312,9 +312,9 @@
             lbHabilidadOculta.AutoSize = true;
             lbHabilidadOculta.Location = new Point(142, 308);
             lbHabilidadOculta.Name = "lbHabilidadOculta";
-            lbHabilidadOculta.Size = new Size(50, 20);
+            lbHabilidadOculta.Size = new Size(73, 20);
             lbHabilidadOculta.TabIndex = 50;
-            lbHabilidadOculta.Text = "label5";
+            lbHabilidadOculta.Text = "No posee";
             // 
             // label4
             // 
@@ -331,18 +331,16 @@
             lbHabilidad2.AutoSize = true;
             lbHabilidad2.Location = new Point(170, 284);
             lbHabilidad2.Name = "lbHabilidad2";
-            lbHabilidad2.Size = new Size(50, 20);
+            lbHabilidad2.Size = new Size(0, 20);
             lbHabilidad2.TabIndex = 48;
-            lbHabilidad2.Text = "label3";
             // 
             // lbHabilidad1
             // 
             lbHabilidad1.AutoSize = true;
             lbHabilidad1.Location = new Point(20, 284);
             lbHabilidad1.Name = "lbHabilidad1";
-            lbHabilidad1.Size = new Size(144, 20);
+            lbHabilidad1.Size = new Size(0, 20);
             lbHabilidad1.TabIndex = 48;
-            lbHabilidad1.Text = "ooooooooooooooo";
             // 
             // panelHabi
             // 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0EOK26VO2rw=",
+  "dgSpecHash": "qf4F6tEpP04=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gabri\\source\\repos\\Proyecto Pokemon BDD\\CargarBDDPokemon\\CargarBDDPokemon\\CargarBDDPokemon.csproj",
+  "projectFilePath": "C:\\Users\\gabri\\Desktop\\Pokedex\\Principal - copia - copia\\Pokedex_BDD\\CargarBDDPokemon\\CargarBDDPokemon\\CargarBDDPokemon.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\bouncycastle.cryptography\\2.5.1\\bouncycastle.cryptography.2.5.1.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\google.protobuf\\3.30.0\\google.protobuf.3.30.0.nupkg.sha512",
