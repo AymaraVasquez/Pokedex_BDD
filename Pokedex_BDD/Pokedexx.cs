@@ -116,11 +116,11 @@ namespace Pokedex
         {
             if (CrearEquipos.anadirPokemon == true)
             {
-                labInstruccion.Visible = true;
+                //labInstruccion.Visible = true;
             }
             else
             {
-                labInstruccion.Visible = false;
+                //labInstruccion.Visible = false;
             }
             Conexion.conectar();
             string consulta = "SELECT id_poke, nombre_poke, url_img FROM `pokedex_normal` limit 8";

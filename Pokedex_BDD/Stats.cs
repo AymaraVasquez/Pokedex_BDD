@@ -92,54 +92,54 @@ namespace Pokedex
 
             //vida
             lbVida.Text = vida.ToString();
-            progressBarChafa(173, 150);
-            pbVida.Size = new Size(size, vida);
+            progressBarChafa(173, vida);
+            pbVida.Size = new Size(size, 14);
             pbVida.BackColor = Color.GreenYellow;
             size = 0;
             //Ataque
             lbAtaque.Text = ataque.ToString();
-            progressBarChafa(161, 50);
-            pbAtaque.Size = new Size(size, ataque);
+            progressBarChafa(161, ataque);
+            pbAtaque.Size = new Size(size, 14);
             pbAtaque.BackColor = Color.Red;
             //Defensa
             lbDefensa.Text = defensa.ToString();
-            progressBarChafa(155, 50);
-            pbDefensa.Size = new Size(size, defensa);
+            progressBarChafa(155, defensa);
+            pbDefensa.Size = new Size(size, 14);
             pbDefensa.BackColor = Color.Blue;
             //AtqEsp
             lbAtqEsp.Text = atqEspecial.ToString();
-            progressBarChafa(122, 200);
-            pbAtqEspecial.Size = new Size(size, atqEspecial);
+            progressBarChafa(122, atqEspecial);
+            pbAtqEspecial.Size = new Size(size, 14);
             pbAtqEspecial.BackColor = Color.Orange;
             //DefEsp
             lbDefEsp.Text = defEspecial.ToString();
             progressBarChafa(122, defEspecial);
-            pbDefEspecial.Size = new Size(size, defEspecial);
+            pbDefEspecial.Size = new Size(size, 14);
             pbDefEspecial.BackColor = Color.Green;
             //Velocidad
             lbVelocidad.Text = velocidad.ToString();
-            progressBarChafa(140, 150);
-            pbVelocidad.Size = new Size(size, velocidad);
+            progressBarChafa(140, velocidad);
+            pbVelocidad.Size = new Size(size, 14);
             pbVelocidad.BackColor = Color.Yellow;
 
             FoticoPokemon.Image = Pokimon;
-            lbAltura.Text = altura.ToString();
-            lbPeso.Text = peso.ToString();
+            lbAltura.Text = altura.ToString()+"m";
+            lbPeso.Text = peso.ToString()+"kg";
             lbAttTotal.Text = statsTotales.ToString();
 
             switch (color)
             {
                 case "Black":
-                    ColorHex = Color.Black;
+                    ColorHex = Color.FromArgb(35, 35, 35);
                     break;
                 case "Blue":
-                    ColorHex = Color.Blue;
+                    ColorHex = Color.CornflowerBlue;
                     break;
                 case "Brown":
-                    ColorHex = Color.FromArgb(168, 24, 0);
+                    ColorHex = Color.FromArgb(126, 96, 58);
                     break;
                 case "Green":
-                    ColorHex = Color.GreenYellow;
+                    ColorHex = Color.FromArgb(108, 238, 108);
                     break;
                 case "Grey":
                     ColorHex = Color.Gray;
@@ -148,16 +148,16 @@ namespace Pokedex
                     ColorHex = Color.Pink;
                 break;
                 case "Purple":
-                    ColorHex = Color.Purple;
+                    ColorHex = Color.MediumOrchid;
                 break;
                 case "Red":
-                    ColorHex = Color.Red;
+                    ColorHex = Color.Tomato;
                 break;
                 case "White":
-                    ColorHex = Color.WhiteSmoke;
+                    ColorHex = Color.PapayaWhip;
                 break;
                 case "Yellow":
-                    ColorHex = Color.Yellow;
+                    ColorHex = Color.FromArgb(255, 222, 0);
                 break;
             }
             lbNombre.Text = nombre;
@@ -167,6 +167,9 @@ namespace Pokedex
             panelHabi.BackColor = ColorHex;
             panelEstat.BackColor = ColorHex;
             panelMov.BackColor = ColorHex;
+            buttonAtras.BackColor = ColorHex;
+            btSiguiente.BackColor = ColorHex;
+
             if (ColorHex == Color.Black || ColorHex == Color.FromArgb(168, 24, 0) || ColorHex == Color.Purple)
             {
                 label1.ForeColor = Color.White;

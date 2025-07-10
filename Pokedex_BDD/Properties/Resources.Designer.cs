@@ -263,16 +263,6 @@ namespace Pokedex.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TipoAgua1 {
-            get {
-                object obj = ResourceManager.GetObject("TipoAgua1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap TipoBicho {
             get {
                 object obj = ResourceManager.GetObject("TipoBicho", resourceCulture);
@@ -296,16 +286,6 @@ namespace Pokedex.Properties {
         internal static System.Drawing.Bitmap TipoElectrico {
             get {
                 object obj = ResourceManager.GetObject("TipoElectrico", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap TipoElectrico1 {
-            get {
-                object obj = ResourceManager.GetObject("TipoElectrico1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

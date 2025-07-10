@@ -123,3 +123,30 @@ C:\Users\gabri\Desktop\Pokedex\Principal - copia - copia\Pokedex_BDD\Pokedex_BDD
 C:\Users\gabri\Desktop\Pokedex\Principal - copia - copia\Pokedex_BDD\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.pdb
 C:\Users\gabri\Desktop\Pokedex\Principal - copia - copia\Pokedex_BDD\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.genruntimeconfig.cache
 C:\Users\gabri\Desktop\Pokedex\Principal - copia - copia\Pokedex_BDD\Pokedex_BDD\obj\Debug\net8.0-windows\ref\Pokedex.dll
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\bin\Debug\net8.0-windows\Pokedex.exe
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\bin\Debug\net8.0-windows\Pokedex.deps.json
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\bin\Debug\net8.0-windows\Pokedex.runtimeconfig.json
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\bin\Debug\net8.0-windows\Pokedex.dll
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\bin\Debug\net8.0-windows\Pokedex.pdb
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.csproj.AssemblyReference.cache
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.CrearEquipos.resources
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.InicioDeSesion.resources
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.Opciones.resources
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.Perfil.resources
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.Pokedexx.resources
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.Properties.Resources.resources
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.RegistroDeUsuarios.resources
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.Stats.resources
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.csproj.GenerateResource.cache
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.AssemblyInfoInputs.cache
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.AssemblyInfo.cs
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.csproj.CoreCompileInputs.cache
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.sourcelink.json
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.csproj.Up2Date
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.dll
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\refint\Pokedex.dll
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.pdb
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.genruntimeconfig.cache
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\ref\Pokedex.dll

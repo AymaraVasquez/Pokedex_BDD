@@ -363,7 +363,6 @@
             // 
             // pbTipo2
             // 
-            pbTipo2.Image = Properties.Resources.TipoElectrico;
             pbTipo2.Location = new Point(212, 87);
             pbTipo2.Name = "pbTipo2";
             pbTipo2.Size = new Size(47, 50);
@@ -373,7 +372,6 @@
             // 
             // pbTipo1
             // 
-            pbTipo1.Image = Properties.Resources.TipoElectrico;
             pbTipo1.Location = new Point(159, 87);
             pbTipo1.Name = "pbTipo1";
             pbTipo1.Size = new Size(47, 50);
@@ -394,11 +392,11 @@
             // lbNombre
             // 
             lbNombre.AutoSize = true;
-            lbNombre.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
+            lbNombre.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbNombre.ForeColor = SystemColors.GrayText;
-            lbNombre.Location = new Point(159, 49);
+            lbNombre.Location = new Point(159, 53);
             lbNombre.Name = "lbNombre";
-            lbNombre.Size = new Size(99, 31);
+            lbNombre.Size = new Size(79, 25);
             lbNombre.TabIndex = 41;
             lbNombre.Text = "Pikachu";
             // 
@@ -799,7 +797,6 @@
             // 
             // pbTipoMov3
             // 
-            pbTipoMov3.Image = Properties.Resources.TipoElectrico;
             pbTipoMov3.Location = new Point(119, 33);
             pbTipoMov3.Name = "pbTipoMov3";
             pbTipoMov3.Size = new Size(43, 37);
@@ -860,7 +857,6 @@
             // 
             // pbTipoMov4
             // 
-            pbTipoMov4.Image = Properties.Resources.TipoElectrico;
             pbTipoMov4.Location = new Point(119, 33);
             pbTipoMov4.Name = "pbTipoMov4";
             pbTipoMov4.Size = new Size(43, 37);
@@ -1130,7 +1126,6 @@
             // 
             // pbTipoMov1
             // 
-            pbTipoMov1.Image = Properties.Resources.TipoElectrico;
             pbTipoMov1.Location = new Point(119, 33);
             pbTipoMov1.Name = "pbTipoMov1";
             pbTipoMov1.Size = new Size(43, 37);
@@ -1323,7 +1318,6 @@
             // 
             // pbTipoMov2
             // 
-            pbTipoMov2.Image = Properties.Resources.TipoElectrico;
             pbTipoMov2.Location = new Point(119, 33);
             pbTipoMov2.Name = "pbTipoMov2";
             pbTipoMov2.Size = new Size(43, 37);

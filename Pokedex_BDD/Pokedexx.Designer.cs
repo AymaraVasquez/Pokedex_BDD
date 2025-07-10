@@ -31,7 +31,6 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pokedexx));
             panel3 = new Panel();
-            labInstruccion = new Label();
             pcbPokedex = new PictureBox();
             btManual = new Button();
             panel1 = new Panel();
@@ -183,24 +182,12 @@
             // panel3
             // 
             panel3.BackColor = Color.Red;
-            panel3.Controls.Add(labInstruccion);
             panel3.Controls.Add(pcbPokedex);
             panel3.Controls.Add(btManual);
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
             panel3.Size = new Size(1118, 64);
             panel3.TabIndex = 28;
-            // 
-            // labInstruccion
-            // 
-            labInstruccion.AutoSize = true;
-            labInstruccion.Font = new Font("Segoe UI", 22F);
-            labInstruccion.Location = new Point(67, 9);
-            labInstruccion.Name = "labInstruccion";
-            labInstruccion.Size = new Size(929, 50);
-            labInstruccion.TabIndex = 31;
-            labInstruccion.Text = "Selecciona los pokemones que quieras añadir al equipo";
-            labInstruccion.Visible = false;
             // 
             // pcbPokedex
             // 
@@ -384,11 +371,11 @@
             // lbNombre8
             // 
             lbNombre8.AutoSize = true;
-            lbNombre8.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbNombre8.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lbNombre8.ForeColor = SystemColors.GrayText;
-            lbNombre8.Location = new Point(72, 152);
+            lbNombre8.Location = new Point(67, 155);
             lbNombre8.Name = "lbNombre8";
-            lbNombre8.Size = new Size(79, 25);
+            lbNombre8.Size = new Size(63, 20);
             lbNombre8.TabIndex = 56;
             lbNombre8.Text = "Pikachu";
             // 
@@ -463,11 +450,11 @@
             // lbNombre7
             // 
             lbNombre7.AutoSize = true;
-            lbNombre7.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbNombre7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lbNombre7.ForeColor = SystemColors.GrayText;
-            lbNombre7.Location = new Point(70, 152);
+            lbNombre7.Location = new Point(65, 154);
             lbNombre7.Name = "lbNombre7";
-            lbNombre7.Size = new Size(79, 25);
+            lbNombre7.Size = new Size(63, 20);
             lbNombre7.TabIndex = 51;
             lbNombre7.Text = "Pikachu";
             // 
@@ -542,11 +529,11 @@
             // lbNombre6
             // 
             lbNombre6.AutoSize = true;
-            lbNombre6.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbNombre6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lbNombre6.ForeColor = SystemColors.GrayText;
-            lbNombre6.Location = new Point(71, 152);
+            lbNombre6.Location = new Point(66, 155);
             lbNombre6.Name = "lbNombre6";
-            lbNombre6.Size = new Size(79, 25);
+            lbNombre6.Size = new Size(63, 20);
             lbNombre6.TabIndex = 46;
             lbNombre6.Text = "Pikachu";
             // 
@@ -632,11 +619,11 @@
             // lbNombre5
             // 
             lbNombre5.AutoSize = true;
-            lbNombre5.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbNombre5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lbNombre5.ForeColor = SystemColors.GrayText;
-            lbNombre5.Location = new Point(71, 154);
+            lbNombre5.Location = new Point(66, 157);
             lbNombre5.Name = "lbNombre5";
-            lbNombre5.Size = new Size(79, 25);
+            lbNombre5.Size = new Size(63, 20);
             lbNombre5.TabIndex = 51;
             lbNombre5.Text = "Pikachu";
             // 
@@ -700,11 +687,11 @@
             // lbNombre4
             // 
             lbNombre4.AutoSize = true;
-            lbNombre4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbNombre4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lbNombre4.ForeColor = SystemColors.GrayText;
-            lbNombre4.Location = new Point(72, 155);
+            lbNombre4.Location = new Point(67, 158);
             lbNombre4.Name = "lbNombre4";
-            lbNombre4.Size = new Size(79, 25);
+            lbNombre4.Size = new Size(63, 20);
             lbNombre4.TabIndex = 41;
             lbNombre4.Text = "Pikachu";
             // 
@@ -779,11 +766,11 @@
             // lbNombre3
             // 
             lbNombre3.AutoSize = true;
-            lbNombre3.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbNombre3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lbNombre3.ForeColor = SystemColors.GrayText;
-            lbNombre3.Location = new Point(70, 155);
+            lbNombre3.Location = new Point(65, 158);
             lbNombre3.Name = "lbNombre3";
-            lbNombre3.Size = new Size(79, 25);
+            lbNombre3.Size = new Size(63, 20);
             lbNombre3.TabIndex = 36;
             lbNombre3.Text = "Pikachu";
             // 
@@ -858,11 +845,11 @@
             // lbNombre2
             // 
             lbNombre2.AutoSize = true;
-            lbNombre2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbNombre2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lbNombre2.ForeColor = SystemColors.GrayText;
-            lbNombre2.Location = new Point(71, 155);
+            lbNombre2.Location = new Point(66, 158);
             lbNombre2.Name = "lbNombre2";
-            lbNombre2.Size = new Size(79, 25);
+            lbNombre2.Size = new Size(63, 20);
             lbNombre2.TabIndex = 36;
             lbNombre2.Text = "Pikachu";
             // 
@@ -908,7 +895,6 @@
             // 
             // pbTipo1_1
             // 
-            pbTipo1_1.Image = Properties.Resources.TipoElectrico;
             pbTipo1_1.Location = new Point(18, 185);
             pbTipo1_1.Name = "pbTipo1_1";
             pbTipo1_1.Size = new Size(49, 49);
@@ -939,11 +925,11 @@
             // lbNombre1
             // 
             lbNombre1.AutoSize = true;
-            lbNombre1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbNombre1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lbNombre1.ForeColor = SystemColors.GrayText;
-            lbNombre1.Location = new Point(71, 155);
+            lbNombre1.Location = new Point(66, 158);
             lbNombre1.Name = "lbNombre1";
-            lbNombre1.Size = new Size(79, 25);
+            lbNombre1.Size = new Size(63, 20);
             lbNombre1.TabIndex = 1;
             lbNombre1.Text = "Pikachu";
             // 
@@ -1185,20 +1171,20 @@
             // 
             btFantasma.BackColor = Color.White;
             btFantasma.BackgroundImage = Properties.Resources.TipoFantasma;
-            btFantasma.BackgroundImageLayout = ImageLayout.Stretch;
+            btFantasma.BackgroundImageLayout = ImageLayout.Zoom;
             btFantasma.FlatAppearance.BorderColor = Color.White;
             btFantasma.FlatStyle = FlatStyle.Flat;
             btFantasma.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btFantasma.Location = new Point(71, 128);
             btFantasma.Name = "btFantasma";
-            btFantasma.Size = new Size(60, 63);
+            btFantasma.Size = new Size(60, 57);
             btFantasma.TabIndex = 43;
             btFantasma.UseVisualStyleBackColor = false;
             // 
             // btElectrico
             // 
             btElectrico.BackColor = Color.White;
-            btElectrico.BackgroundImage = Properties.Resources.TipoElectrico1;
+            btElectrico.BackgroundImage = Properties.Resources.TipoElectrico;
             btElectrico.BackgroundImageLayout = ImageLayout.Stretch;
             btElectrico.FlatAppearance.BorderColor = Color.White;
             btElectrico.FlatStyle = FlatStyle.Flat;
@@ -1211,7 +1197,7 @@
             // 
             // btDragon
             // 
-            btDragon.BackColor = Color.Gainsboro;
+            btDragon.BackColor = Color.Transparent;
             btDragon.BackgroundImage = Properties.Resources.TipoDragon;
             btDragon.BackgroundImageLayout = ImageLayout.Stretch;
             btDragon.FlatAppearance.BorderColor = Color.White;
@@ -1240,7 +1226,7 @@
             // 
             // btBicho
             // 
-            btBicho.BackColor = Color.White;
+            btBicho.BackColor = Color.Transparent;
             btBicho.BackgroundImage = Properties.Resources.TipoBicho;
             btBicho.BackgroundImageLayout = ImageLayout.Stretch;
             btBicho.FlatAppearance.BorderColor = Color.White;
@@ -1255,7 +1241,7 @@
             // btAgua
             // 
             btAgua.BackColor = Color.White;
-            btAgua.BackgroundImage = Properties.Resources.TipoAgua1;
+            btAgua.BackgroundImage = Properties.Resources.TipoAgua;
             btAgua.BackgroundImageLayout = ImageLayout.Stretch;
             btAgua.FlatAppearance.BorderColor = Color.White;
             btAgua.FlatStyle = FlatStyle.Flat;
@@ -1281,7 +1267,6 @@
             Text = "Pokedex";
             Load += Pokedexx_Load;
             panel3.ResumeLayout(false);
-            panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pcbPokedex).EndInit();
             panel1.ResumeLayout(false);
             panel15.ResumeLayout(false);
@@ -1443,6 +1428,5 @@
         private PictureBox pbTipo5_2;
         private Label lbCodigo5;
         private Label lbNombre5;
-        private Label labInstruccion;
     }
 }
