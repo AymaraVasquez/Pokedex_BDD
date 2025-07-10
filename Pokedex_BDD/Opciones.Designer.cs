@@ -134,6 +134,7 @@
             btManual.TabIndex = 0;
             btManual.Text = "?";
             btManual.UseVisualStyleBackColor = false;
+            btManual.Click += btManual_Click;
             // 
             // label1
             // 

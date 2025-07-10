@@ -159,118 +159,241 @@ namespace Pokedex
             }
             CargarPokemons();
         }
+
+        public void BusquedaSinPokemon(int num)
+        {
+            Foto3.Image = Properties.Resources.pokebola;
+            lbCodigo3.Text = "###";
+            lbNombre3.Text = "Pokemon Oculto";
+            pbTipo3_1.Image = Properties.Resources.question;
+            pbTipo3_2.Image = Properties.Resources.question;
+        }
         public void CargarPokemons()
         {
-            Foto1.Image = PokemonsAVer[0].imagen;
-            lbCodigo1.Text = "#" + PokemonsAVer[0].id;
-            lbNombre1.Text = PokemonsAVer[0].nombre;
-            pbTipo1_1.Image = PokemonsAVer[0].Tipo1;
-            pbTipo1_2.Image = PokemonsAVer[0].Tipo2;
-            if (PokemonsAVer[0].Tipo1 == null)
+            //Panel1
+            if (PokemonsAVer[0].imagen == null)
             {
-                pbTipo1_2.Visible = false;
+                Foto1.Image = Properties.Resources.pokeball;
+                lbCodigo1.Text = "#####";
+                lbNombre1.Text = "Pokemon Oculto";
+                pbTipo1_1.Image = Properties.Resources.questi;
+                pbTipo1_2.Image = Properties.Resources.questi;
+                btInfo1.Visible = false;
+
             }
             else
             {
-                pbTipo1_2.Visible = true;
+                Foto1.Image = PokemonsAVer[0].imagen;
+                lbCodigo1.Text = "#" + PokemonsAVer[0].id;
+                lbNombre1.Text = PokemonsAVer[0].nombre;
+                pbTipo1_1.Image = PokemonsAVer[0].Tipo1;
+                pbTipo1_2.Image = PokemonsAVer[0].Tipo2;
+                if (PokemonsAVer[0].Tipo1 == null)
+                {
+                    pbTipo1_2.Visible = false;
+                }
+                else
+                {
+                    pbTipo1_2.Visible = true;
+                }
             }
 
-            Foto2.Image = PokemonsAVer[1].imagen;
-            lbCodigo2.Text = "#" + PokemonsAVer[1].id;
-            lbNombre2.Text = PokemonsAVer[1].nombre;
-            pbTipo2_1.Image = PokemonsAVer[1].Tipo1;
-            pbTipo2_2.Image = PokemonsAVer[1].Tipo2;
-            if (PokemonsAVer[1].Tipo1 == null)
+
+            //Panel2
+            if (PokemonsAVer[1].imagen == null)
             {
-                pbTipo2_2.Visible = false;
+                Foto2.Image = Properties.Resources.pokeball;
+                lbCodigo2.Text = "#####";
+                lbNombre2.Text = "Pokemon Oculto";
+                pbTipo2_1.Image = Properties.Resources.questi;
+                pbTipo2_2.Image = Properties.Resources.questi;
+                btInfo2.Visible = false;
+
             }
             else
             {
-                pbTipo2_2.Visible = true;
+                Foto2.Image = PokemonsAVer[1].imagen;
+                lbCodigo2.Text = "#" + PokemonsAVer[1].id;
+                lbNombre2.Text = PokemonsAVer[1].nombre;
+                pbTipo2_1.Image = PokemonsAVer[1].Tipo1;
+                pbTipo2_2.Image = PokemonsAVer[1].Tipo2;
+                if (PokemonsAVer[1].Tipo1 == null)
+                {
+                    pbTipo2_2.Visible = false;
+                }
+                else
+                {
+                    pbTipo2_2.Visible = true;
+                }
             }
 
-            Foto3.Image = PokemonsAVer[2].imagen;
-            lbCodigo3.Text = "#" + PokemonsAVer[2].id;
-            lbNombre3.Text = PokemonsAVer[2].nombre;
-            pbTipo3_1.Image = PokemonsAVer[2].Tipo1;
-            pbTipo3_2.Image = PokemonsAVer[2].Tipo2;
-            if (PokemonsAVer[2].Tipo1 == null)
+            //Panel3
+            if (PokemonsAVer[2].imagen == null)
             {
-                pbTipo3_2.Visible = false;
+                Foto3.Image = Properties.Resources.pokeball;
+                lbCodigo3.Text = "#####";
+                lbNombre3.Text = "Pokemon Oculto";
+                pbTipo3_1.Image = Properties.Resources.questi;
+                pbTipo3_2.Image = Properties.Resources.questi;
+                btInfo3.Visible = false;
+
             }
             else
             {
-                pbTipo3_2.Visible = true;
+                Foto3.Image = PokemonsAVer[2].imagen;
+                lbCodigo3.Text = "#" + PokemonsAVer[2].id;
+                lbNombre3.Text = PokemonsAVer[2].nombre;
+                pbTipo3_1.Image = PokemonsAVer[2].Tipo1;
+                pbTipo3_2.Image = PokemonsAVer[2].Tipo2;
+                if (PokemonsAVer[2].Tipo1 == null)
+                {
+                    pbTipo3_2.Visible = false;
+                }
+                else
+                {
+                    pbTipo3_2.Visible = true;
+                }
             }
 
-            Foto4.Image = PokemonsAVer[3].imagen;
-            lbCodigo4.Text = "#" + PokemonsAVer[3].id;
-            lbNombre4.Text = PokemonsAVer[3].nombre;
-            pbTipo4_1.Image = PokemonsAVer[3].Tipo1;
-            pbTipo4_2.Image = PokemonsAVer[3].Tipo2;
-            if (PokemonsAVer[3].Tipo1 == null)
+            //Panel4
+            if (PokemonsAVer[3].imagen == null)
             {
-                pbTipo4_2.Visible = false;
+                Foto4.Image = Properties.Resources.pokeball;
+                lbCodigo4.Text = "#####";
+                lbNombre4.Text = "Pokemon Oculto";
+                pbTipo4_1.Image = Properties.Resources.questi;
+                pbTipo4_2.Image = Properties.Resources.questi;
+                btInfo4.Visible = false;
+
             }
             else
             {
-                pbTipo4_2.Visible = true;
+                Foto4.Image = PokemonsAVer[3].imagen;
+                lbCodigo4.Text = "#" + PokemonsAVer[3].id;
+                lbNombre4.Text = PokemonsAVer[3].nombre;
+                pbTipo4_1.Image = PokemonsAVer[3].Tipo1;
+                pbTipo4_2.Image = PokemonsAVer[3].Tipo2;
+                if (PokemonsAVer[3].Tipo1 == null)
+                {
+                    pbTipo4_2.Visible = false;
+                }
+                else
+                {
+                    pbTipo4_2.Visible = true;
+                }
             }
 
-            Foto5.Image = PokemonsAVer[4].imagen;
-            lbCodigo5.Text = "#" + PokemonsAVer[4].id;
-            lbNombre5.Text = PokemonsAVer[4].nombre;
-            pbTipo5_1.Image = PokemonsAVer[4].Tipo1;
-            pbTipo5_2.Image = PokemonsAVer[4].Tipo2;
-            if (PokemonsAVer[4].Tipo1 == null)
+            //Panel5
+            if (PokemonsAVer[4].imagen == null)
             {
-                pbTipo5_2.Visible = false;
+                Foto5.Image = Properties.Resources.pokeball;
+                lbCodigo5.Text = "#####";
+                lbNombre5.Text = "Pokemon Oculto";
+                pbTipo5_1.Image = Properties.Resources.questi;
+                pbTipo5_2.Image = Properties.Resources.questi;
+                btInfo5.Visible = false;
+
             }
             else
             {
-                pbTipo5_2.Visible = true;
+                Foto5.Image = PokemonsAVer[4].imagen;
+                lbCodigo5.Text = "#" + PokemonsAVer[4].id;
+                lbNombre5.Text = PokemonsAVer[4].nombre;
+                pbTipo5_1.Image = PokemonsAVer[4].Tipo1;
+                pbTipo5_2.Image = PokemonsAVer[4].Tipo2;
+                if (PokemonsAVer[4].Tipo1 == null)
+                {
+                    pbTipo5_2.Visible = false;
+                }
+                else
+                {
+                    pbTipo5_2.Visible = true;
+                }
             }
 
-            Foto6.Image = PokemonsAVer[5].imagen;
-            lbCodigo6.Text = "#" + PokemonsAVer[5].id;
-            lbNombre6.Text = PokemonsAVer[5].nombre;
-            pbTipo6_1.Image = PokemonsAVer[5].Tipo1;
-            pbTipo6_2.Image = PokemonsAVer[5].Tipo2;
-            if (PokemonsAVer[5].Tipo1 == null)
+            //Panel6
+            if (PokemonsAVer[5].imagen == null)
             {
-                pbTipo6_2.Visible = false;
+                Foto6.Image = Properties.Resources.pokeball;
+                lbCodigo6.Text = "#####";
+                lbNombre6.Text = "Pokemon Oculto";
+                pbTipo6_1.Image = Properties.Resources.questi;
+                pbTipo6_2.Image = Properties.Resources.questi;
+                btInfo6.Visible = false;
+
             }
             else
             {
-                pbTipo6_2.Visible = true;
+                Foto6.Image = PokemonsAVer[5].imagen;
+                lbCodigo6.Text = "#" + PokemonsAVer[5].id;
+                lbNombre6.Text = PokemonsAVer[5].nombre;
+                pbTipo6_1.Image = PokemonsAVer[5].Tipo1;
+                pbTipo6_2.Image = PokemonsAVer[5].Tipo2;
+                if (PokemonsAVer[5].Tipo1 == null)
+                {
+                    pbTipo6_2.Visible = false;
+                }
+                else
+                {
+                    pbTipo6_2.Visible = true;
+                }
             }
 
-            Foto7.Image = PokemonsAVer[6].imagen;
-            lbCodigo7.Text = "#" + PokemonsAVer[6].id;
-            lbNombre7.Text = PokemonsAVer[6].nombre;
-            pbTipo7_1.Image = PokemonsAVer[6].Tipo1;
-            pbTipo7_2.Image = PokemonsAVer[6].Tipo2;
-            if (PokemonsAVer[6].Tipo1 == null)
+
+            //Panel7
+            if (PokemonsAVer[6].imagen == null)
             {
-                pbTipo7_2.Visible = false;
+                Foto7.Image = Properties.Resources.pokeball;
+                lbCodigo7.Text = "#####";
+                lbNombre7.Text = "Pokemon Oculto";
+                pbTipo7_1.Image = Properties.Resources.questi;
+                pbTipo7_2.Image = Properties.Resources.questi;
+                btInfo7.Visible = false;
+
             }
             else
             {
-                pbTipo7_2.Visible = true;
+                Foto7.Image = PokemonsAVer[6].imagen;
+                lbCodigo7.Text = "#" + PokemonsAVer[6].id;
+                lbNombre7.Text = PokemonsAVer[6].nombre;
+                pbTipo7_1.Image = PokemonsAVer[6].Tipo1;
+                pbTipo7_2.Image = PokemonsAVer[6].Tipo2;
+                if (PokemonsAVer[6].Tipo1 == null)
+                {
+                    pbTipo7_2.Visible = false;
+                }
+                else
+                {
+                    pbTipo7_2.Visible = true;
+                }
             }
 
-            Foto8.Image = PokemonsAVer[7].imagen;
-            lbCodigo8.Text = "#" + PokemonsAVer[7].id;
-            lbNombre8.Text = PokemonsAVer[7].nombre;
-            pbTipo8_1.Image = PokemonsAVer[7].Tipo1;
-            pbTipo8_2.Image = PokemonsAVer[7].Tipo2;
-            if (PokemonsAVer[7].Tipo1 == null)
+            //Panel8
+            if (PokemonsAVer[7].imagen == null)
             {
-                pbTipo8_2.Visible = false;
+                Foto8.Image = Properties.Resources.pokeball;
+                lbCodigo8.Text = "#####";
+                lbNombre8.Text = "Pokemon Oculto";
+                pbTipo8_1.Image = Properties.Resources.questi;
+                pbTipo8_2.Image = Properties.Resources.questi;
+                btInfo8.Visible = false;
+
             }
             else
             {
-                pbTipo8_2.Visible = true;
+                Foto8.Image = PokemonsAVer[7].imagen;
+                lbCodigo8.Text = "#" + PokemonsAVer[7].id;
+                lbNombre8.Text = PokemonsAVer[7].nombre;
+                pbTipo8_1.Image = PokemonsAVer[7].Tipo1;
+                pbTipo8_2.Image = PokemonsAVer[7].Tipo2;
+                if (PokemonsAVer[7].Tipo1 == null)
+                {
+                    pbTipo8_2.Visible = false;
+                }
+                else
+                {
+                    pbTipo8_2.Visible = true;
+                }
             }
         }
         public Image ImagenTipo(string Tipo)
@@ -450,6 +573,61 @@ namespace Pokedex
                 Conexion.desconectar();
             }
             CargarPokemons();
+        }
+
+        private void pcbPokedex_Click(object sender, EventArgs e)
+        {
+            tbBarraBusqueda.Text = "";
+            if (CrearEquipos.anadirPokemon == true)
+            {
+                //labInstruccion.Visible = true;
+            }
+            else
+            {
+                //labInstruccion.Visible = false;
+            }
+            Conexion.conectar();
+            string consulta = "SELECT id_poke, nombre_poke, url_img FROM `pokedex_normal` limit 8";
+            MySqlCommand comando3 = new MySqlCommand(consulta, Conex.Coneccion);
+            Conex.Lector = comando3.ExecuteReader();
+            int contador = 0;
+            ImageLoader Cargador = new ImageLoader();
+            while (Conex.Lector.Read())
+            {
+                PokemonsAVer[contador].id = Convert.ToInt32(Conex.Lector[0].ToString());
+                pokemax = PokemonsAVer[contador].id;
+                PokemonsAVer[contador].nombre = Conex.Lector[1].ToString();
+                PokemonsAVer[contador].imagen = Cargador.DownloadImageFromUrl(Cargador.ConvertSharedLinkToDownloadLink(Conex.Lector[2].ToString()));
+                contador++;
+            }
+            Conexion.desconectar();
+            for (int i = 0; i < 8; i++)
+            {
+                Conexion.conectar();
+                string consulta2 = "SELECT ti.tipo FROM rela_pokes_tipo rela join tipos ti on rela.id_tipo = ti.id_tipo WHERE rela.id_poke = " + PokemonsAVer[i].id;
+                MySqlCommand comando2 = new MySqlCommand(consulta2, Conex.Coneccion);
+                Conex.Lector = comando2.ExecuteReader();
+                int contador2 = 0;
+                while (Conex.Lector.Read())
+                {
+                    if (PokemonsAVer[i].Tipo1 == null)
+                    {
+                        PokemonsAVer[i].Tipo1 = ImagenTipo(Conex.Lector[0].ToString());
+                    }
+                    else
+                    {
+                        PokemonsAVer[i].Tipo2 = ImagenTipo(Conex.Lector[0].ToString());
+                    }
+                }
+                Conexion.desconectar();
+            }
+            CargarPokemons();
+        }
+
+        private void btManual_Click(object sender, EventArgs e)
+        {
+            ManualDeUsuario manualForm = new ManualDeUsuario();
+            manualForm.ShowDialog();
         }
     }
 

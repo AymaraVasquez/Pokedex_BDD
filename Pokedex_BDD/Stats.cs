@@ -123,8 +123,8 @@ namespace Pokedex
             pbVelocidad.BackColor = Color.Yellow;
 
             FoticoPokemon.Image = Pokimon;
-            lbAltura.Text = altura.ToString()+"m";
-            lbPeso.Text = peso.ToString()+"kg";
+            lbAltura.Text = altura.ToString()+" m";
+            lbPeso.Text = peso.ToString()+" kg";
             lbAttTotal.Text = statsTotales.ToString();
 
             switch (color)
@@ -139,7 +139,7 @@ namespace Pokedex
                     ColorHex = Color.FromArgb(126, 96, 58);
                     break;
                 case "Green":
-                    ColorHex = Color.FromArgb(108, 238, 108);
+                    ColorHex = Color.YellowGreen;
                     break;
                 case "Grey":
                     ColorHex = Color.Gray;
@@ -148,13 +148,13 @@ namespace Pokedex
                     ColorHex = Color.Pink;
                 break;
                 case "Purple":
-                    ColorHex = Color.MediumOrchid;
+                    ColorHex = Color.Orchid;
                 break;
                 case "Red":
                     ColorHex = Color.Tomato;
                 break;
                 case "White":
-                    ColorHex = Color.PapayaWhip;
+                    ColorHex = Color.GhostWhite;
                 break;
                 case "Yellow":
                     ColorHex = Color.FromArgb(255, 222, 0);
@@ -170,7 +170,8 @@ namespace Pokedex
             buttonAtras.BackColor = ColorHex;
             btSiguiente.BackColor = ColorHex;
 
-            if (ColorHex == Color.Black || ColorHex == Color.FromArgb(168, 24, 0) || ColorHex == Color.Purple)
+            if (ColorHex == Color.FromArgb(35, 35, 35) || ColorHex == Color.FromArgb(126, 96, 58)
+            || ColorHex == Color.Orchid || ColorHex == Color.CornflowerBlue || ColorHex == Color.Tomato)
             {
                 label1.ForeColor = Color.White;
                 label12.ForeColor = Color.White;
@@ -186,7 +187,6 @@ namespace Pokedex
                 label12.ForeColor = Color.Black;
                 label39.ForeColor = Color.Black;
                 btSiguiente.ForeColor = Color.Black;
-                btSiguiente.BackColor = Color.Yellow;
             }
 
             Conexion.conectar();
@@ -208,6 +208,7 @@ namespace Pokedex
                 } else
                 {
                     lbHabilidad2.Text = Conex.Lector[0].ToString();
+                    label11.Visible = false;
                 }
             }
             Conexion.desconectar();

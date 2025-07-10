@@ -34,5 +34,11 @@ namespace Pokedex
             Perfil equiposForm = new Perfil();
             equiposForm.ShowDialog();
         }
+
+        private void btManual_Click(object sender, EventArgs e)
+        {
+            ManualDeUsuario manualForm = new ManualDeUsuario();
+            manualForm.ShowDialog();
+        }
     }
 }

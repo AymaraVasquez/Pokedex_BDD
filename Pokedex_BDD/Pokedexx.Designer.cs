@@ -198,6 +198,7 @@
             pcbPokedex.SizeMode = PictureBoxSizeMode.Zoom;
             pcbPokedex.TabIndex = 30;
             pcbPokedex.TabStop = false;
+            pcbPokedex.Click += pcbPokedex_Click;
             // 
             // btManual
             // 
@@ -210,6 +211,7 @@
             btManual.TabIndex = 30;
             btManual.Text = "?";
             btManual.UseVisualStyleBackColor = false;
+            btManual.Click += btManual_Click;
             // 
             // panel1
             // 

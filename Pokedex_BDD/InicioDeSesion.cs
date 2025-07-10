@@ -54,7 +54,7 @@ namespace Pokedex
             }
             else
             {
-                MessageBox.Show("Usuario o Contraseña Invalidos", "Advertencia");
+                MessageBox.Show("Usuario o Contraseña Invalidos", "Advertencia", MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
         }
 

@@ -51,7 +51,7 @@ namespace Pokedex
                 Conexion.desconectar();
                 if (count > 0)
                 {
-                    MessageBox.Show("El usuario ya existe. Por favor, elija otro nombre de usuario.");
+                    MessageBox.Show("El usuario ya existe. Por favor, elija otro nombre de usuario.","Advertencia" ,MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 Conexion.conectar();
@@ -64,18 +64,18 @@ namespace Pokedex
                 try
                 {
                     comando.ExecuteNonQuery();
-                    MessageBox.Show("Usuario creado exitosamente.");
+                    MessageBox.Show("Usuario creado exitosamente.", "Registros", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error al crear el usuario: " + ex.Message);
+                    MessageBox.Show("Error al crear el usuario: " + ex.Message, "Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
                 }
                 Conexion.desconectar();
             }
             else
             {
-                MessageBox.Show("Por favor, complete todos los campos.");
+                MessageBox.Show("Por favor, complete todos los campos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

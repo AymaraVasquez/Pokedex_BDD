@@ -31,6 +31,9 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Stats));
             panel1 = new Panel();
+            label11 = new Label();
+            label7 = new Label();
+            label3 = new Label();
             butAnadirEquipo = new Button();
             label10 = new Label();
             lbGeneracion = new Label();
@@ -204,6 +207,9 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
+            panel1.Controls.Add(label11);
+            panel1.Controls.Add(label7);
+            panel1.Controls.Add(label3);
             panel1.Controls.Add(butAnadirEquipo);
             panel1.Controls.Add(label10);
             panel1.Controls.Add(lbGeneracion);
@@ -222,6 +228,35 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(305, 353);
             panel1.TabIndex = 33;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(181, 284);
+            label11.Name = "label11";
+            label11.Size = new Size(73, 20);
+            label11.TabIndex = 84;
+            label11.Text = "No posee";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.Location = new Point(159, 284);
+            label7.Name = "label7";
+            label7.Size = new Size(25, 20);
+            label7.TabIndex = 83;
+            label7.Text = "2. ";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(20, 284);
+            label3.Name = "label3";
+            label3.Size = new Size(19, 20);
+            label3.TabIndex = 56;
+            label3.Text = "1.";
             // 
             // butAnadirEquipo
             // 
@@ -329,7 +364,7 @@
             // lbHabilidad2
             // 
             lbHabilidad2.AutoSize = true;
-            lbHabilidad2.Location = new Point(170, 284);
+            lbHabilidad2.Location = new Point(181, 284);
             lbHabilidad2.Name = "lbHabilidad2";
             lbHabilidad2.Size = new Size(0, 20);
             lbHabilidad2.TabIndex = 48;
@@ -337,7 +372,7 @@
             // lbHabilidad1
             // 
             lbHabilidad1.AutoSize = true;
-            lbHabilidad1.Location = new Point(20, 284);
+            lbHabilidad1.Location = new Point(39, 284);
             lbHabilidad1.Name = "lbHabilidad1";
             lbHabilidad1.Size = new Size(0, 20);
             lbHabilidad1.TabIndex = 48;
@@ -392,11 +427,11 @@
             // lbNombre
             // 
             lbNombre.AutoSize = true;
-            lbNombre.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbNombre.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbNombre.ForeColor = SystemColors.GrayText;
-            lbNombre.Location = new Point(159, 53);
+            lbNombre.Location = new Point(156, 56);
             lbNombre.Name = "lbNombre";
-            lbNombre.Size = new Size(79, 25);
+            lbNombre.Size = new Size(63, 20);
             lbNombre.TabIndex = 41;
             lbNombre.Text = "Pikachu";
             // 
@@ -405,7 +440,7 @@
             lbCodigo.AutoSize = true;
             lbCodigo.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
             lbCodigo.ForeColor = SystemColors.GrayText;
-            lbCodigo.Location = new Point(159, 21);
+            lbCodigo.Location = new Point(156, 21);
             lbCodigo.Name = "lbCodigo";
             lbCodigo.Size = new Size(80, 31);
             lbCodigo.TabIndex = 42;
@@ -1696,5 +1731,8 @@
         private Label label58;
         private Button butAnadirEquipo;
         private ToolTip toolTip1;
+        private Label label11;
+        private Label label7;
+        private Label label3;
     }
 }
