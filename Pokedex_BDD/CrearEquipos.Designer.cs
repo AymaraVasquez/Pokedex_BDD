@@ -1121,6 +1121,7 @@
             Name = "CrearEquipos";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CrearEquipos";
+            Load += CrearEquipos_Load;
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pcbPokedex).EndInit();
             paEquipo1.ResumeLayout(false);

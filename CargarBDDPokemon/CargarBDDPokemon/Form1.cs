@@ -211,6 +211,10 @@ namespace CargarBDDPokemon
                     estadisticas.Add(estadistica);
                 }
             }
+
+            // Crear listas de tipos
+            Conexion.conectar();    
+            string consulta
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -437,5 +441,9 @@ namespace CargarBDDPokemon
                 MessageBox.Show("Error al leer el archivo: " + ex.Message);
             }
         }
+    }
+    public class Movimiento()
+    {
+
     }
 }

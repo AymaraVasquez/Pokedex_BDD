@@ -18,8 +18,9 @@ namespace Pokedex
     {
         Conex Conexion = new Conex();
         PokemonVer[] PokemonsAVer = new PokemonVer[8];
-        public int pokemax;
-        public int pokemin;
+        public int pokemax = 0;
+        public int pokemin = 0;
+        public string whereconsulta;
         public Pokedexx()
         {
             InitializeComponent();
@@ -53,14 +54,34 @@ namespace Pokedex
 
         private void btAcero_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Si funciona el boton");
+            LimpiarPokemons();
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                whereconsulta = "id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 13)";
+            }
+            else
+            {
+                whereconsulta += " and id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 13)";
+            }
+            cargar_Arrays();
+            CargarPokemons();
         }
-
+        public void ChequearAniadido()
+        {
+            if (SesionIniciada.idPokeAniadir != 0)
+            {
+                this.Close();
+            }
+        }
         private void btInfo1_Click(object sender, EventArgs e)
         {
             Stats statsForm = new Stats();
             SesionIniciada.idPokeVer = PokemonsAVer[0].id;
             statsForm.ShowDialog();
+            if (SesionIniciada.idPokeAniadir != 0)
+            {
+                this.Close();
+            }
         }
 
         private void btInfo2_Click(object sender, EventArgs e)
@@ -68,6 +89,10 @@ namespace Pokedex
             Stats statsForm = new Stats();
             SesionIniciada.idPokeVer = PokemonsAVer[1].id;
             statsForm.ShowDialog();
+            if (SesionIniciada.idPokeAniadir != 0)
+            {
+                this.Close();
+            }
         }
 
         private void btInfo3_Click(object sender, EventArgs e)
@@ -75,6 +100,10 @@ namespace Pokedex
             Stats statsForm = new Stats();
             SesionIniciada.idPokeVer = PokemonsAVer[2].id;
             statsForm.ShowDialog();
+            if (SesionIniciada.idPokeAniadir != 0)
+            {
+                this.Close();
+            }
         }
 
         private void btInfo4_Click(object sender, EventArgs e)
@@ -82,6 +111,10 @@ namespace Pokedex
             Stats statsForm = new Stats();
             SesionIniciada.idPokeVer = PokemonsAVer[3].id;
             statsForm.ShowDialog();
+            if (SesionIniciada.idPokeAniadir != 0)
+            {
+                this.Close();
+            }
         }
 
         private void btInfo5_Click(object sender, EventArgs e)
@@ -89,6 +122,10 @@ namespace Pokedex
             Stats statsForm = new Stats();
             SesionIniciada.idPokeVer = PokemonsAVer[4].id;
             statsForm.ShowDialog();
+            if (SesionIniciada.idPokeAniadir != 0)
+            {
+                this.Close();
+            }
         }
 
         private void btInfo6_Click(object sender, EventArgs e)
@@ -96,6 +133,10 @@ namespace Pokedex
             Stats statsForm = new Stats();
             SesionIniciada.idPokeVer = PokemonsAVer[5].id;
             statsForm.ShowDialog();
+            if (SesionIniciada.idPokeAniadir != 0)
+            {
+                this.Close();
+            }
         }
 
         private void btInfo7_Click(object sender, EventArgs e)
@@ -103,6 +144,10 @@ namespace Pokedex
             Stats statsForm = new Stats();
             SesionIniciada.idPokeVer = PokemonsAVer[6].id;
             statsForm.ShowDialog();
+            if (SesionIniciada.idPokeAniadir != 0)
+            {
+                this.Close();
+            }
         }
 
         private void btInfo8_Click(object sender, EventArgs e)
@@ -110,20 +155,23 @@ namespace Pokedex
             Stats statsForm = new Stats();
             SesionIniciada.idPokeVer = PokemonsAVer[7].id;
             statsForm.ShowDialog();
-        }
-
-        private void Pokedexx_Load(object sender, EventArgs e)
-        {
-            if (CrearEquipos.anadirPokemon == true)
+            if (SesionIniciada.idPokeAniadir != 0)
             {
-                //labInstruccion.Visible = true;
+                this.Close();
+            }
+        }
+        public void cargar_Arrays()
+        {
+            Conexion.conectar();
+            string consulta;
+            if (!String.IsNullOrEmpty(whereconsulta))
+            {
+                consulta = "SELECT id_poke, nombre_poke, url_img FROM `pokedex_normal`where " + whereconsulta + " limit 8 ";
             }
             else
             {
-                //labInstruccion.Visible = false;
+                consulta = "SELECT id_poke, nombre_poke, url_img FROM `pokedex_normal` limit 8 ";
             }
-            Conexion.conectar();
-            string consulta = "SELECT id_poke, nombre_poke, url_img FROM `pokedex_normal` limit 8";
             MySqlCommand comando3 = new MySqlCommand(consulta, Conex.Coneccion);
             Conex.Lector = comando3.ExecuteReader();
             int contador = 0;
@@ -157,6 +205,18 @@ namespace Pokedex
                 }
                 Conexion.desconectar();
             }
+        }
+        private void Pokedexx_Load(object sender, EventArgs e)
+        {
+            if (CrearEquipos.anadirPokemon == true)
+            {
+                //labInstruccion.Visible = true;
+            }
+            else
+            {
+                //labInstruccion.Visible = false;
+            }
+            cargar_Arrays();
             CargarPokemons();
         }
 
@@ -455,7 +515,15 @@ namespace Pokedex
         {
             LimpiarPokemons();
             Conexion.conectar();
-            string consulta = "SELECT id_poke, nombre_poke, url_img FROM `pokedex_normal` where id_poke > " + pokemax + " limit 8";
+            string consulta;
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                consulta = "SELECT id_poke, nombre_poke, url_img FROM `pokedex_normal` where id_poke > " + pokemax + " limit 8 ";
+            }
+            else
+            {
+                consulta = "SELECT id_poke, nombre_poke, url_img FROM `pokedex_normal` where id_poke > " + pokemax + " and " + whereconsulta + " limit 8 ";
+            }
             MySqlCommand comando3 = new MySqlCommand(consulta, Conex.Coneccion);
             Conex.Lector = comando3.ExecuteReader();
             int contador = 0;
@@ -538,7 +606,15 @@ namespace Pokedex
             pokemin = PokemonsAVer[0].id - 1;
             LimpiarPokemons();
             Conexion.conectar();
-            string consulta = "SELECT id_poke, nombre_poke, url_img FROM `pokedex_normal` where id_poke < " + pokemin + " order by id_poke desc limit 8 ";
+            string consulta;
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                consulta = "SELECT id_poke, nombre_poke, url_img FROM `pokedex_normal` where id_poke < " + pokemin + " order by id_poke desc limit 8 ";
+            }
+            else
+            {
+                consulta = "SELECT id_poke, nombre_poke, url_img FROM `pokedex_normal` where id_poke < " + pokemin + " and " + whereconsulta + " order by id_poke desc limit 8 ";
+            }
             MySqlCommand comando3 = new MySqlCommand(consulta, Conex.Coneccion);
             Conex.Lector = comando3.ExecuteReader();
             int contador = 7;
@@ -577,6 +653,16 @@ namespace Pokedex
 
         private void pcbPokedex_Click(object sender, EventArgs e)
         {
+            btInfo1.Visible = true;
+            btInfo2.Visible = true;
+            btInfo3.Visible = true;
+            btInfo4.Visible = true;
+            btInfo5.Visible = true;
+            btInfo6.Visible = true;
+            btInfo7.Visible = true;
+            btInfo8.Visible = true;
+
+            whereconsulta = "";
             tbBarraBusqueda.Text = "";
             if (CrearEquipos.anadirPokemon == true)
             {
@@ -628,6 +714,261 @@ namespace Pokedex
         {
             ManualDeUsuario manualForm = new ManualDeUsuario();
             manualForm.ShowDialog();
+        }
+
+        private void btAgua_Click(object sender, EventArgs e)
+        {
+            LimpiarPokemons();
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                whereconsulta = "id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 6)";
+            }
+            else
+            {
+                whereconsulta += " and id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 6)";
+            }
+            cargar_Arrays();
+            CargarPokemons();
+        }
+
+        private void btBicho_Click(object sender, EventArgs e)
+        {
+            LimpiarPokemons();
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                whereconsulta = "id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 7)";
+            }
+            else
+            {
+                whereconsulta += " and id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 7)";
+            }
+            cargar_Arrays();
+            CargarPokemons();
+        }
+
+        private void btDragon_Click(object sender, EventArgs e)
+        {
+            LimpiarPokemons();
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                whereconsulta = "id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 5)";
+            }
+            else
+            {
+                whereconsulta += " and id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 5)";
+            }
+            cargar_Arrays();
+            CargarPokemons();
+        }
+
+        private void btElectrico_Click(object sender, EventArgs e)
+        {
+            LimpiarPokemons();
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                whereconsulta = "id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 10)";
+            }
+            else
+            {
+                whereconsulta += " and id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 10)";
+            }
+            cargar_Arrays();
+            CargarPokemons();
+        }
+
+        private void btFantasma_Click(object sender, EventArgs e)
+        {
+            LimpiarPokemons();
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                whereconsulta = "id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 18)";
+            }
+            else
+            {
+                whereconsulta += " and id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 18)";
+            }
+            cargar_Arrays();
+            CargarPokemons();
+        }
+
+        private void btFuego_Click(object sender, EventArgs e)
+        {
+            LimpiarPokemons();
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                whereconsulta = "id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 3)";
+            }
+            else
+            {
+                whereconsulta += " and id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 3)";
+            }
+            cargar_Arrays();
+            CargarPokemons();
+        }
+
+        private void btHada_Click(object sender, EventArgs e)
+        {
+            LimpiarPokemons();
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                whereconsulta = "id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 15)";
+            }
+            else
+            {
+                whereconsulta += " and id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 15)";
+            }
+            cargar_Arrays();
+            CargarPokemons();
+        }
+
+        private void btHielo_Click(object sender, EventArgs e)
+        {
+            LimpiarPokemons();
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                whereconsulta = "id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 14)";
+            }
+            else
+            {
+                whereconsulta += " and id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 14)";
+            }
+            cargar_Arrays();
+            CargarPokemons();
+        }
+
+        private void btLucha_Click(object sender, EventArgs e)
+        {
+            LimpiarPokemons();
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                whereconsulta = "id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 16)";
+            }
+            else
+            {
+                whereconsulta += " and id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 16)";
+            }
+            cargar_Arrays();
+            CargarPokemons();
+        }
+
+        private void btNormal_Click(object sender, EventArgs e)
+        {
+            LimpiarPokemons();
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                whereconsulta = "id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 8)";
+            }
+            else
+            {
+                whereconsulta += " and id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 8)";
+            }
+            cargar_Arrays();
+            CargarPokemons();
+        }
+
+        private void btPlanta_Click(object sender, EventArgs e)
+        {
+            LimpiarPokemons();
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                whereconsulta = "id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 2)";
+            }
+            else
+            {
+                whereconsulta += " and id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 2)";
+            }
+            cargar_Arrays();
+            CargarPokemons();
+        }
+
+        private void btPsiquico_Click(object sender, EventArgs e)
+        {
+            LimpiarPokemons();
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                whereconsulta = "id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 11)";
+            }
+            else
+            {
+                whereconsulta += " and id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 11)";
+            }
+            cargar_Arrays();
+            CargarPokemons();
+        }
+
+        private void btRoca_Click(object sender, EventArgs e)
+        {
+            LimpiarPokemons();
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                whereconsulta = "id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 17)";
+            }
+            else
+            {
+                whereconsulta += " and id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 17)";
+            }
+            cargar_Arrays();
+            CargarPokemons();
+        }
+
+        private void btOscuro_Click(object sender, EventArgs e)
+        {
+            LimpiarPokemons();
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                whereconsulta = "id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 9)";
+            }
+            else
+            {
+                whereconsulta += " and id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 9)";
+            }
+            cargar_Arrays();
+            CargarPokemons();
+        }
+
+        private void btTierra_Click(object sender, EventArgs e)
+        {
+            LimpiarPokemons();
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                whereconsulta = "id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 12)";
+            }
+            else
+            {
+                whereconsulta += " and id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 12)";
+            }
+            cargar_Arrays();
+            CargarPokemons();
+        }
+
+        private void btVenenoso_Click(object sender, EventArgs e)
+        {
+            LimpiarPokemons();
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                whereconsulta = "id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 1)";
+            }
+            else
+            {
+                whereconsulta += " and id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 1)";
+            }
+            cargar_Arrays();
+            CargarPokemons();
+        }
+
+        private void btVolador_Click(object sender, EventArgs e)
+        {
+            LimpiarPokemons();
+            if (String.IsNullOrEmpty(whereconsulta))
+            {
+                whereconsulta = "id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 4)";
+            }
+            else
+            {
+                whereconsulta += " and id_poke in (Select id_poke from rela_pokes_tipo where id_tipo = 4)";
+            }
+            cargar_Arrays();
+            CargarPokemons();
         }
     }
 

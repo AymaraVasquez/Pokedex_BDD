@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-07-2025 a las 23:03:08
+-- Tiempo de generación: 10-07-2025 a las 22:21:15
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -1009,6 +1009,30 @@ INSERT INTO `datos_generales_pokes` (`id_datos_generales`, `generacion`, `altura
 (965, 8, 0.6, 12, 'Grey', 1, 0),
 (966, 8, 1.9, 105, 'Grey', 1, 0),
 (967, 8, 1.8, 70, 'Green', 1, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `equipos`
+--
+
+CREATE TABLE `equipos` (
+  `id_equipo` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL,
+  `es_favorito` tinyint(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `equipos`
+--
+
+INSERT INTO `equipos` (`id_equipo`, `id_usuario`, `es_favorito`) VALUES
+(11, 1, 0),
+(12, 1, 0),
+(13, 1, 0),
+(16, 7, 0),
+(17, 7, 0),
+(18, 7, 0);
 
 -- --------------------------------------------------------
 
@@ -4963,6 +4987,29 @@ INSERT INTO `pokedex_normal` (`id_poke`, `id_forma`, `nombre_poke`, `id_datos_ge
 (8921, 1, 'Urshifu', 966, 980, 'https://drive.google.com/file/d/1yqEoEXpEb1hqWhsRHxEcMKcBTqPL3iO3/view?usp=drive_link'),
 (8922, 2, 'Urshifu', 966, 980, 'https://drive.google.com/file/d/1G4LasqmjCYOEh_TdZpfuuE2_gMERS7WW/view?usp=drive_link'),
 (8931, 1, 'Zarude', 967, 981, 'https://drive.google.com/file/d/1rWUIRX4UEQMMFIkmS_O-3d4xfO506SVQ/view?usp=drive_link');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `rela_equipos_pokes`
+--
+
+CREATE TABLE `rela_equipos_pokes` (
+  `id_rela_equipos` int(11) NOT NULL,
+  `id_equipo` int(11) NOT NULL,
+  `id_poke` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `rela_equipos_pokes`
+--
+
+INSERT INTO `rela_equipos_pokes` (`id_rela_equipos`, `id_equipo`, `id_poke`) VALUES
+(1, 11, 32),
+(2, 11, 62),
+(3, 11, 3842),
+(4, 11, 2601),
+(5, 11, 1491);
 
 -- --------------------------------------------------------
 
@@ -9029,7 +9076,8 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`id_usuario`, `nombre`, `usuario`, `contrasena`, `foto_perfil`) VALUES
 (1, 'Gabriel Vivas', 'GabrielVior', 'Pokedex', 0),
-(2, 'Jesus Vivas', 'Jevchay', 'pokedex123', 2);
+(2, 'Jesus Vivas', 'Jevchay', 'pokedex123', 2),
+(7, 'Sergio', 'Sergio27', '12345678', 0);
 
 --
 -- Índices para tablas volcadas
@@ -9040,6 +9088,13 @@ INSERT INTO `usuarios` (`id_usuario`, `nombre`, `usuario`, `contrasena`, `foto_p
 --
 ALTER TABLE `datos_generales_pokes`
   ADD PRIMARY KEY (`id_datos_generales`);
+
+--
+-- Indices de la tabla `equipos`
+--
+ALTER TABLE `equipos`
+  ADD PRIMARY KEY (`id_equipo`),
+  ADD KEY `id_usuario` (`id_usuario`);
 
 --
 -- Indices de la tabla `estadisticas_pokes`
@@ -9066,6 +9121,14 @@ ALTER TABLE `pokedex_normal`
   ADD PRIMARY KEY (`id_poke`),
   ADD KEY `id_datos_generales` (`id_datos_generales`),
   ADD KEY `id_att` (`id_att`);
+
+--
+-- Indices de la tabla `rela_equipos_pokes`
+--
+ALTER TABLE `rela_equipos_pokes`
+  ADD PRIMARY KEY (`id_rela_equipos`),
+  ADD KEY `id_equipo` (`id_equipo`),
+  ADD KEY `id_poke` (`id_poke`);
 
 --
 -- Indices de la tabla `rela_pokes_tipo`
@@ -9107,6 +9170,12 @@ ALTER TABLE `datos_generales_pokes`
   MODIFY `id_datos_generales` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=968;
 
 --
+-- AUTO_INCREMENT de la tabla `equipos`
+--
+ALTER TABLE `equipos`
+  MODIFY `id_equipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
 -- AUTO_INCREMENT de la tabla `estadisticas_pokes`
 --
 ALTER TABLE `estadisticas_pokes`
@@ -9131,6 +9200,12 @@ ALTER TABLE `pokedex_normal`
   MODIFY `id_poke` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8932;
 
 --
+-- AUTO_INCREMENT de la tabla `rela_equipos_pokes`
+--
+ALTER TABLE `rela_equipos_pokes`
+  MODIFY `id_rela_equipos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT de la tabla `rela_pokes_tipo`
 --
 ALTER TABLE `rela_pokes_tipo`
@@ -9152,11 +9227,17 @@ ALTER TABLE `tipos`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Restricciones para tablas volcadas
 --
+
+--
+-- Filtros para la tabla `equipos`
+--
+ALTER TABLE `equipos`
+  ADD CONSTRAINT `equipos_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`);
 
 --
 -- Filtros para la tabla `pokedex_normal`
@@ -9165,6 +9246,13 @@ ALTER TABLE `pokedex_normal`
   ADD CONSTRAINT `pokedex_normal_ibfk_1` FOREIGN KEY (`id_datos_generales`) REFERENCES `datos_generales_pokes` (`id_datos_generales`),
   ADD CONSTRAINT `pokedex_normal_ibfk_2` FOREIGN KEY (`id_datos_generales`) REFERENCES `estadisticas_pokes` (`id_att`),
   ADD CONSTRAINT `pokedex_normal_ibfk_3` FOREIGN KEY (`id_att`) REFERENCES `estadisticas_pokes` (`id_att`);
+
+--
+-- Filtros para la tabla `rela_equipos_pokes`
+--
+ALTER TABLE `rela_equipos_pokes`
+  ADD CONSTRAINT `rela_equipos_pokes_ibfk_1` FOREIGN KEY (`id_equipo`) REFERENCES `equipos` (`id_equipo`),
+  ADD CONSTRAINT `rela_equipos_pokes_ibfk_2` FOREIGN KEY (`id_poke`) REFERENCES `pokedex_normal` (`id_poke`);
 
 --
 -- Filtros para la tabla `rela_pokes_tipo`

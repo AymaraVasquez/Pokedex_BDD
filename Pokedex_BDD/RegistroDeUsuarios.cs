@@ -39,6 +39,18 @@ namespace Pokedex
 
         private void btCrearUsu_Click(object sender, EventArgs e)
         {
+            // Validar que el nombre no tenga numeros 
+            if (tbNombre.Text.Any(char.IsDigit))
+            {
+                MessageBox.Show("El nombre no puede contener números.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (tbPass.Text.Length < 8)
+            {
+                MessageBox.Show("La contraseña debe tener al menos 8 caracteres.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             if (tbUsu.Text != "" && tbPass.Text != "" && tbNombre.Text != "")
             {
                 fotoUsuario = (int)numericUpDown1.Value;
@@ -72,6 +84,30 @@ namespace Pokedex
                     MessageBox.Show("Error al crear el usuario: " + ex.Message, "Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
                 }
                 Conexion.desconectar();
+                
+                Conexion.conectar();
+                string query2 = "SELECT id_usuario from usuarios where usuario = '"+tbUsu.Text+"'"; // Obtener el último ID insertado
+                MySqlCommand comando3 = new MySqlCommand(query2, Conex.Coneccion);
+                Conex.Lector = comando3.ExecuteReader();
+                int contador = 0;
+                ImageLoader Cargador = new ImageLoader();
+                while (Conex.Lector.Read())
+                {
+                    contador = Convert.ToInt32(Conex.Lector[0]);
+                }
+                Conexion.desconectar();
+
+                Conexion.conectar();
+                MySqlCommand comando2 = new MySqlCommand(query2, Conex.Coneccion);
+                int lastId = Convert.ToInt32(comando2.ExecuteScalar()); // Ejecutar el comando y obtener el ID
+                for (int i =1; i<4; i++)
+                {
+                    Conexion.conectar();
+                    string query1 = "INSERT INTO `equipos`(`id_equipo`, `id_usuario`, `es_favorito`) VALUES (null,"+contador.ToString()+" ,0)";
+                    MySqlCommand comando1 = new MySqlCommand(query1, Conex.Coneccion);
+                    comando1.ExecuteNonQuery();
+                    Conexion.desconectar();
+                }
             }
             else
             {

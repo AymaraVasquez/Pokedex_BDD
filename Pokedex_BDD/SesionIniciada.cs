@@ -14,5 +14,6 @@ namespace Pokedex
         public static int IdUsuario { get; set; } = 0;
         public static int FotoPerfil { get; set; } = 0;
         public static int idPokeVer { get; set; } = 0;
+        public static int idPokeAniadir { get; set; } = 0;
     }
 }

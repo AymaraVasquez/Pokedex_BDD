@@ -17,7 +17,7 @@ namespace CargarBDDPokemon
             Coneccion = new MySqlConnection();
             if ((Coneccion.State == ConnectionState.Closed))
             {
-                var conect = "Datasource=localhost;Port=3306;User=root;password=;Database=unsafe_people";
+                var conect = "Datasource=localhost;Port=3306;User=root;password=;Database=unsafe people";
                 Coneccion.ConnectionString = conect;
                 Coneccion.Open();
             }

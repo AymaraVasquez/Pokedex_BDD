@@ -270,6 +270,7 @@
             butAnadirEquipo.Text = "+";
             butAnadirEquipo.UseVisualStyleBackColor = false;
             butAnadirEquipo.Visible = false;
+            butAnadirEquipo.Click += butAnadirEquipo_Click;
             // 
             // label10
             // 

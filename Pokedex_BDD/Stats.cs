@@ -123,8 +123,8 @@ namespace Pokedex
             pbVelocidad.BackColor = Color.Yellow;
 
             FoticoPokemon.Image = Pokimon;
-            lbAltura.Text = altura.ToString()+" m";
-            lbPeso.Text = peso.ToString()+" kg";
+            lbAltura.Text = altura.ToString() + " m";
+            lbPeso.Text = peso.ToString() + " kg";
             lbAttTotal.Text = statsTotales.ToString();
 
             switch (color)
@@ -146,23 +146,23 @@ namespace Pokedex
                     break;
                 case "Pink":
                     ColorHex = Color.Pink;
-                break;
+                    break;
                 case "Purple":
                     ColorHex = Color.Orchid;
-                break;
+                    break;
                 case "Red":
                     ColorHex = Color.Tomato;
-                break;
+                    break;
                 case "White":
                     ColorHex = Color.GhostWhite;
-                break;
+                    break;
                 case "Yellow":
                     ColorHex = Color.FromArgb(255, 222, 0);
-                break;
+                    break;
             }
             lbNombre.Text = nombre;
             lbGeneracion.Text = generacion.ToString();
-            lbCodigo.Text = "#"+ id.ToString();
+            lbCodigo.Text = "#" + id.ToString();
             this.BackColor = ColorHex;
             panelHabi.BackColor = ColorHex;
             panelEstat.BackColor = ColorHex;
@@ -199,13 +199,14 @@ namespace Pokedex
                 if (Conex.Lector[1].ToString() == "True")
                 {
                     lbHabilidadOculta.Text = Conex.Lector[0].ToString();
-                } 
+                }
                 else if (habilidadCount == 0)
                 {
                     lbHabilidad1.Text = Conex.Lector[0].ToString();
                     habilidadCount++;
 
-                } else
+                }
+                else
                 {
                     lbHabilidad2.Text = Conex.Lector[0].ToString();
                     label11.Visible = false;
@@ -286,7 +287,7 @@ namespace Pokedex
 
         }
 
-       
+
 
         private void btSiguiente_Click(object sender, EventArgs e)
         {
@@ -301,6 +302,12 @@ namespace Pokedex
             buttonAtras.Visible = false;
             btSiguiente.Visible = true;
 
+        }
+
+        private void butAnadirEquipo_Click(object sender, EventArgs e)
+        {
+            SesionIniciada.idPokeAniadir = id;
+            this.Close();
         }
     }
 }

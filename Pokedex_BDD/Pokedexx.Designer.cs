@@ -1014,6 +1014,7 @@
             btVolador.Size = new Size(60, 57);
             btVolador.TabIndex = 55;
             btVolador.UseVisualStyleBackColor = false;
+            btVolador.Click += btVolador_Click;
             // 
             // btVenenoso
             // 
@@ -1028,6 +1029,7 @@
             btVenenoso.Size = new Size(60, 57);
             btVenenoso.TabIndex = 54;
             btVenenoso.UseVisualStyleBackColor = false;
+            btVenenoso.Click += btVenenoso_Click;
             // 
             // btTierra
             // 
@@ -1042,6 +1044,7 @@
             btTierra.Size = new Size(60, 57);
             btTierra.TabIndex = 53;
             btTierra.UseVisualStyleBackColor = false;
+            btTierra.Click += btTierra_Click;
             // 
             // btOscuro
             // 
@@ -1056,6 +1059,7 @@
             btOscuro.Size = new Size(60, 57);
             btOscuro.TabIndex = 52;
             btOscuro.UseVisualStyleBackColor = false;
+            btOscuro.Click += btOscuro_Click;
             // 
             // btRoca
             // 
@@ -1070,6 +1074,7 @@
             btRoca.Size = new Size(60, 57);
             btRoca.TabIndex = 51;
             btRoca.UseVisualStyleBackColor = false;
+            btRoca.Click += btRoca_Click;
             // 
             // btPsiquico
             // 
@@ -1084,6 +1089,7 @@
             btPsiquico.Size = new Size(60, 57);
             btPsiquico.TabIndex = 50;
             btPsiquico.UseVisualStyleBackColor = false;
+            btPsiquico.Click += btPsiquico_Click;
             // 
             // btPlanta
             // 
@@ -1098,6 +1104,7 @@
             btPlanta.Size = new Size(60, 57);
             btPlanta.TabIndex = 49;
             btPlanta.UseVisualStyleBackColor = false;
+            btPlanta.Click += btPlanta_Click;
             // 
             // btNormal
             // 
@@ -1112,6 +1119,7 @@
             btNormal.Size = new Size(60, 57);
             btNormal.TabIndex = 48;
             btNormal.UseVisualStyleBackColor = false;
+            btNormal.Click += btNormal_Click;
             // 
             // btLucha
             // 
@@ -1126,6 +1134,7 @@
             btLucha.Size = new Size(60, 57);
             btLucha.TabIndex = 47;
             btLucha.UseVisualStyleBackColor = false;
+            btLucha.Click += btLucha_Click;
             // 
             // btHielo
             // 
@@ -1140,6 +1149,7 @@
             btHielo.Size = new Size(60, 57);
             btHielo.TabIndex = 46;
             btHielo.UseVisualStyleBackColor = false;
+            btHielo.Click += btHielo_Click;
             // 
             // btHada
             // 
@@ -1154,6 +1164,7 @@
             btHada.Size = new Size(60, 57);
             btHada.TabIndex = 45;
             btHada.UseVisualStyleBackColor = false;
+            btHada.Click += btHada_Click;
             // 
             // btFuego
             // 
@@ -1168,6 +1179,7 @@
             btFuego.Size = new Size(60, 57);
             btFuego.TabIndex = 44;
             btFuego.UseVisualStyleBackColor = false;
+            btFuego.Click += btFuego_Click;
             // 
             // btFantasma
             // 
@@ -1182,6 +1194,7 @@
             btFantasma.Size = new Size(60, 57);
             btFantasma.TabIndex = 43;
             btFantasma.UseVisualStyleBackColor = false;
+            btFantasma.Click += btFantasma_Click;
             // 
             // btElectrico
             // 
@@ -1196,6 +1209,7 @@
             btElectrico.Size = new Size(59, 57);
             btElectrico.TabIndex = 42;
             btElectrico.UseVisualStyleBackColor = false;
+            btElectrico.Click += btElectrico_Click;
             // 
             // btDragon
             // 
@@ -1210,6 +1224,7 @@
             btDragon.Size = new Size(60, 57);
             btDragon.TabIndex = 41;
             btDragon.UseVisualStyleBackColor = false;
+            btDragon.Click += btDragon_Click;
             // 
             // btAcero
             // 
@@ -1239,6 +1254,7 @@
             btBicho.Size = new Size(60, 57);
             btBicho.TabIndex = 39;
             btBicho.UseVisualStyleBackColor = false;
+            btBicho.Click += btBicho_Click;
             // 
             // btAgua
             // 
@@ -1253,6 +1269,7 @@
             btAgua.Size = new Size(60, 57);
             btAgua.TabIndex = 38;
             btAgua.UseVisualStyleBackColor = false;
+            btAgua.Click += btAgua_Click;
             // 
             // Pokedexx
             // 
