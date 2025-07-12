@@ -108,7 +108,7 @@
             label45 = new Label();
             label46 = new Label();
             label47 = new Label();
-            panel18 = new Panel();
+            panelMov1 = new Panel();
             label35 = new Label();
             label36 = new Label();
             panel20 = new Panel();
@@ -185,7 +185,7 @@
             ((System.ComponentModel.ISupportInitialize)pbTipoMov4).BeginInit();
             panel23.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            panel18.SuspendLayout();
+            panelMov1.SuspendLayout();
             panel20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel19.SuspendLayout();
@@ -752,7 +752,7 @@
             panel9.Controls.Add(panel15);
             panel9.Controls.Add(panel24);
             panel9.Controls.Add(panel23);
-            panel9.Controls.Add(panel18);
+            panel9.Controls.Add(panelMov1);
             panel9.Controls.Add(panel20);
             panel9.Controls.Add(panel19);
             panel9.Location = new Point(2, 59);
@@ -999,15 +999,15 @@
             label47.TabIndex = 55;
             label47.Text = "000";
             // 
-            // panel18
+            // panelMov1
             // 
-            panel18.BackColor = Color.FromArgb(255, 222, 0);
-            panel18.Controls.Add(label35);
-            panel18.Controls.Add(label36);
-            panel18.Location = new Point(16, 14);
-            panel18.Name = "panel18";
-            panel18.Size = new Size(174, 36);
-            panel18.TabIndex = 78;
+            panelMov1.BackColor = Color.FromArgb(255, 222, 0);
+            panelMov1.Controls.Add(label35);
+            panelMov1.Controls.Add(label36);
+            panelMov1.Location = new Point(16, 14);
+            panelMov1.Name = "panelMov1";
+            panelMov1.Size = new Size(174, 36);
+            panelMov1.TabIndex = 78;
             // 
             // label35
             // 
@@ -1571,8 +1571,8 @@
             panel23.ResumeLayout(false);
             panel23.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            panel18.ResumeLayout(false);
-            panel18.PerformLayout();
+            panelMov1.ResumeLayout(false);
+            panelMov1.PerformLayout();
             panel20.ResumeLayout(false);
             panel20.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -1680,7 +1680,7 @@
         private Label label45;
         private Label label46;
         private Label label47;
-        private Panel panel18;
+        private Panel panelMov1;
         private Label label35;
         private Label label36;
         private Panel panel20;

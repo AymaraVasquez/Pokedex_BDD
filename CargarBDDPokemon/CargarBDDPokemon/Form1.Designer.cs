@@ -35,6 +35,7 @@
             VerPokimon = new Button();
             CargarRela = new Button();
             BtMovi = new Button();
+            BtCargarRelaMov = new Button();
             SuspendLayout();
             // 
             // button1
@@ -107,11 +108,22 @@
             BtMovi.UseVisualStyleBackColor = true;
             BtMovi.Click += BtMovi_Click;
             // 
+            // BtCargarRelaMov
+            // 
+            BtCargarRelaMov.Location = new Point(315, 152);
+            BtCargarRelaMov.Name = "BtCargarRelaMov";
+            BtCargarRelaMov.Size = new Size(169, 57);
+            BtCargarRelaMov.TabIndex = 7;
+            BtCargarRelaMov.Text = "Cargar Relaciones Movimientos";
+            BtCargarRelaMov.UseVisualStyleBackColor = true;
+            BtCargarRelaMov.Click += BtCargarRelaMov_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(BtCargarRelaMov);
             Controls.Add(BtMovi);
             Controls.Add(CargarRela);
             Controls.Add(VerPokimon);
@@ -134,5 +146,6 @@
         private Button VerPokimon;
         private Button CargarRela;
         private Button BtMovi;
+        private Button BtCargarRelaMov;
     }
 }

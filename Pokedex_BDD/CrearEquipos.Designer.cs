@@ -268,6 +268,7 @@
             btElim1_6.TabIndex = 56;
             btElim1_6.UseVisualStyleBackColor = false;
             btElim1_6.Visible = false;
+            btElim1_6.Click += btElim1_6_Click;
             // 
             // Foto1_6
             // 
@@ -303,6 +304,7 @@
             btElim1_5.TabIndex = 56;
             btElim1_5.UseVisualStyleBackColor = false;
             btElim1_5.Visible = false;
+            btElim1_5.Click += btElim1_5_Click;
             // 
             // Foto1_5
             // 
@@ -338,6 +340,7 @@
             btElim1_4.TabIndex = 56;
             btElim1_4.UseVisualStyleBackColor = false;
             btElim1_4.Visible = false;
+            btElim1_4.Click += btElim1_4_Click;
             // 
             // Foto1_4
             // 
@@ -373,6 +376,7 @@
             btElim1_3.TabIndex = 56;
             btElim1_3.UseVisualStyleBackColor = false;
             btElim1_3.Visible = false;
+            btElim1_3.Click += btElim1_3_Click;
             // 
             // Foto1_3
             // 
@@ -408,6 +412,7 @@
             btElim1_2.TabIndex = 56;
             btElim1_2.UseVisualStyleBackColor = false;
             btElim1_2.Visible = false;
+            btElim1_2.Click += btElim1_2_Click;
             // 
             // Foto1_2
             // 
@@ -443,6 +448,7 @@
             btElim1_1.TabIndex = 56;
             btElim1_1.UseVisualStyleBackColor = false;
             btElim1_1.Visible = false;
+            btElim1_1.Click += btElim1_1_Click;
             // 
             // Foto1_1
             // 
@@ -560,6 +566,7 @@
             btElim2_6.TabIndex = 56;
             btElim2_6.UseVisualStyleBackColor = false;
             btElim2_6.Visible = false;
+            btElim2_6.Click += btElim2_6_Click;
             // 
             // Foto2_6
             // 
@@ -595,6 +602,7 @@
             btElim2_5.TabIndex = 56;
             btElim2_5.UseVisualStyleBackColor = false;
             btElim2_5.Visible = false;
+            btElim2_5.Click += btElim2_5_Click;
             // 
             // Foto2_5
             // 
@@ -630,6 +638,7 @@
             btElim2_4.TabIndex = 56;
             btElim2_4.UseVisualStyleBackColor = false;
             btElim2_4.Visible = false;
+            btElim2_4.Click += btElim2_4_Click;
             // 
             // Foto2_4
             // 
@@ -665,6 +674,7 @@
             btElim2_3.TabIndex = 56;
             btElim2_3.UseVisualStyleBackColor = false;
             btElim2_3.Visible = false;
+            btElim2_3.Click += btElim2_3_Click;
             // 
             // Foto2_3
             // 
@@ -700,6 +710,7 @@
             btElim2_2.TabIndex = 56;
             btElim2_2.UseVisualStyleBackColor = false;
             btElim2_2.Visible = false;
+            btElim2_2.Click += btElim2_2_Click;
             // 
             // Foto2_2
             // 
@@ -749,6 +760,7 @@
             btElim2_1.TabIndex = 56;
             btElim2_1.UseVisualStyleBackColor = false;
             btElim2_1.Visible = false;
+            btElim2_1.Click += btElim2_1_Click;
             // 
             // Foto2_1
             // 
@@ -903,6 +915,7 @@
             btElim3_6.TabIndex = 56;
             btElim3_6.UseVisualStyleBackColor = false;
             btElim3_6.Visible = false;
+            btElim3_6.Click += btElim3_6_Click;
             // 
             // Foto3_6
             // 
@@ -938,6 +951,7 @@
             btElim3_5.TabIndex = 56;
             btElim3_5.UseVisualStyleBackColor = false;
             btElim3_5.Visible = false;
+            btElim3_5.Click += btElim3_5_Click;
             // 
             // Foto3_5
             // 
@@ -973,6 +987,7 @@
             btElim3_4.TabIndex = 56;
             btElim3_4.UseVisualStyleBackColor = false;
             btElim3_4.Visible = false;
+            btElim3_4.Click += btElim3_4_Click;
             // 
             // Foto3_4
             // 
@@ -1008,6 +1023,7 @@
             btElim3_3.TabIndex = 56;
             btElim3_3.UseVisualStyleBackColor = false;
             btElim3_3.Visible = false;
+            btElim3_3.Click += btElim3_3_Click;
             // 
             // Foto3_3
             // 
@@ -1043,6 +1059,7 @@
             btElim3_2.TabIndex = 56;
             btElim3_2.UseVisualStyleBackColor = false;
             btElim3_2.Visible = false;
+            btElim3_2.Click += btElim3_2_Click;
             // 
             // Foto3_2
             // 
@@ -1092,6 +1109,7 @@
             btElim3_1.TabIndex = 56;
             btElim3_1.UseVisualStyleBackColor = false;
             btElim3_1.Visible = false;
+            btElim3_1.Click += btElim3_1_Click;
             // 
             // Foto3_1
             // 

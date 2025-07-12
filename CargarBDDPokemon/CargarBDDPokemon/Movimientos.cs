@@ -10,5 +10,8 @@ namespace CargarBDDPokemon
     {
         int idMovimiento;
         string nombreMovimiento;
+        int potenciaMovimiento;
+        int precisionMovimiento;
+        string tipoMovimiento;
     }
 }

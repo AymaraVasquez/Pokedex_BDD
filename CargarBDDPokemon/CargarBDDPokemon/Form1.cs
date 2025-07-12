@@ -11,6 +11,9 @@ namespace CargarBDDPokemon
         public List<string> habilidades = new List<string>();
         public List<datosGeneralesPokes> datosGenerales = new List<datosGeneralesPokes>();
         public List<estadisticas_pokes> estadisticas = new List<estadisticas_pokes>();
+
+
+
         public Form1()
         {
             InitializeComponent();
@@ -212,9 +215,6 @@ namespace CargarBDDPokemon
                 }
             }
 
-            // Crear listas de tipos
-            Conexion.conectar();    
-            string consulta
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -419,13 +419,71 @@ namespace CargarBDDPokemon
                             {
                                 Conexion.conectar();
 
-                                string consulta = "insert into movimientos (id_movimiento, nombre_movimiento, potencia, poke_precision) Values (null, '" + columnas[2] + "'," + columnas[4] + " ," + columnas[7] + ")";
+                                string consulta = "insert into movimientos (id_movimiento, nombre_movimiento, potencia, poke_precision, id_tipo) Values (null, '" + columnas[2] + "'," + columnas[4] + " ," + columnas[7] + ", @id_tipo)";
 
                                 using (MySqlCommand cmd = new MySqlCommand(consulta, Conex.Coneccion))
                                 {
                                     cmd.Parameters.AddWithValue("nombre_movimiento", columnas[2]);
                                     cmd.Parameters.AddWithValue("potencia", columnas[4]);
                                     cmd.Parameters.AddWithValue("poke_precision", columnas[7]);
+
+                                    switch (columnas[5].ToString().Trim().ToLower())
+                                    {
+                                        case "poison":
+                                            cmd.Parameters.AddWithValue("id_tipo", 1);
+                                            break;
+                                        case "grass":
+                                            cmd.Parameters.AddWithValue("id_tipo", 2);
+                                            break;
+                                        case "fire":
+                                            cmd.Parameters.AddWithValue("id_tipo", 3);
+                                            break;
+                                        case "flying":
+                                            cmd.Parameters.AddWithValue("id_tipo", 4);
+                                            break;
+                                        case "dragon":
+                                            cmd.Parameters.AddWithValue("id_tipo", 5);
+                                            break;
+                                        case "water":
+                                            cmd.Parameters.AddWithValue("id_tipo", 6);
+                                            break;
+                                        case "bug":
+                                            cmd.Parameters.AddWithValue("id_tipo", 7);
+                                            break;
+                                        case "normal":
+                                            cmd.Parameters.AddWithValue("id_tipo", 8);
+                                            break;
+                                        case "dark":
+                                            cmd.Parameters.AddWithValue("id_tipo", 9);
+                                            break;
+                                        case "electric":
+                                            cmd.Parameters.AddWithValue("id_tipo", 10);
+                                            break;
+                                        case "psychic":
+                                            cmd.Parameters.AddWithValue("id_tipo", 11);
+                                            break;
+                                        case "ground":
+                                            cmd.Parameters.AddWithValue("id_tipo", 12);
+                                            break;
+                                        case "steel":
+                                            cmd.Parameters.AddWithValue("id_tipo", 13);
+                                            break;
+                                        case "ice":
+                                            cmd.Parameters.AddWithValue("id_tipo", 14);
+                                            break;
+                                        case "fairy":
+                                            cmd.Parameters.AddWithValue("id_tipo", 15);
+                                            break;
+                                        case "fighting":
+                                            cmd.Parameters.AddWithValue("id_tipo", 16);
+                                            break;
+                                        case "rock":
+                                            cmd.Parameters.AddWithValue("id_tipo", 17);
+                                            break;
+                                        case "ghost":
+                                            cmd.Parameters.AddWithValue("id_tipo", 18);
+                                            break;
+                                    }
 
                                     cmd.ExecuteNonQuery();
                                 }
@@ -439,6 +497,30 @@ namespace CargarBDDPokemon
             catch (Exception ex)
             {
                 MessageBox.Show("Error al leer el archivo: " + ex.Message);
+            }
+        }
+
+        private void BtCargarRelaMov_Click(object sender, EventArgs e)
+        {
+            foreach (Pokemon poke in pokemons)
+            {
+                for (int i = 0; i<4; i++)
+                {
+                    if (poke.tipo1 == "Fairy")
+                    {
+                        Conexion.conectar();
+                        string consulta2 = "insert into rela_poke_movimiento (id_poke_movimiento, id_poke, id_movimiento) values (null, "+poke.code_poke.ToString()+", (select id_movimiento from movimientos order by rand() limit 1))";
+                        MySqlCommand comando2 = new MySqlCommand(consulta2, Conex.Coneccion);
+                        comando2.ExecuteNonQuery();
+                        Conexion.desconectar();
+                        continue;
+                    }
+                    Conexion.conectar();
+                    string consulta = "insert into rela_poke_movimiento (id_poke_movimiento, id_poke, id_movimiento) values (null, "+poke.code_poke.ToString()+", (select id_movimiento from movimientos where id_tipo = (select id_tipo from tipos where tipo like '"+poke.tipo1+"') order by rand() limit 1))";
+                    MySqlCommand comando = new MySqlCommand(consulta, Conex.Coneccion);
+                    comando.ExecuteNonQuery();
+                    Conexion.desconectar();
+                }   
             }
         }
     }

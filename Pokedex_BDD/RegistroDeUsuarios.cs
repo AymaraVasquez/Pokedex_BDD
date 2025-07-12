@@ -90,7 +90,6 @@ namespace Pokedex
                 MySqlCommand comando3 = new MySqlCommand(query2, Conex.Coneccion);
                 Conex.Lector = comando3.ExecuteReader();
                 int contador = 0;
-                ImageLoader Cargador = new ImageLoader();
                 while (Conex.Lector.Read())
                 {
                     contador = Convert.ToInt32(Conex.Lector[0]);
@@ -103,7 +102,7 @@ namespace Pokedex
                 for (int i =1; i<4; i++)
                 {
                     Conexion.conectar();
-                    string query1 = "INSERT INTO `equipos`(`id_equipo`, `id_usuario`, `es_favorito`) VALUES (null,"+contador.ToString()+" ,0)";
+                    string query1 = "INSERT INTO `equipos`(`id_equipo`, `id_usuario`, `es_favorito`) VALUES ("+contador.ToString()+i.ToString()+","+contador.ToString()+" ,0)";
                     MySqlCommand comando1 = new MySqlCommand(query1, Conex.Coneccion);
                     comando1.ExecuteNonQuery();
                     Conexion.desconectar();

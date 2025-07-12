@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -37,6 +38,7 @@ namespace Pokedex
         public int statsTotales;
         public string color;
         public Color ColorHex;
+        public movimiento[] movimientos = new movimiento[4];
         public Stats()
         {
             InitializeComponent();
@@ -70,12 +72,11 @@ namespace Pokedex
             string consulta = "SELECT id_poke, nombre_poke, url_img, generacion, altura, peso, color, vida, ataque, defensa, ataque_especial, defensa_especial, velocidad, att_totales FROM pokedex_normal po join datos_generales_pokes da on po.id_datos_generales = da.id_datos_generales join estadisticas_pokes est on po.id_att = est.id_att where id_poke = " + SesionIniciada.idPokeVer.ToString();
             MySqlCommand comando3 = new MySqlCommand(consulta, Conex.Coneccion);
             Conex.Lector = comando3.ExecuteReader();
-            ImageLoader Cargador = new ImageLoader();
             while (Conex.Lector.Read())
             {
                 id = Convert.ToInt32(Conex.Lector[0].ToString());
                 nombre = Conex.Lector[1].ToString();
-                Pokimon = Cargador.DownloadImageFromUrl(Cargador.ConvertSharedLinkToDownloadLink(Conex.Lector[2].ToString()));
+                Pokimon = BuscarImagen.DeStringAImage(Conex.Lector[0].ToString());
                 generacion = Convert.ToInt32(Conex.Lector[3].ToString());
                 altura = Convert.ToDouble(Conex.Lector[4].ToString());
                 peso = Convert.ToDouble(Conex.Lector[5].ToString());
@@ -180,6 +181,12 @@ namespace Pokedex
                 btSiguiente.BackColor = ColorHex;
                 buttonAtras.ForeColor = Color.White;
                 buttonAtras.BackColor = ColorHex;
+                label24.ForeColor = Color.White;
+                label33.ForeColor = Color.White;
+                lbNombreMov1.ForeColor = Color.White;
+                lbNombreMov2.ForeColor = Color.White;
+                lBNombreMov3.ForeColor = Color.White;
+                lbNombreMov4.ForeColor = Color.White;
             }
             else
             {
@@ -236,6 +243,92 @@ namespace Pokedex
                 pbTipo2.Visible = false;
             }
             Conexion.desconectar();
+
+            // Cargar movimientos
+            Conexion.conectar();
+            string consulta3 = "SELECT mo.nombre_movimiento, mo.potencia, mo.poke_precision, ti.tipo from movimientos mo join tipos ti on mo.id_tipo = ti.id_tipo where mo.id_movimiento in (SELECT id_movimiento FROM rela_poke_movimiento where id_poke = "+id.ToString()+") ORDER BY mo.id_movimiento asc";
+            MySqlCommand comandomov = new MySqlCommand(consulta3, Conex.Coneccion);
+            Conex.Lector = comandomov.ExecuteReader();
+            int i = 0;
+            while (Conex.Lector.Read())
+            {
+                movimientos[i] = new movimiento(Conex.Lector[0].ToString(), Convert.ToInt32(Conex.Lector[1].ToString()), Convert.ToInt32(Conex.Lector[2].ToString()), ImagenTipo(Conex.Lector[3].ToString()));
+                i++;
+            }
+            Conexion.desconectar();
+
+            // Cargar movimientos en el panel
+            if (movimientos[0] != null)
+            {
+                lbNombreMov1.Text = movimientos[0].nombre;
+                lbPotMov1.Text = movimientos[0].potencia.ToString();
+                lbPrecisionMov1.Text = movimientos[0].precision.ToString();
+                pbTipoMov1.Image = movimientos[0].tipo;
+            }
+            else
+            {
+                panelMov1.Visible = false;
+                lbNombreMov1.Visible = false;
+                lbPotMov1.Visible = false;
+                lbPrecisionMov1.Visible = false;
+                pbTipoMov1.Visible = false;
+            }
+
+            panel19.BackColor = ColorHex;
+            panelMov1.BackColor = ColorHex;
+            panelMov3.BackColor = ColorHex;
+            panelMov4.BackColor = ColorHex;
+
+            if (movimientos[1] != null)
+            {
+                panelMov2.BackColor = ColorHex;
+                lbNombreMov2.Text = movimientos[1].nombre;
+                lbPotMov2.Text = movimientos[1].potencia.ToString();
+                lbPrecisionMov2.Text = movimientos[1].precision.ToString();
+                pbTipoMov2.Image = movimientos[1].tipo;
+            }
+            else
+            {
+                panelMov2.Visible = false;
+                lbNombreMov2.Visible = false;
+                lbPotMov2.Visible = false;
+                lbPrecisionMov2.Visible = false;
+                pbTipoMov2.Visible = false;
+            }
+
+            if (movimientos[2] != null)
+            {
+                lBNombreMov3.Text = movimientos[2].nombre;
+                lbPotMov3.Text = movimientos[2].potencia.ToString();
+                lbPrecisionMov3.Text = movimientos[2].precision.ToString();
+                pbTipoMov3.Image = movimientos[2].tipo;
+            }
+            else
+            {
+                panelMov3.Visible = false;
+                lBNombreMov3.Visible = false;
+                lbPotMov3.Visible = false;
+                lbPrecisionMov3.Visible = false;
+                pbTipoMov3.Visible = false;
+            }
+
+            if (movimientos[3] != null)
+            {
+                lbNombreMov4.Text = movimientos[3].nombre;
+                lbPotMov4.Text = movimientos[3].potencia.ToString();
+                lbPrecisionMov4.Text = movimientos[3].precision.ToString();
+                pbTipoMov4.Image = movimientos[3].tipo;
+            } else
+            {
+                panelMov4.Visible = false;
+                lbNombreMov4.Visible = false;
+                lbPotMov4.Visible = false;
+                lbPrecisionMov4.Visible = false;
+                pbTipoMov4.Visible = false;
+                panel24.Visible = false;
+            }
+
+
         }
 
         public Image ImagenTipo(string Tipo)
@@ -308,6 +401,20 @@ namespace Pokedex
         {
             SesionIniciada.idPokeAniadir = id;
             this.Close();
+        }
+    }
+    public class movimiento
+    {
+        public string nombre;
+        public int potencia;
+        public int precision;
+        public Image tipo;
+        public movimiento(string nombre, int potencia, int precision, Image tipo)
+        {
+            this.nombre = nombre;
+            this.potencia = potencia;
+            this.precision = precision;
+            this.tipo = tipo;
         }
     }
 }

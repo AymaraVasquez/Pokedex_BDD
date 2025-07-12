@@ -175,13 +175,12 @@ namespace Pokedex
             MySqlCommand comando3 = new MySqlCommand(consulta, Conex.Coneccion);
             Conex.Lector = comando3.ExecuteReader();
             int contador = 0;
-            ImageLoader Cargador = new ImageLoader();
             while (Conex.Lector.Read())
             {
                 PokemonsAVer[contador].id = Convert.ToInt32(Conex.Lector[0].ToString());
                 pokemax = PokemonsAVer[contador].id;
                 PokemonsAVer[contador].nombre = Conex.Lector[1].ToString();
-                PokemonsAVer[contador].imagen = Cargador.DownloadImageFromUrl(Cargador.ConvertSharedLinkToDownloadLink(Conex.Lector[2].ToString()));
+                PokemonsAVer[contador].imagen = BuscarImagen.DeStringAImage(Conex.Lector[0].ToString());
                 contador++;
             }
             Conexion.desconectar();
@@ -513,6 +512,10 @@ namespace Pokedex
         }
         private void btSiguiente_Click(object sender, EventArgs e)
         {
+            if (PokemonsAVer[7].imagen == null)
+            {
+                return;
+            }
             LimpiarPokemons();
             Conexion.conectar();
             string consulta;
@@ -527,13 +530,12 @@ namespace Pokedex
             MySqlCommand comando3 = new MySqlCommand(consulta, Conex.Coneccion);
             Conex.Lector = comando3.ExecuteReader();
             int contador = 0;
-            ImageLoader Cargador = new ImageLoader();
             while (Conex.Lector.Read())
             {
                 PokemonsAVer[contador].id = Convert.ToInt32(Conex.Lector[0].ToString());
                 pokemax = PokemonsAVer[contador].id;
                 PokemonsAVer[contador].nombre = Conex.Lector[1].ToString();
-                PokemonsAVer[contador].imagen = Cargador.DownloadImageFromUrl(Cargador.ConvertSharedLinkToDownloadLink(Conex.Lector[2].ToString()));
+                PokemonsAVer[contador].imagen = BuscarImagen.DeStringAImage(Conex.Lector[0].ToString());
                 contador++;
             }
             Conexion.desconectar();
@@ -568,13 +570,12 @@ namespace Pokedex
             MySqlCommand comando3 = new MySqlCommand(consulta, Conex.Coneccion);
             Conex.Lector = comando3.ExecuteReader();
             int contador = 0;
-            ImageLoader Cargador = new ImageLoader();
             while (Conex.Lector.Read())
             {
                 PokemonsAVer[contador].id = Convert.ToInt32(Conex.Lector[0].ToString());
                 pokemax = -1;
                 PokemonsAVer[contador].nombre = Conex.Lector[1].ToString();
-                PokemonsAVer[contador].imagen = Cargador.DownloadImageFromUrl(Cargador.ConvertSharedLinkToDownloadLink(Conex.Lector[2].ToString()));
+                PokemonsAVer[contador].imagen = BuscarImagen.DeStringAImage(Conex.Lector[0].ToString());
                 contador++;
             }
             Conexion.desconectar();
@@ -618,13 +619,12 @@ namespace Pokedex
             MySqlCommand comando3 = new MySqlCommand(consulta, Conex.Coneccion);
             Conex.Lector = comando3.ExecuteReader();
             int contador = 7;
-            ImageLoader Cargador = new ImageLoader();
             while (Conex.Lector.Read())
             {
                 PokemonsAVer[contador].id = Convert.ToInt32(Conex.Lector[0].ToString());
                 pokemax = PokemonsAVer[contador].id;
                 PokemonsAVer[contador].nombre = Conex.Lector[1].ToString();
-                PokemonsAVer[contador].imagen = Cargador.DownloadImageFromUrl(Cargador.ConvertSharedLinkToDownloadLink(Conex.Lector[2].ToString()));
+                PokemonsAVer[contador].imagen = BuscarImagen.DeStringAImage(Conex.Lector[0].ToString());
                 contador--;
             }
             Conexion.desconectar();
@@ -677,13 +677,12 @@ namespace Pokedex
             MySqlCommand comando3 = new MySqlCommand(consulta, Conex.Coneccion);
             Conex.Lector = comando3.ExecuteReader();
             int contador = 0;
-            ImageLoader Cargador = new ImageLoader();
             while (Conex.Lector.Read())
             {
                 PokemonsAVer[contador].id = Convert.ToInt32(Conex.Lector[0].ToString());
                 pokemax = PokemonsAVer[contador].id;
                 PokemonsAVer[contador].nombre = Conex.Lector[1].ToString();
-                PokemonsAVer[contador].imagen = Cargador.DownloadImageFromUrl(Cargador.ConvertSharedLinkToDownloadLink(Conex.Lector[2].ToString()));
+                PokemonsAVer[contador].imagen = BuscarImagen.DeStringAImage(Conex.Lector[0].ToString());
                 contador++;
             }
             Conexion.desconectar();
@@ -987,75 +986,6 @@ namespace Pokedex
             this.imagen = null;
             this.Tipo1 = null;
             this.Tipo2 = null;
-        }
-    }
-
-    public class ImageLoader
-    {
-        public void LoadImageFromDriveUrl(PictureBox pictureBox, string sharedUrl)
-        {
-            try
-            {
-                // 1. Obtener la URL de la base de datos
-                if (!string.IsNullOrEmpty(sharedUrl))
-                {
-                    // 2. Convertir el enlace compartido a enlace de descarga directa
-                    string downloadUrl = ConvertSharedLinkToDownloadLink(sharedUrl);
-
-                    // 3. Descargar la imagen desde la URL
-                    Image image = DownloadImageFromUrl(downloadUrl);
-
-                    // 4. Asignar la imagen al PictureBox
-                    pictureBox.Image = image;
-                }
-                else
-                {
-                    pictureBox.Image = null;
-                    MessageBox.Show("No se encontró la URL de la imagen en la base de datos.");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al cargar la imagen: {ex.Message}");
-                pictureBox.Image = null;
-            }
-        }
-
-
-        public string ConvertSharedLinkToDownloadLink(string sharedUrl)
-        {
-            // Extraer el ID del archivo de la URL compartida
-            int startIndex = sharedUrl.IndexOf("/d/") + 3;
-            int endIndex = sharedUrl.IndexOf("/", startIndex);
-
-            if (endIndex == -1)
-                endIndex = sharedUrl.IndexOf("?", startIndex);
-
-            if (endIndex == -1)
-                endIndex = sharedUrl.Length;
-
-            string fileId = sharedUrl.Substring(startIndex, endIndex - startIndex);
-
-            // Crear URL de descarga directa
-            return $"https://drive.google.com/uc?export=download&id={fileId}";
-        }
-
-        public Image DownloadImageFromUrl(string imageUrl)
-        {
-            using (WebClient webClient = new WebClient())
-            {
-                // Configurar credenciales si es necesario (para archivos con restricciones)
-                webClient.UseDefaultCredentials = true;
-
-                // Descargar los bytes de la imagen
-                byte[] imageBytes = webClient.DownloadData(imageUrl);
-
-                // Convertir los bytes a Image
-                using (MemoryStream ms = new MemoryStream(imageBytes))
-                {
-                    return Image.FromStream(ms);
-                }
-            }
         }
     }
 }

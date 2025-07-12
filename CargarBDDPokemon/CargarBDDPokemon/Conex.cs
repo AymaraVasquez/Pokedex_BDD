@@ -30,4 +30,27 @@ namespace CargarBDDPokemon
             }
         }
     }
+
+    public class Conex2
+    {
+        public MySqlConnection Coneccion;
+        public MySqlDataReader Lector;
+        public void conectar()
+        {
+            Coneccion = new MySqlConnection();
+            if ((Coneccion.State == ConnectionState.Closed))
+            {
+                var conect = "Datasource=localhost;Port=3306;User=root;password=;Database=unsafe people";
+                Coneccion.ConnectionString = conect;
+                Coneccion.Open();
+            }
+        }
+        public void desconectar()
+        {
+            if ((Coneccion.State == ConnectionState.Open))
+            {
+                Coneccion.Close();
+            }
+        }
+    }
 }

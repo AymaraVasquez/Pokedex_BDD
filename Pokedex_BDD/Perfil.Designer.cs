@@ -103,6 +103,7 @@
             btInfo1.Size = new Size(26, 28);
             btInfo1.TabIndex = 56;
             btInfo1.UseVisualStyleBackColor = false;
+            btInfo1.Click += btInfo1_Click;
             // 
             // lbCodigo1
             // 
@@ -161,6 +162,7 @@
             btInfo2.Size = new Size(26, 28);
             btInfo2.TabIndex = 56;
             btInfo2.UseVisualStyleBackColor = false;
+            btInfo2.Click += btInfo2_Click;
             // 
             // lbCodigo2
             // 
@@ -219,6 +221,7 @@
             btInfo3.Size = new Size(26, 28);
             btInfo3.TabIndex = 56;
             btInfo3.UseVisualStyleBackColor = false;
+            btInfo3.Click += btInfo3_Click;
             // 
             // lbCodigo3
             // 
@@ -277,6 +280,7 @@
             btInfo4.Size = new Size(26, 28);
             btInfo4.TabIndex = 56;
             btInfo4.UseVisualStyleBackColor = false;
+            btInfo4.Click += btInfo4_Click;
             // 
             // lbCodigo4
             // 
@@ -335,6 +339,7 @@
             btInfo5.Size = new Size(26, 28);
             btInfo5.TabIndex = 56;
             btInfo5.UseVisualStyleBackColor = false;
+            btInfo5.Click += btInfo5_Click;
             // 
             // lbCodigo5
             // 
@@ -393,6 +398,7 @@
             btInfo6.Size = new Size(26, 28);
             btInfo6.TabIndex = 56;
             btInfo6.UseVisualStyleBackColor = false;
+            btInfo6.Click += btInfo6_Click;
             // 
             // lbCodigo6
             // 
@@ -457,7 +463,7 @@
             lbNombre.TabIndex = 60;
             lbNombre.Text = "Ash Ketchup";
             // 
-            // Equipos
+            // Perfil
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -473,9 +479,10 @@
             Controls.Add(panel1);
             Controls.Add(panel4);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "Equipos";
+            Name = "Perfil";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Perfil";
+            Load += Perfil_Load;
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)Foto1).EndInit();
