@@ -43,21 +43,23 @@ namespace Pokedex
                 lbNombre.Text = nombre;
                 switch (fotoPerfil)
                 {
+                    case 0:
+                        FotoPerfil.Image = Properties.Resources.ashicon_removebg_preview;
+                        break;
                     case 1:
-                        //pbFotoPerfil.Image = Properties.Resources.foto1;
+                        FotoPerfil.Image = Properties.Resources.IconIsa;
                         break;
                     case 2:
-                        //pbFotoPerfil.Image = Properties.Resources.foto2;
+                        FotoPerfil.Image = Properties.Resources.IconGabo;
                         break;
                     case 3:
-                        //pbFotoPerfil.Image = Properties.Resources.foto3;
+                        FotoPerfil.Image = Properties.Resources.IconSergio;
                         break;
                     case 4:
-                        //pbFotoPerfil.Image = Properties.Resources.foto4;
+                        FotoPerfil.Image = Properties.Resources.IconAyma;
                         break;
-                    default:
-                        //pbFotoPerfil.Image = Properties.Resources.default_foto; 
-                        break;
+
+
                 }
             }
             Conexion.desconectar();
@@ -212,6 +214,16 @@ namespace Pokedex
             Stats statsForm = new Stats();
             SesionIniciada.idPokeVer = EquipoFav[5].id;
             statsForm.ShowDialog();
+        }
+
+        private void btVolverAtras_Click(object sender, EventArgs e)
+        {
+            Form InicioForm = Application.OpenForms["Opciones"];
+            if (InicioForm != null)
+            {
+                InicioForm.Show();
+                this.Hide();
+            }
         }
     }
 }

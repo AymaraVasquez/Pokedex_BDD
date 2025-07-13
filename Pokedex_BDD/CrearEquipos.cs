@@ -31,8 +31,11 @@ namespace Pokedex
         public CrearEquipos()
         {
             InitializeComponent();
+            
+
         }
         public static bool anadirPokemon;
+        public static bool anadirPokemonn;
         public static bool equipoFavorito;
         public static int equipoFav;
         private void btAnadir_Click(object sender, EventArgs e)
@@ -45,9 +48,11 @@ namespace Pokedex
             btElim1_6.Visible = false;
 
             anadirPokemon = true;
+            anadirPokemonn = true;
             Pokedexx pokedex = new Pokedexx();
             pokedex.ShowDialog();
             anadirPokemon = false;
+            anadirPokemonn = false;
 
             if (SesionIniciada.idPokeAniadir != 0)
             {
@@ -223,8 +228,8 @@ namespace Pokedex
                 MySqlCommand comando = new MySqlCommand(query, Conex.Coneccion);
                 comando.ExecuteNonQuery();
                 Conexion.desconectar();
-                Equipo1 = new PokemonVer[6]; 
-                CargarImagenes(); 
+                Equipo1 = new PokemonVer[6];
+                CargarImagenes();
             }
             else
             {
@@ -242,8 +247,8 @@ namespace Pokedex
                 MySqlCommand comando = new MySqlCommand(query, Conex.Coneccion);
                 comando.ExecuteNonQuery();
                 Conexion.desconectar();
-                Equipo2 = new PokemonVer[6]; 
-                CargarImagenes(); 
+                Equipo2 = new PokemonVer[6];
+                CargarImagenes();
             }
             else
             {
@@ -261,8 +266,8 @@ namespace Pokedex
                 MySqlCommand comando = new MySqlCommand(query, Conex.Coneccion);
                 comando.ExecuteNonQuery();
                 Conexion.desconectar();
-                Equipo3 = new PokemonVer[6]; 
-                CargarImagenes(); 
+                Equipo3 = new PokemonVer[6];
+                CargarImagenes();
             }
             else
             {
@@ -299,11 +304,11 @@ namespace Pokedex
             MySqlCommand comando = new MySqlCommand(query, Conex.Coneccion);
             comando.ExecuteNonQuery();
             Conexion.desconectar();
-            
+
         }
 
         private void btFav2_Click(object sender, EventArgs e)
-        {       
+        {
             if (equipoFav == 1)
             {
                 btFav1_Click(sender, e);
@@ -840,6 +845,23 @@ namespace Pokedex
             else
             {
                 MessageBox.Show("No hay pokemon para eliminar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        Dictionary<Button, Image> imagenesOg = new Dictionary<Button, Image>();
+        Dictionary<Button, Image> imagenesCk = new Dictionary<Button, Image>();
+        List<Button> botonesClick = new List<Button>();
+        int contadorClicks = 0;
+
+
+
+        private void btVolverAtras_Click(object sender, EventArgs e)
+        {
+            Form InicioForm = Application.OpenForms["Opciones"];
+            if (InicioForm != null)
+            {
+                InicioForm.Show();
+                this.Hide();
             }
         }
     }

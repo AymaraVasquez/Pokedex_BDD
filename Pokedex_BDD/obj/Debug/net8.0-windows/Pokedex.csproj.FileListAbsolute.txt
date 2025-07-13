@@ -151,3 +151,6 @@ C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pok
 C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.genruntimeconfig.cache
 C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\ref\Pokedex.dll
 C:\Users\gabri\Desktop\Pokedex\Principal - copia - copia\Pokedex_BDD\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.ManualDeUsuario.resources
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.ManualDeUsuario.resources
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.RegistroExitoso.resources
+C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.RecuperarContrasena.resources

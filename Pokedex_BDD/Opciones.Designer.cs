@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Opciones));
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
@@ -35,11 +36,15 @@
             btCrear = new Button();
             btVerPerfil = new Button();
             panel3 = new Panel();
+            btVolverAtras = new Button();
             btManual = new Button();
             label1 = new Label();
+            toolTip1 = new ToolTip(components);
+            pcbPokedex = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pcbPokedex).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -117,11 +122,26 @@
             // panel3
             // 
             panel3.BackColor = Color.Red;
+            panel3.Controls.Add(pcbPokedex);
+            panel3.Controls.Add(btVolverAtras);
             panel3.Controls.Add(btManual);
             panel3.Location = new Point(-1, -28);
             panel3.Name = "panel3";
             panel3.Size = new Size(804, 89);
             panel3.TabIndex = 7;
+            // 
+            // btVolverAtras
+            // 
+            btVolverAtras.BackColor = Color.FromArgb(255, 222, 0);
+            btVolverAtras.FlatStyle = FlatStyle.Flat;
+            btVolverAtras.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btVolverAtras.Location = new Point(14, 42);
+            btVolverAtras.Name = "btVolverAtras";
+            btVolverAtras.Size = new Size(55, 36);
+            btVolverAtras.TabIndex = 36;
+            btVolverAtras.Text = "<<";
+            btVolverAtras.UseVisualStyleBackColor = false;
+            btVolverAtras.Click += btVolverAtras_Click;
             // 
             // btManual
             // 
@@ -148,6 +168,16 @@
             label1.TabIndex = 4;
             label1.Text = "Ahora escoge\r\n¿Qué quieres hacer primero?";
             // 
+            // pcbPokedex
+            // 
+            pcbPokedex.Image = (Image)resources.GetObject("pcbPokedex.Image");
+            pcbPokedex.Location = new Point(365, 40);
+            pcbPokedex.Name = "pcbPokedex";
+            pcbPokedex.Size = new Size(86, 42);
+            pcbPokedex.SizeMode = PictureBoxSizeMode.Zoom;
+            pcbPokedex.TabIndex = 31;
+            pcbPokedex.TabStop = false;
+            // 
             // Opciones
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -164,6 +194,7 @@
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pcbPokedex).EndInit();
             ResumeLayout(false);
         }
 
@@ -177,5 +208,8 @@
         private Button btVerPerfil;
         private Button btManual;
         private PictureBox pictureBox1;
+        private ToolTip toolTip1;
+        private Button btVolverAtras;
+        private PictureBox pcbPokedex;
     }
 }

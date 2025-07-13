@@ -21,9 +21,20 @@ namespace Pokedex
         public int pokemax = 0;
         public int pokemin = 0;
         public string whereconsulta;
+
+        Dictionary<Button, Image> imagenesOg = new Dictionary<Button, Image>();
+        Dictionary<Button, Image> imagenesCk = new Dictionary<Button, Image>();
+        List<Button> botonesClick = new List<Button>();
+        int contadorClicks = 0;
+
         public Pokedexx()
         {
             InitializeComponent();
+            toolTip19.SetToolTip(this.btVolverAtras, "Volver a opciones");
+            toolTip20.SetToolTip(this.btAtras, "Ver anteriores");
+            toolTip21.SetToolTip(this.btSiguiente, "Ver más");
+            toolTip22.SetToolTip(this.btManual, "Ver manual");
+
             toolTip1.SetToolTip(this.btAcero, "Tipo Acero");
             toolTip2.SetToolTip(this.btAgua, "Tipo Agua");
             toolTip3.SetToolTip(this.btBicho, "Tipo Bicho");
@@ -42,6 +53,68 @@ namespace Pokedex
             toolTip16.SetToolTip(this.btTierra, "Tipo Tierra");
             toolTip17.SetToolTip(this.btVenenoso, "Tipo Venenoso");
             toolTip18.SetToolTip(this.btVolador, "Tipo Volador");
+
+            // Imagenes og
+            imagenesOg[btAcero] = Properties.Resources. TipoAcero;
+            imagenesOg[btAgua] = Properties.Resources.TipoAgua;
+            imagenesOg[btBicho] = Properties.Resources.TipoBicho;
+            imagenesOg[btDragon] = Properties.Resources.TipoDragon;
+            imagenesOg[btElectrico] = Properties.Resources.TipoElectrico;
+            imagenesOg[btFantasma] = Properties.Resources.TipoFantasma;
+            imagenesOg[btFuego] = Properties.Resources.TipoFuego;
+            imagenesOg[btHada] = Properties.Resources.TipoHada;
+            imagenesOg[btHielo] = Properties.Resources.TipoHielo;
+            imagenesOg[btLucha] = Properties.Resources.TipoLucha;
+            imagenesOg[btNormal] = Properties.Resources.TipoNormal;
+            imagenesOg[btPlanta] = Properties.Resources.TipoPlanta;
+            imagenesOg[btPsiquico] = Properties.Resources.TipoPsiquico;
+            imagenesOg[btRoca] = Properties.Resources.TipoRoca;
+            imagenesOg[btOscuro] = Properties.Resources.TipoSiniestro;
+            imagenesOg[btTierra] = Properties.Resources.TipoTierra;
+            imagenesOg[btVenenoso] = Properties.Resources.TipoVenenoso;
+            imagenesOg[btVolador] = Properties.Resources.TipoVolador;
+
+            // Imagenes ck
+            imagenesCk[btAcero] = Properties.Resources.TipoAceroP;
+            imagenesCk[btAgua] = Properties.Resources.TipoAguaP;
+            imagenesCk[btBicho] = Properties.Resources.TipoBichoP;
+            imagenesCk[btDragon] = Properties.Resources.TipoDragonP;
+            imagenesCk[btElectrico] = Properties.Resources.TipoElectricoP;
+            imagenesCk[btFantasma] = Properties.Resources.TipoFantasmaP;
+            imagenesCk[btFuego] = Properties.Resources.TipoFuegoP;
+            imagenesCk[btHada] = Properties.Resources.TipoHadaP;
+            imagenesCk[btHielo] = Properties.Resources.TipoHieloP;
+            imagenesCk[btLucha] = Properties.Resources.TipoLuchaP;
+            imagenesCk[btNormal] = Properties.Resources.TipoNormalP;
+            imagenesCk[btPlanta] = Properties.Resources.TipoPlantaP;
+            imagenesCk[btPsiquico] = Properties.Resources.TipoPsiquicoP;
+            imagenesCk[btRoca] = Properties.Resources.TipoRocaP;
+            imagenesCk[btOscuro] = Properties.Resources.TipoSiniestroP;
+            imagenesCk[btTierra] = Properties.Resources.TipoTierraP;
+            imagenesCk[btVenenoso] = Properties.Resources.TipoVenenoP;
+            imagenesCk[btVolador] = Properties.Resources.TipoVoladorP;
+           
+            btAcero.Click += Button_Click;
+            btAgua.Click += Button_Click;
+            btBicho.Click += Button_Click;
+            btDragon.Click += Button_Click;
+            btElectrico.Click += Button_Click;
+            btFantasma.Click += Button_Click;
+            btFuego.Click += Button_Click;
+            btHada.Click += Button_Click;
+            btHielo.Click += Button_Click;
+            btLucha.Click += Button_Click;
+            btNormal.Click += Button_Click;
+            btPlanta.Click += Button_Click;
+            btPsiquico.Click += Button_Click;
+            btRoca.Click += Button_Click;
+            btOscuro.Click += Button_Click;
+            btTierra.Click += Button_Click;
+            btVenenoso.Click += Button_Click;
+            btVolador.Click += Button_Click;
+
+            
+
             PokemonsAVer[0] = new PokemonVer();
             PokemonsAVer[1] = new PokemonVer();
             PokemonsAVer[2] = new PokemonVer();
@@ -50,6 +123,27 @@ namespace Pokedex
             PokemonsAVer[5] = new PokemonVer();
             PokemonsAVer[6] = new PokemonVer();
             PokemonsAVer[7] = new PokemonVer();
+        }
+
+        private void Button_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            if (botonesClick.Contains(btn)) return;
+
+            btn.BackgroundImage = imagenesCk[btn];
+            botonesClick.Add(btn);
+            contadorClicks++;
+
+            
+            if (contadorClicks > 2)
+            {
+                foreach (var foticop in imagenesOg)
+                {
+                    foticop.Key.BackgroundImage = foticop.Value;
+                }
+                botonesClick.Clear();
+                contadorClicks = 0;
+            }
         }
 
         private void btAcero_Click(object sender, EventArgs e)
@@ -207,16 +301,43 @@ namespace Pokedex
         }
         private void Pokedexx_Load(object sender, EventArgs e)
         {
-            if (CrearEquipos.anadirPokemon == true)
+            if (CrearEquipos.anadirPokemonn == true)
             {
+                btAdd1.Visible = true;
+                //btAdd2.Visible = true;
+                //btAdd3.Visible = true;
+                //btAdd4.Visible = true;
+                //btAdd5.Visible = true;
+                //btAdd6.Visible = true;
+                //btAdd7.Visible = true;
+                //btAdd8.Visible = true;
                 //labInstruccion.Visible = true;
             }
             else
             {
+                btAdd1.Visible = false;
+                //btAdd2.Visible = false;
+                //btAdd3.Visible = false;
+                //btAdd4.Visible = false;
+                //btAdd5.Visible = false;
+                //btAdd6.Visible = false;
+                //btAdd7.Visible = false;
+                //btAdd8.Visible = false;
                 //labInstruccion.Visible = false;
             }
+
             cargar_Arrays();
             CargarPokemons();
+
+            toolTip23.SetToolTip(this.btAdd1, "Agregar al Equipo");
+            toolTip24.SetToolTip(this.btAdd2, "Agregar al Equipo");
+            toolTip25.SetToolTip(this.btAdd3, "Agregar al Equipo");
+            toolTip26.SetToolTip(this.btAdd4, "Agregar al Equipo");
+            toolTip27.SetToolTip(this.btAdd5, "Agregar al Equipo");
+            toolTip28.SetToolTip(this.btAdd6, "Agregar al Equipo");
+            toolTip29.SetToolTip(this.btAdd7, "Agregar al Equipo");
+            toolTip30.SetToolTip(this.btAdd8, "Agregar al Equipo");
+
         }
 
         public void BusquedaSinPokemon(int num)
@@ -238,6 +359,14 @@ namespace Pokedex
                 pbTipo1_1.Image = Properties.Resources.questi;
                 pbTipo1_2.Image = Properties.Resources.questi;
                 btInfo1.Visible = false;
+                if (CrearEquipos.anadirPokemonn == true)
+                {
+                    btAdd1.Visible = true;
+                }
+                else
+                {
+                    btAdd1.Visible = false;
+                }
 
             }
             else
@@ -247,6 +376,16 @@ namespace Pokedex
                 lbNombre1.Text = PokemonsAVer[0].nombre;
                 pbTipo1_1.Image = PokemonsAVer[0].Tipo1;
                 pbTipo1_2.Image = PokemonsAVer[0].Tipo2;
+                btInfo1.Visible = true;
+                if (CrearEquipos.anadirPokemonn == true)
+                {
+                    btAdd1.Visible = true;
+                }
+                else
+                {
+                    btAdd1.Visible = false;
+                }
+
                 if (PokemonsAVer[0].Tipo1 == null)
                 {
                     pbTipo1_2.Visible = false;
@@ -267,7 +406,15 @@ namespace Pokedex
                 pbTipo2_1.Image = Properties.Resources.questi;
                 pbTipo2_2.Image = Properties.Resources.questi;
                 btInfo2.Visible = false;
-
+               
+                if (CrearEquipos.anadirPokemonn == true)
+                {
+                    btAdd2.Visible = true;
+                }
+                else
+                {
+                    btAdd2.Visible = false;
+                }
             }
             else
             {
@@ -276,6 +423,16 @@ namespace Pokedex
                 lbNombre2.Text = PokemonsAVer[1].nombre;
                 pbTipo2_1.Image = PokemonsAVer[1].Tipo1;
                 pbTipo2_2.Image = PokemonsAVer[1].Tipo2;
+                btInfo2.Visible = true;
+               
+                if (CrearEquipos.anadirPokemonn == true)
+                {
+                    btAdd2.Visible = true;
+                }
+                else
+                {
+                    btAdd2.Visible = false;
+                }
                 if (PokemonsAVer[1].Tipo1 == null)
                 {
                     pbTipo2_2.Visible = false;
@@ -295,7 +452,15 @@ namespace Pokedex
                 pbTipo3_1.Image = Properties.Resources.questi;
                 pbTipo3_2.Image = Properties.Resources.questi;
                 btInfo3.Visible = false;
-
+                
+                if (CrearEquipos.anadirPokemonn == true)
+                {
+                    btAdd3.Visible = true;
+                }
+                else
+                {
+                    btAdd3.Visible = false;
+                }
             }
             else
             {
@@ -304,6 +469,15 @@ namespace Pokedex
                 lbNombre3.Text = PokemonsAVer[2].nombre;
                 pbTipo3_1.Image = PokemonsAVer[2].Tipo1;
                 pbTipo3_2.Image = PokemonsAVer[2].Tipo2;
+                btInfo3.Visible = true;
+                if (CrearEquipos.anadirPokemonn == true)
+                {
+                    btAdd3.Visible = true;
+                }
+                else
+                {
+                    btAdd3.Visible = false;
+                }
                 if (PokemonsAVer[2].Tipo1 == null)
                 {
                     pbTipo3_2.Visible = false;
@@ -323,6 +497,14 @@ namespace Pokedex
                 pbTipo4_1.Image = Properties.Resources.questi;
                 pbTipo4_2.Image = Properties.Resources.questi;
                 btInfo4.Visible = false;
+                if (CrearEquipos.anadirPokemonn == true)
+                {
+                    btAdd4.Visible = true;
+                }
+                else
+                {
+                    btAdd4.Visible = false;
+                }
 
             }
             else
@@ -332,6 +514,15 @@ namespace Pokedex
                 lbNombre4.Text = PokemonsAVer[3].nombre;
                 pbTipo4_1.Image = PokemonsAVer[3].Tipo1;
                 pbTipo4_2.Image = PokemonsAVer[3].Tipo2;
+                btInfo4.Visible = true;
+                if (CrearEquipos.anadirPokemonn == true)
+                {
+                    btAdd4.Visible = true;
+                }
+                else
+                {
+                    btAdd4.Visible = false;
+                }
                 if (PokemonsAVer[3].Tipo1 == null)
                 {
                     pbTipo4_2.Visible = false;
@@ -351,6 +542,14 @@ namespace Pokedex
                 pbTipo5_1.Image = Properties.Resources.questi;
                 pbTipo5_2.Image = Properties.Resources.questi;
                 btInfo5.Visible = false;
+                if (CrearEquipos.anadirPokemonn == true)
+                {
+                    btAdd5.Visible = true;
+                }
+                else
+                {
+                    btAdd5.Visible = false;
+                }
 
             }
             else
@@ -360,6 +559,15 @@ namespace Pokedex
                 lbNombre5.Text = PokemonsAVer[4].nombre;
                 pbTipo5_1.Image = PokemonsAVer[4].Tipo1;
                 pbTipo5_2.Image = PokemonsAVer[4].Tipo2;
+                btInfo5.Visible = true;
+                if (CrearEquipos.anadirPokemonn == true)
+                {
+                    btAdd5.Visible = true;
+                }
+                else
+                {
+                    btAdd5.Visible = false;
+                }
                 if (PokemonsAVer[4].Tipo1 == null)
                 {
                     pbTipo5_2.Visible = false;
@@ -379,6 +587,14 @@ namespace Pokedex
                 pbTipo6_1.Image = Properties.Resources.questi;
                 pbTipo6_2.Image = Properties.Resources.questi;
                 btInfo6.Visible = false;
+                if (CrearEquipos.anadirPokemonn == true)
+                {
+                    btAdd6.Visible = true;
+                }
+                else
+                {
+                    btAdd6.Visible = false;
+                }
 
             }
             else
@@ -388,6 +604,15 @@ namespace Pokedex
                 lbNombre6.Text = PokemonsAVer[5].nombre;
                 pbTipo6_1.Image = PokemonsAVer[5].Tipo1;
                 pbTipo6_2.Image = PokemonsAVer[5].Tipo2;
+                btInfo6.Visible = true;
+                if (CrearEquipos.anadirPokemonn == true)
+                {
+                    btAdd6.Visible = true;
+                }
+                else
+                {
+                    btAdd6.Visible = false;
+                }
                 if (PokemonsAVer[5].Tipo1 == null)
                 {
                     pbTipo6_2.Visible = false;
@@ -408,6 +633,14 @@ namespace Pokedex
                 pbTipo7_1.Image = Properties.Resources.questi;
                 pbTipo7_2.Image = Properties.Resources.questi;
                 btInfo7.Visible = false;
+                if (CrearEquipos.anadirPokemonn == true)
+                {
+                    btAdd7.Visible = true;
+                }
+                else
+                {
+                    btAdd1.Visible = false;
+                }
 
             }
             else
@@ -417,6 +650,15 @@ namespace Pokedex
                 lbNombre7.Text = PokemonsAVer[6].nombre;
                 pbTipo7_1.Image = PokemonsAVer[6].Tipo1;
                 pbTipo7_2.Image = PokemonsAVer[6].Tipo2;
+                btInfo7.Visible = true;
+                if (CrearEquipos.anadirPokemonn == true)
+                {
+                    btAdd7.Visible = true;
+                }
+                else
+                {
+                    btAdd7.Visible = false;
+                }
                 if (PokemonsAVer[6].Tipo1 == null)
                 {
                     pbTipo7_2.Visible = false;
@@ -436,6 +678,14 @@ namespace Pokedex
                 pbTipo8_1.Image = Properties.Resources.questi;
                 pbTipo8_2.Image = Properties.Resources.questi;
                 btInfo8.Visible = false;
+                if (CrearEquipos.anadirPokemonn == true)
+                {
+                    btAdd8.Visible = true;
+                }
+                else
+                {
+                    btAdd8.Visible = false;
+                }
 
             }
             else
@@ -445,6 +695,15 @@ namespace Pokedex
                 lbNombre8.Text = PokemonsAVer[7].nombre;
                 pbTipo8_1.Image = PokemonsAVer[7].Tipo1;
                 pbTipo8_2.Image = PokemonsAVer[7].Tipo2;
+                btInfo8.Visible = true;
+                if (CrearEquipos.anadirPokemonn == true)
+                {
+                    btAdd8.Visible = true;
+                }
+                else
+                {
+                    btAdd8.Visible = false;
+                }
                 if (PokemonsAVer[7].Tipo1 == null)
                 {
                     pbTipo8_2.Visible = false;
@@ -653,60 +912,6 @@ namespace Pokedex
 
         private void pcbPokedex_Click(object sender, EventArgs e)
         {
-            btInfo1.Visible = true;
-            btInfo2.Visible = true;
-            btInfo3.Visible = true;
-            btInfo4.Visible = true;
-            btInfo5.Visible = true;
-            btInfo6.Visible = true;
-            btInfo7.Visible = true;
-            btInfo8.Visible = true;
-
-            whereconsulta = "";
-            tbBarraBusqueda.Text = "";
-            if (CrearEquipos.anadirPokemon == true)
-            {
-                //labInstruccion.Visible = true;
-            }
-            else
-            {
-                //labInstruccion.Visible = false;
-            }
-            Conexion.conectar();
-            string consulta = "SELECT id_poke, nombre_poke, url_img FROM `pokedex_normal` limit 8";
-            MySqlCommand comando3 = new MySqlCommand(consulta, Conex.Coneccion);
-            Conex.Lector = comando3.ExecuteReader();
-            int contador = 0;
-            while (Conex.Lector.Read())
-            {
-                PokemonsAVer[contador].id = Convert.ToInt32(Conex.Lector[0].ToString());
-                pokemax = PokemonsAVer[contador].id;
-                PokemonsAVer[contador].nombre = Conex.Lector[1].ToString();
-                PokemonsAVer[contador].imagen = BuscarImagen.DeStringAImage(Conex.Lector[0].ToString());
-                contador++;
-            }
-            Conexion.desconectar();
-            for (int i = 0; i < 8; i++)
-            {
-                Conexion.conectar();
-                string consulta2 = "SELECT ti.tipo FROM rela_pokes_tipo rela join tipos ti on rela.id_tipo = ti.id_tipo WHERE rela.id_poke = " + PokemonsAVer[i].id;
-                MySqlCommand comando2 = new MySqlCommand(consulta2, Conex.Coneccion);
-                Conex.Lector = comando2.ExecuteReader();
-                int contador2 = 0;
-                while (Conex.Lector.Read())
-                {
-                    if (PokemonsAVer[i].Tipo1 == null)
-                    {
-                        PokemonsAVer[i].Tipo1 = ImagenTipo(Conex.Lector[0].ToString());
-                    }
-                    else
-                    {
-                        PokemonsAVer[i].Tipo2 = ImagenTipo(Conex.Lector[0].ToString());
-                    }
-                }
-                Conexion.desconectar();
-            }
-            CargarPokemons();
         }
 
         private void btManual_Click(object sender, EventArgs e)
@@ -968,6 +1173,95 @@ namespace Pokedex
             }
             cargar_Arrays();
             CargarPokemons();
+        }
+
+        private void btVolverAtras_Click(object sender, EventArgs e)
+        {
+            Form InicioForm = Application.OpenForms["Opciones"];
+            if (InicioForm != null)
+            {
+                InicioForm.Show();
+                this.Hide();
+            }
+        }
+
+        public void refrescar()
+        {
+            foreach (var foticop in imagenesOg)
+            {
+                foticop.Key.BackgroundImage = foticop.Value;
+            }
+
+            botonesClick.Clear();
+            contadorClicks = 0;
+
+            btInfo1.Visible = true;
+            btInfo2.Visible = true;
+            btInfo3.Visible = true;
+            btInfo4.Visible = true;
+            btInfo5.Visible = true;
+            btInfo6.Visible = true;
+            btInfo7.Visible = true;
+            btInfo8.Visible = true;
+
+            whereconsulta = "";
+            tbBarraBusqueda.Text = "";
+            if (CrearEquipos.anadirPokemon == true)
+            {
+                //labInstruccion.Visible = true;
+            }
+            else
+            {
+                //labInstruccion.Visible = false;
+            }
+            Conexion.conectar();
+            string consulta = "SELECT id_poke, nombre_poke, url_img FROM `pokedex_normal` limit 8";
+            MySqlCommand comando3 = new MySqlCommand(consulta, Conex.Coneccion);
+            Conex.Lector = comando3.ExecuteReader();
+            int contador = 0;
+            while (Conex.Lector.Read())
+            {
+                PokemonsAVer[contador].id = Convert.ToInt32(Conex.Lector[0].ToString());
+                pokemax = PokemonsAVer[contador].id;
+                PokemonsAVer[contador].nombre = Conex.Lector[1].ToString();
+                PokemonsAVer[contador].imagen = BuscarImagen.DeStringAImage(Conex.Lector[0].ToString());
+                contador++;
+            }
+            Conexion.desconectar();
+            for (int i = 0; i < 8; i++)
+            {
+                Conexion.conectar();
+                string consulta2 = "SELECT ti.tipo FROM rela_pokes_tipo rela join tipos ti on rela.id_tipo = ti.id_tipo WHERE rela.id_poke = " + PokemonsAVer[i].id;
+                MySqlCommand comando2 = new MySqlCommand(consulta2, Conex.Coneccion);
+                Conex.Lector = comando2.ExecuteReader();
+                int contador2 = 0;
+                while (Conex.Lector.Read())
+                {
+                    if (PokemonsAVer[i].Tipo1 == null)
+                    {
+                        PokemonsAVer[i].Tipo1 = ImagenTipo(Conex.Lector[0].ToString());
+                    }
+                    else
+                    {
+                        PokemonsAVer[i].Tipo2 = ImagenTipo(Conex.Lector[0].ToString());
+                    }
+                }
+                Conexion.desconectar();
+            }
+            CargarPokemons();
+        }
+        private void btRefrescar_Click(object sender, EventArgs e)
+        {
+            refrescar();
+        }
+
+      
+        private void tbBarraBusqueda_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(Char.IsLetter(e.KeyChar) || Char.IsControl(e.KeyChar) || e.KeyChar == ' '))
+            {
+                e.Handled = true;
+            }
         }
     }
 

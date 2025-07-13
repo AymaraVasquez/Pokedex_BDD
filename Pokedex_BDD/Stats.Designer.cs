@@ -54,6 +54,9 @@
             lbNombre = new Label();
             lbCodigo = new Label();
             panel4 = new Panel();
+            panelAtt = new Panel();
+            labelAtributos = new Label();
+            lbAttTotal = new Label();
             panel16 = new Panel();
             pbVelocidad = new Panel();
             panel12 = new Panel();
@@ -66,14 +69,12 @@
             pbAtaque = new Panel();
             panel6 = new Panel();
             pbVida = new Panel();
-            lbAttTotal = new Label();
             lbVelocidad = new Label();
             lbDefEsp = new Label();
             lbAtqEsp = new Label();
             lbDefensa = new Label();
             lbAtaque = new Label();
             lbVida = new Label();
-            label19 = new Label();
             label18 = new Label();
             label17 = new Label();
             label16 = new Label();
@@ -85,81 +86,45 @@
             PanelMov3y4 = new Panel();
             panel9 = new Panel();
             panelMov4 = new Panel();
-            label33 = new Label();
-            lbNombreMov4 = new Label();
-            panelMov3 = new Panel();
-            label24 = new Label();
-            lBNombreMov3 = new Label();
-            panel15 = new Panel();
-            pbTipoMov3 = new PictureBox();
-            label26 = new Label();
-            lbPotMov3 = new Label();
-            label31 = new Label();
-            lbPrecisionMov3 = new Label();
-            panel24 = new Panel();
-            pbTipoMov4 = new PictureBox();
-            label48 = new Label();
-            lbPotMov4 = new Label();
-            label50 = new Label();
-            lbPrecisionMov4 = new Label();
-            panel23 = new Panel();
-            pictureBox5 = new PictureBox();
-            label44 = new Label();
-            label45 = new Label();
-            label46 = new Label();
-            label47 = new Label();
-            panelMov1 = new Panel();
-            label35 = new Label();
-            label36 = new Label();
-            panel20 = new Panel();
-            pictureBox4 = new PictureBox();
-            label40 = new Label();
-            label41 = new Label();
-            label42 = new Label();
-            label43 = new Label();
-            panel19 = new Panel();
-            label37 = new Label();
-            label38 = new Label();
-            panel11 = new Panel();
-            label2 = new Label();
-            lbNombreMov1 = new Label();
-            panel14 = new Panel();
-            pbTipoMov1 = new PictureBox();
-            label5 = new Label();
-            lbPotMov1 = new Label();
-            label8 = new Label();
-            lbPrecisionMov1 = new Label();
-            buttonAtras = new Button();
-            panel21 = new Panel();
-            label20 = new Label();
-            lbNombreMov2 = new Label();
-            btSiguiente = new Button();
-            panel25 = new Panel();
             label22 = new Label();
-            label23 = new Label();
+            lbMov4 = new Label();
+            panelMov3 = new Panel();
+            label19 = new Label();
+            lbMov3 = new Label();
+            panel11 = new Panel();
+            pbMov3 = new PictureBox();
+            lbPot3 = new Label();
+            label24 = new Label();
+            lbPre3 = new Label();
+            label26 = new Label();
+            panel15 = new Panel();
+            pbMov4 = new PictureBox();
+            lbPot4 = new Label();
+            label32 = new Label();
+            lbPre4 = new Label();
+            label34 = new Label();
+            panelMov1 = new Panel();
+            label2 = new Label();
+            lbMov1 = new Label();
+            panel5 = new Panel();
+            pbMov1 = new PictureBox();
+            label8 = new Label();
+            lbPotMov1 = new Label();
+            label20 = new Label();
+            lbPreMov1 = new Label();
+            buttonAtras = new Button();
+            btSiguiente = new Button();
             panelMov = new Panel();
             label39 = new Label();
             panelMov2 = new Panel();
-            label28 = new Label();
-            label29 = new Label();
-            panel29 = new Panel();
-            pbTipoMov2 = new PictureBox();
-            label59 = new Label();
-            lbPotMov2 = new Label();
-            label61 = new Label();
-            lbPrecisionMov2 = new Label();
-            panel27 = new Panel();
-            pictureBox2 = new PictureBox();
-            label30 = new Label();
-            lb_potmov3 = new Label();
-            label53 = new Label();
-            label54 = new Label();
+            label5 = new Label();
+            lbMov2 = new Label();
             panel28 = new Panel();
-            pictureBox7 = new PictureBox();
+            lbPot2 = new Label();
+            lbPre2 = new Label();
+            pbMov2 = new PictureBox();
             label55 = new Label();
-            label56 = new Label();
             label57 = new Label();
-            label58 = new Label();
             toolTip1 = new ToolTip(components);
             panel1.SuspendLayout();
             panel3.SuspendLayout();
@@ -168,6 +133,7 @@
             ((System.ComponentModel.ISupportInitialize)pbTipo1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)FoticoPokemon).BeginInit();
             panel4.SuspendLayout();
+            panelAtt.SuspendLayout();
             panel16.SuspendLayout();
             panel12.SuspendLayout();
             panel10.SuspendLayout();
@@ -179,29 +145,17 @@
             panel9.SuspendLayout();
             panelMov4.SuspendLayout();
             panelMov3.SuspendLayout();
-            panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pbTipoMov3).BeginInit();
-            panel24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pbTipoMov4).BeginInit();
-            panel23.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            panelMov1.SuspendLayout();
-            panel20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            panel19.SuspendLayout();
             panel11.SuspendLayout();
-            panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pbTipoMov1).BeginInit();
-            panel21.SuspendLayout();
-            panel25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbMov3).BeginInit();
+            panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbMov4).BeginInit();
+            panelMov1.SuspendLayout();
+            panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbMov1).BeginInit();
             panelMov.SuspendLayout();
             panelMov2.SuspendLayout();
-            panel29.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pbTipoMov2).BeginInit();
-            panel27.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel28.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbMov2).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -450,20 +404,19 @@
             // panel4
             // 
             panel4.BackColor = Color.White;
+            panel4.Controls.Add(panelAtt);
             panel4.Controls.Add(panel16);
             panel4.Controls.Add(panel12);
             panel4.Controls.Add(panel10);
             panel4.Controls.Add(panel13);
             panel4.Controls.Add(panel8);
             panel4.Controls.Add(panel6);
-            panel4.Controls.Add(lbAttTotal);
             panel4.Controls.Add(lbVelocidad);
             panel4.Controls.Add(lbDefEsp);
             panel4.Controls.Add(lbAtqEsp);
             panel4.Controls.Add(lbDefensa);
             panel4.Controls.Add(lbAtaque);
             panel4.Controls.Add(lbVida);
-            panel4.Controls.Add(label19);
             panel4.Controls.Add(label18);
             panel4.Controls.Add(label17);
             panel4.Controls.Add(label16);
@@ -476,11 +429,40 @@
             panel4.Size = new Size(306, 353);
             panel4.TabIndex = 34;
             // 
+            // panelAtt
+            // 
+            panelAtt.BackColor = Color.FromArgb(255, 222, 0);
+            panelAtt.Controls.Add(labelAtributos);
+            panelAtt.Controls.Add(lbAttTotal);
+            panelAtt.Location = new Point(19, 301);
+            panelAtt.Name = "panelAtt";
+            panelAtt.Size = new Size(271, 35);
+            panelAtt.TabIndex = 50;
+            // 
+            // labelAtributos
+            // 
+            labelAtributos.AutoSize = true;
+            labelAtributos.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            labelAtributos.Location = new Point(10, 8);
+            labelAtributos.Name = "labelAtributos";
+            labelAtributos.Size = new Size(127, 20);
+            labelAtributos.TabIndex = 61;
+            labelAtributos.Text = "Atributos Totales:";
+            // 
+            // lbAttTotal
+            // 
+            lbAttTotal.AutoSize = true;
+            lbAttTotal.Location = new Point(138, 8);
+            lbAttTotal.Name = "lbAttTotal";
+            lbAttTotal.Size = new Size(33, 20);
+            lbAttTotal.TabIndex = 67;
+            lbAttTotal.Text = "000";
+            // 
             // panel16
             // 
             panel16.BackColor = SystemColors.Control;
             panel16.Controls.Add(pbVelocidad);
-            panel16.Location = new Point(142, 272);
+            panel16.Location = new Point(142, 264);
             panel16.Name = "panel16";
             panel16.Size = new Size(146, 20);
             panel16.TabIndex = 74;
@@ -496,7 +478,7 @@
             // 
             panel12.BackColor = SystemColors.Control;
             panel12.Controls.Add(pbDefEspecial);
-            panel12.Location = new Point(160, 231);
+            panel12.Location = new Point(160, 223);
             panel12.Name = "panel12";
             panel12.Size = new Size(128, 20);
             panel12.TabIndex = 73;
@@ -512,7 +494,7 @@
             // 
             panel10.BackColor = SystemColors.Control;
             panel10.Controls.Add(pbAtqEspecial);
-            panel10.Location = new Point(160, 195);
+            panel10.Location = new Point(160, 187);
             panel10.Name = "panel10";
             panel10.Size = new Size(128, 20);
             panel10.TabIndex = 72;
@@ -528,7 +510,7 @@
             // 
             panel13.BackColor = SystemColors.Control;
             panel13.Controls.Add(pbDefensa);
-            panel13.Location = new Point(127, 156);
+            panel13.Location = new Point(127, 148);
             panel13.Name = "panel13";
             panel13.Size = new Size(161, 20);
             panel13.TabIndex = 71;
@@ -544,7 +526,7 @@
             // 
             panel8.BackColor = SystemColors.Control;
             panel8.Controls.Add(pbAtaque);
-            panel8.Location = new Point(121, 118);
+            panel8.Location = new Point(121, 110);
             panel8.Name = "panel8";
             panel8.Size = new Size(167, 20);
             panel8.TabIndex = 70;
@@ -560,7 +542,7 @@
             // 
             panel6.BackColor = SystemColors.Control;
             panel6.Controls.Add(pbVida);
-            panel6.Location = new Point(109, 80);
+            panel6.Location = new Point(109, 72);
             panel6.Name = "panel6";
             panel6.Size = new Size(179, 20);
             panel6.TabIndex = 68;
@@ -572,19 +554,10 @@
             pbVida.Size = new Size(173, 17);
             pbVida.TabIndex = 69;
             // 
-            // lbAttTotal
-            // 
-            lbAttTotal.AutoSize = true;
-            lbAttTotal.Location = new Point(148, 310);
-            lbAttTotal.Name = "lbAttTotal";
-            lbAttTotal.Size = new Size(33, 20);
-            lbAttTotal.TabIndex = 67;
-            lbAttTotal.Text = "000";
-            // 
             // lbVelocidad
             // 
             lbVelocidad.AutoSize = true;
-            lbVelocidad.Location = new Point(103, 272);
+            lbVelocidad.Location = new Point(103, 264);
             lbVelocidad.Name = "lbVelocidad";
             lbVelocidad.Size = new Size(33, 20);
             lbVelocidad.TabIndex = 66;
@@ -593,7 +566,7 @@
             // lbDefEsp
             // 
             lbDefEsp.AutoSize = true;
-            lbDefEsp.Location = new Point(121, 234);
+            lbDefEsp.Location = new Point(121, 226);
             lbDefEsp.Name = "lbDefEsp";
             lbDefEsp.Size = new Size(33, 20);
             lbDefEsp.TabIndex = 65;
@@ -602,7 +575,7 @@
             // lbAtqEsp
             // 
             lbAtqEsp.AutoSize = true;
-            lbAtqEsp.Location = new Point(121, 195);
+            lbAtqEsp.Location = new Point(121, 187);
             lbAtqEsp.Name = "lbAtqEsp";
             lbAtqEsp.Size = new Size(33, 20);
             lbAtqEsp.TabIndex = 64;
@@ -611,7 +584,7 @@
             // lbDefensa
             // 
             lbDefensa.AutoSize = true;
-            lbDefensa.Location = new Point(88, 156);
+            lbDefensa.Location = new Point(88, 148);
             lbDefensa.Name = "lbDefensa";
             lbDefensa.Size = new Size(33, 20);
             lbDefensa.TabIndex = 63;
@@ -620,7 +593,7 @@
             // lbAtaque
             // 
             lbAtaque.AutoSize = true;
-            lbAtaque.Location = new Point(82, 118);
+            lbAtaque.Location = new Point(82, 110);
             lbAtaque.Name = "lbAtaque";
             lbAtaque.Size = new Size(33, 20);
             lbAtaque.TabIndex = 62;
@@ -629,27 +602,17 @@
             // lbVida
             // 
             lbVida.AutoSize = true;
-            lbVida.Location = new Point(65, 80);
+            lbVida.Location = new Point(65, 72);
             lbVida.Name = "lbVida";
             lbVida.Size = new Size(33, 20);
             lbVida.TabIndex = 59;
             lbVida.Text = "000";
             // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label19.Location = new Point(20, 310);
-            label19.Name = "label19";
-            label19.Size = new Size(127, 20);
-            label19.TabIndex = 61;
-            label19.Text = "Atributos Totales:";
-            // 
             // label18
             // 
             label18.AutoSize = true;
             label18.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label18.Location = new Point(19, 272);
+            label18.Location = new Point(19, 264);
             label18.Name = "label18";
             label18.Size = new Size(81, 20);
             label18.TabIndex = 54;
@@ -659,7 +622,7 @@
             // 
             label17.AutoSize = true;
             label17.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label17.Location = new Point(19, 234);
+            label17.Location = new Point(19, 226);
             label17.Name = "label17";
             label17.Size = new Size(100, 20);
             label17.TabIndex = 53;
@@ -669,7 +632,7 @@
             // 
             label16.AutoSize = true;
             label16.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label16.Location = new Point(19, 195);
+            label16.Location = new Point(19, 187);
             label16.Name = "label16";
             label16.Size = new Size(100, 20);
             label16.TabIndex = 52;
@@ -679,7 +642,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label15.Location = new Point(19, 156);
+            label15.Location = new Point(19, 148);
             label15.Name = "label15";
             label15.Size = new Size(69, 20);
             label15.TabIndex = 51;
@@ -689,7 +652,7 @@
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label14.Location = new Point(19, 118);
+            label14.Location = new Point(19, 110);
             label14.Name = "label14";
             label14.Size = new Size(63, 20);
             label14.TabIndex = 50;
@@ -699,7 +662,7 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label13.Location = new Point(19, 81);
+            label13.Location = new Point(19, 73);
             label13.Name = "label13";
             label13.Size = new Size(45, 20);
             label13.TabIndex = 48;
@@ -728,16 +691,12 @@
             // 
             PanelMov3y4.BackColor = Color.White;
             PanelMov3y4.Controls.Add(panel9);
-            PanelMov3y4.Controls.Add(panel11);
-            PanelMov3y4.Controls.Add(panel14);
+            PanelMov3y4.Controls.Add(panelMov1);
+            PanelMov3y4.Controls.Add(panel5);
             PanelMov3y4.Controls.Add(buttonAtras);
-            PanelMov3y4.Controls.Add(panel21);
             PanelMov3y4.Controls.Add(btSiguiente);
-            PanelMov3y4.Controls.Add(panel25);
             PanelMov3y4.Controls.Add(panelMov);
             PanelMov3y4.Controls.Add(panelMov2);
-            PanelMov3y4.Controls.Add(panel29);
-            PanelMov3y4.Controls.Add(panel27);
             PanelMov3y4.Controls.Add(panel28);
             PanelMov3y4.Location = new Point(678, 31);
             PanelMov3y4.Name = "PanelMov3y4";
@@ -749,13 +708,9 @@
             panel9.BackColor = Color.White;
             panel9.Controls.Add(panelMov4);
             panel9.Controls.Add(panelMov3);
+            panel9.Controls.Add(panel11);
             panel9.Controls.Add(panel15);
-            panel9.Controls.Add(panel24);
-            panel9.Controls.Add(panel23);
-            panel9.Controls.Add(panelMov1);
-            panel9.Controls.Add(panel20);
-            panel9.Controls.Add(panel19);
-            panel9.Location = new Point(2, 59);
+            panel9.Location = new Point(5, 58);
             panel9.Name = "panel9";
             panel9.Size = new Size(202, 232);
             panel9.TabIndex = 80;
@@ -763,421 +718,244 @@
             // panelMov4
             // 
             panelMov4.BackColor = Color.FromArgb(255, 222, 0);
-            panelMov4.Controls.Add(label33);
-            panelMov4.Controls.Add(lbNombreMov4);
-            panelMov4.Location = new Point(16, 124);
+            panelMov4.Controls.Add(label22);
+            panelMov4.Controls.Add(lbMov4);
+            panelMov4.Location = new Point(13, 128);
             panelMov4.Name = "panelMov4";
             panelMov4.Size = new Size(174, 36);
-            panelMov4.TabIndex = 84;
+            panelMov4.TabIndex = 78;
             // 
-            // label33
+            // label22
             // 
-            label33.AutoSize = true;
-            label33.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label33.Location = new Point(7, 9);
-            label33.Name = "label33";
-            label33.Size = new Size(69, 20);
-            label33.TabIndex = 60;
-            label33.Text = "Nombre:";
+            label22.AutoSize = true;
+            label22.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label22.Location = new Point(8, 8);
+            label22.Name = "label22";
+            label22.Size = new Size(42, 20);
+            label22.TabIndex = 64;
+            label22.Text = "Mov:";
             // 
-            // lbNombreMov4
+            // lbMov4
             // 
-            lbNombreMov4.AutoSize = true;
-            lbNombreMov4.Location = new Point(76, 9);
-            lbNombreMov4.Name = "lbNombreMov4";
-            lbNombreMov4.Size = new Size(46, 20);
-            lbNombreMov4.TabIndex = 61;
-            lbNombreMov4.Text = "mov4";
+            lbMov4.AutoSize = true;
+            lbMov4.Font = new Font("Segoe UI", 9F);
+            lbMov4.Location = new Point(50, 8);
+            lbMov4.Name = "lbMov4";
+            lbMov4.Size = new Size(46, 20);
+            lbMov4.TabIndex = 65;
+            lbMov4.Text = "mov3";
             // 
             // panelMov3
             // 
             panelMov3.BackColor = Color.FromArgb(255, 222, 0);
-            panelMov3.Controls.Add(label24);
-            panelMov3.Controls.Add(lBNombreMov3);
-            panelMov3.Location = new Point(16, 14);
+            panelMov3.Controls.Add(label19);
+            panelMov3.Controls.Add(lbMov3);
+            panelMov3.Location = new Point(13, 16);
             panelMov3.Name = "panelMov3";
             panelMov3.Size = new Size(174, 36);
-            panelMov3.TabIndex = 82;
+            panelMov3.TabIndex = 80;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label19.Location = new Point(12, 9);
+            label19.Name = "label19";
+            label19.Size = new Size(42, 20);
+            label19.TabIndex = 62;
+            label19.Text = "Mov:";
+            // 
+            // lbMov3
+            // 
+            lbMov3.AutoSize = true;
+            lbMov3.Font = new Font("Segoe UI", 9F);
+            lbMov3.Location = new Point(52, 9);
+            lbMov3.Name = "lbMov3";
+            lbMov3.Size = new Size(46, 20);
+            lbMov3.TabIndex = 63;
+            lbMov3.Text = "mov3";
+            // 
+            // panel11
+            // 
+            panel11.BorderStyle = BorderStyle.FixedSingle;
+            panel11.Controls.Add(pbMov3);
+            panel11.Controls.Add(lbPot3);
+            panel11.Controls.Add(label24);
+            panel11.Controls.Add(lbPre3);
+            panel11.Controls.Add(label26);
+            panel11.Location = new Point(13, 31);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(174, 79);
+            panel11.TabIndex = 81;
+            // 
+            // pbMov3
+            // 
+            pbMov3.Location = new Point(118, 26);
+            pbMov3.Name = "pbMov3";
+            pbMov3.Size = new Size(47, 45);
+            pbMov3.SizeMode = PictureBoxSizeMode.Zoom;
+            pbMov3.TabIndex = 88;
+            pbMov3.TabStop = false;
+            // 
+            // lbPot3
+            // 
+            lbPot3.AutoSize = true;
+            lbPot3.Location = new Point(77, 29);
+            lbPot3.Name = "lbPot3";
+            lbPot3.Size = new Size(33, 20);
+            lbPot3.TabIndex = 87;
+            lbPot3.Text = "000";
             // 
             // label24
             // 
             label24.AutoSize = true;
             label24.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label24.Location = new Point(7, 9);
+            label24.Location = new Point(7, 29);
             label24.Name = "label24";
-            label24.Size = new Size(69, 20);
-            label24.TabIndex = 60;
-            label24.Text = "Nombre:";
+            label24.Size = new Size(72, 20);
+            label24.TabIndex = 56;
+            label24.Text = "Potencia:";
             // 
-            // lBNombreMov3
+            // lbPre3
             // 
-            lBNombreMov3.AutoSize = true;
-            lBNombreMov3.Location = new Point(76, 9);
-            lBNombreMov3.Name = "lBNombreMov3";
-            lBNombreMov3.Size = new Size(46, 20);
-            lBNombreMov3.TabIndex = 61;
-            lBNombreMov3.Text = "mov3";
-            // 
-            // panel15
-            // 
-            panel15.BorderStyle = BorderStyle.FixedSingle;
-            panel15.Controls.Add(pbTipoMov3);
-            panel15.Controls.Add(label26);
-            panel15.Controls.Add(lbPotMov3);
-            panel15.Controls.Add(label31);
-            panel15.Controls.Add(lbPrecisionMov3);
-            panel15.Location = new Point(16, 32);
-            panel15.Name = "panel15";
-            panel15.Size = new Size(174, 79);
-            panel15.TabIndex = 77;
-            // 
-            // pbTipoMov3
-            // 
-            pbTipoMov3.Location = new Point(119, 33);
-            pbTipoMov3.Name = "pbTipoMov3";
-            pbTipoMov3.Size = new Size(43, 37);
-            pbTipoMov3.SizeMode = PictureBoxSizeMode.Zoom;
-            pbTipoMov3.TabIndex = 59;
-            pbTipoMov3.TabStop = false;
+            lbPre3.AutoSize = true;
+            lbPre3.Location = new Point(78, 51);
+            lbPre3.Name = "lbPre3";
+            lbPre3.Size = new Size(33, 20);
+            lbPre3.TabIndex = 86;
+            lbPre3.Text = "000";
             // 
             // label26
             // 
             label26.AutoSize = true;
             label26.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label26.Location = new Point(6, 29);
+            label26.Location = new Point(7, 51);
             label26.Name = "label26";
-            label26.Size = new Size(72, 20);
-            label26.TabIndex = 56;
-            label26.Text = "Potencia:";
+            label26.Size = new Size(74, 20);
+            label26.TabIndex = 54;
+            label26.Text = "Precision:";
             // 
-            // lbPotMov3
+            // panel15
             // 
-            lbPotMov3.AutoSize = true;
-            lbPotMov3.Location = new Point(77, 29);
-            lbPotMov3.Name = "lbPotMov3";
-            lbPotMov3.Size = new Size(33, 20);
-            lbPotMov3.TabIndex = 57;
-            lbPotMov3.Text = "000";
+            panel15.BorderStyle = BorderStyle.FixedSingle;
+            panel15.Controls.Add(pbMov4);
+            panel15.Controls.Add(lbPot4);
+            panel15.Controls.Add(label32);
+            panel15.Controls.Add(lbPre4);
+            panel15.Controls.Add(label34);
+            panel15.Location = new Point(13, 143);
+            panel15.Name = "panel15";
+            panel15.Size = new Size(174, 79);
+            panel15.TabIndex = 79;
             // 
-            // label31
+            // pbMov4
             // 
-            label31.AutoSize = true;
-            label31.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label31.Location = new Point(7, 51);
-            label31.Name = "label31";
-            label31.Size = new Size(74, 20);
-            label31.TabIndex = 54;
-            label31.Text = "Precisión:";
+            pbMov4.Location = new Point(118, 26);
+            pbMov4.Name = "pbMov4";
+            pbMov4.Size = new Size(47, 45);
+            pbMov4.SizeMode = PictureBoxSizeMode.Zoom;
+            pbMov4.TabIndex = 91;
+            pbMov4.TabStop = false;
             // 
-            // lbPrecisionMov3
+            // lbPot4
             // 
-            lbPrecisionMov3.AutoSize = true;
-            lbPrecisionMov3.Location = new Point(78, 51);
-            lbPrecisionMov3.Name = "lbPrecisionMov3";
-            lbPrecisionMov3.Size = new Size(33, 20);
-            lbPrecisionMov3.TabIndex = 55;
-            lbPrecisionMov3.Text = "000";
+            lbPot4.AutoSize = true;
+            lbPot4.Location = new Point(77, 29);
+            lbPot4.Name = "lbPot4";
+            lbPot4.Size = new Size(33, 20);
+            lbPot4.TabIndex = 90;
+            lbPot4.Text = "000";
             // 
-            // panel24
+            // label32
             // 
-            panel24.BorderStyle = BorderStyle.FixedSingle;
-            panel24.Controls.Add(pbTipoMov4);
-            panel24.Controls.Add(label48);
-            panel24.Controls.Add(lbPotMov4);
-            panel24.Controls.Add(label50);
-            panel24.Controls.Add(lbPrecisionMov4);
-            panel24.Location = new Point(16, 142);
-            panel24.Name = "panel24";
-            panel24.Size = new Size(174, 79);
-            panel24.TabIndex = 83;
+            label32.AutoSize = true;
+            label32.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label32.Location = new Point(6, 29);
+            label32.Name = "label32";
+            label32.Size = new Size(72, 20);
+            label32.TabIndex = 56;
+            label32.Text = "Potencia:";
             // 
-            // pbTipoMov4
+            // lbPre4
             // 
-            pbTipoMov4.Location = new Point(119, 33);
-            pbTipoMov4.Name = "pbTipoMov4";
-            pbTipoMov4.Size = new Size(43, 37);
-            pbTipoMov4.SizeMode = PictureBoxSizeMode.Zoom;
-            pbTipoMov4.TabIndex = 59;
-            pbTipoMov4.TabStop = false;
+            lbPre4.AutoSize = true;
+            lbPre4.Location = new Point(78, 51);
+            lbPre4.Name = "lbPre4";
+            lbPre4.Size = new Size(33, 20);
+            lbPre4.TabIndex = 89;
+            lbPre4.Text = "000";
             // 
-            // label48
+            // label34
             // 
-            label48.AutoSize = true;
-            label48.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label48.Location = new Point(6, 29);
-            label48.Name = "label48";
-            label48.Size = new Size(72, 20);
-            label48.TabIndex = 56;
-            label48.Text = "Potencia:";
-            // 
-            // lbPotMov4
-            // 
-            lbPotMov4.AutoSize = true;
-            lbPotMov4.Location = new Point(77, 29);
-            lbPotMov4.Name = "lbPotMov4";
-            lbPotMov4.Size = new Size(33, 20);
-            lbPotMov4.TabIndex = 57;
-            lbPotMov4.Text = "000";
-            // 
-            // label50
-            // 
-            label50.AutoSize = true;
-            label50.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label50.Location = new Point(7, 51);
-            label50.Name = "label50";
-            label50.Size = new Size(74, 20);
-            label50.TabIndex = 54;
-            label50.Text = "Precisión:";
-            // 
-            // lbPrecisionMov4
-            // 
-            lbPrecisionMov4.AutoSize = true;
-            lbPrecisionMov4.Location = new Point(78, 51);
-            lbPrecisionMov4.Name = "lbPrecisionMov4";
-            lbPrecisionMov4.Size = new Size(33, 20);
-            lbPrecisionMov4.TabIndex = 55;
-            lbPrecisionMov4.Text = "000";
-            // 
-            // panel23
-            // 
-            panel23.BorderStyle = BorderStyle.FixedSingle;
-            panel23.Controls.Add(pictureBox5);
-            panel23.Controls.Add(label44);
-            panel23.Controls.Add(label45);
-            panel23.Controls.Add(label46);
-            panel23.Controls.Add(label47);
-            panel23.Location = new Point(16, 32);
-            panel23.Name = "panel23";
-            panel23.Size = new Size(174, 79);
-            panel23.TabIndex = 81;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Image = Properties.Resources.TipoElectrico;
-            pictureBox5.Location = new Point(119, 33);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(43, 37);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 59;
-            pictureBox5.TabStop = false;
-            // 
-            // label44
-            // 
-            label44.AutoSize = true;
-            label44.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label44.Location = new Point(6, 29);
-            label44.Name = "label44";
-            label44.Size = new Size(72, 20);
-            label44.TabIndex = 56;
-            label44.Text = "Potencia:";
-            // 
-            // label45
-            // 
-            label45.AutoSize = true;
-            label45.Location = new Point(77, 29);
-            label45.Name = "label45";
-            label45.Size = new Size(33, 20);
-            label45.TabIndex = 57;
-            label45.Text = "000";
-            // 
-            // label46
-            // 
-            label46.AutoSize = true;
-            label46.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label46.Location = new Point(7, 51);
-            label46.Name = "label46";
-            label46.Size = new Size(74, 20);
-            label46.TabIndex = 54;
-            label46.Text = "Precisión:";
-            // 
-            // label47
-            // 
-            label47.AutoSize = true;
-            label47.Location = new Point(78, 51);
-            label47.Name = "label47";
-            label47.Size = new Size(33, 20);
-            label47.TabIndex = 55;
-            label47.Text = "000";
+            label34.AutoSize = true;
+            label34.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label34.Location = new Point(7, 51);
+            label34.Name = "label34";
+            label34.Size = new Size(74, 20);
+            label34.TabIndex = 54;
+            label34.Text = "Precision:";
             // 
             // panelMov1
             // 
             panelMov1.BackColor = Color.FromArgb(255, 222, 0);
-            panelMov1.Controls.Add(label35);
-            panelMov1.Controls.Add(label36);
-            panelMov1.Location = new Point(16, 14);
+            panelMov1.Controls.Add(label2);
+            panelMov1.Controls.Add(lbMov1);
+            panelMov1.Location = new Point(18, 74);
             panelMov1.Name = "panelMov1";
             panelMov1.Size = new Size(174, 36);
-            panelMov1.TabIndex = 78;
-            // 
-            // label35
-            // 
-            label35.AutoSize = true;
-            label35.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label35.Location = new Point(7, 9);
-            label35.Name = "label35";
-            label35.Size = new Size(69, 20);
-            label35.TabIndex = 60;
-            label35.Text = "Nombre:";
-            // 
-            // label36
-            // 
-            label36.AutoSize = true;
-            label36.Location = new Point(76, 9);
-            label36.Name = "label36";
-            label36.Size = new Size(46, 20);
-            label36.TabIndex = 61;
-            label36.Text = "mov3";
-            // 
-            // panel20
-            // 
-            panel20.BorderStyle = BorderStyle.FixedSingle;
-            panel20.Controls.Add(pictureBox4);
-            panel20.Controls.Add(label40);
-            panel20.Controls.Add(label41);
-            panel20.Controls.Add(label42);
-            panel20.Controls.Add(label43);
-            panel20.Location = new Point(16, 142);
-            panel20.Name = "panel20";
-            panel20.Size = new Size(174, 79);
-            panel20.TabIndex = 79;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = Properties.Resources.TipoElectrico;
-            pictureBox4.Location = new Point(119, 33);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(43, 37);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 59;
-            pictureBox4.TabStop = false;
-            // 
-            // label40
-            // 
-            label40.AutoSize = true;
-            label40.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label40.Location = new Point(6, 29);
-            label40.Name = "label40";
-            label40.Size = new Size(72, 20);
-            label40.TabIndex = 56;
-            label40.Text = "Potencia:";
-            // 
-            // label41
-            // 
-            label41.AutoSize = true;
-            label41.Location = new Point(77, 29);
-            label41.Name = "label41";
-            label41.Size = new Size(33, 20);
-            label41.TabIndex = 57;
-            label41.Text = "000";
-            // 
-            // label42
-            // 
-            label42.AutoSize = true;
-            label42.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label42.Location = new Point(7, 51);
-            label42.Name = "label42";
-            label42.Size = new Size(74, 20);
-            label42.TabIndex = 54;
-            label42.Text = "Precisión:";
-            // 
-            // label43
-            // 
-            label43.AutoSize = true;
-            label43.Location = new Point(78, 51);
-            label43.Name = "label43";
-            label43.Size = new Size(33, 20);
-            label43.TabIndex = 55;
-            label43.Text = "000";
-            // 
-            // panel19
-            // 
-            panel19.BackColor = Color.FromArgb(255, 222, 0);
-            panel19.Controls.Add(label37);
-            panel19.Controls.Add(label38);
-            panel19.Location = new Point(16, 124);
-            panel19.Name = "panel19";
-            panel19.Size = new Size(174, 36);
-            panel19.TabIndex = 80;
-            // 
-            // label37
-            // 
-            label37.AutoSize = true;
-            label37.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label37.Location = new Point(7, 9);
-            label37.Name = "label37";
-            label37.Size = new Size(69, 20);
-            label37.TabIndex = 60;
-            label37.Text = "Nombre:";
-            // 
-            // label38
-            // 
-            label38.AutoSize = true;
-            label38.Location = new Point(76, 9);
-            label38.Name = "label38";
-            label38.Size = new Size(46, 20);
-            label38.TabIndex = 61;
-            label38.Text = "mov3";
-            // 
-            // panel11
-            // 
-            panel11.BackColor = Color.FromArgb(255, 222, 0);
-            panel11.Controls.Add(label2);
-            panel11.Controls.Add(lbNombreMov1);
-            panel11.Location = new Point(18, 73);
-            panel11.Name = "panel11";
-            panel11.Size = new Size(174, 36);
-            panel11.TabIndex = 74;
+            panelMov1.TabIndex = 76;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label2.Location = new Point(7, 9);
+            label2.Location = new Point(9, 9);
             label2.Name = "label2";
-            label2.Size = new Size(69, 20);
-            label2.TabIndex = 60;
-            label2.Text = "Nombre:";
+            label2.Size = new Size(42, 20);
+            label2.TabIndex = 48;
+            label2.Text = "Mov:";
             // 
-            // lbNombreMov1
+            // lbMov1
             // 
-            lbNombreMov1.AutoSize = true;
-            lbNombreMov1.Location = new Point(76, 9);
-            lbNombreMov1.Name = "lbNombreMov1";
-            lbNombreMov1.Size = new Size(46, 20);
-            lbNombreMov1.TabIndex = 61;
-            lbNombreMov1.Text = "mov1";
+            lbMov1.AutoSize = true;
+            lbMov1.Font = new Font("Segoe UI", 9F);
+            lbMov1.Location = new Point(49, 9);
+            lbMov1.Name = "lbMov1";
+            lbMov1.Size = new Size(46, 20);
+            lbMov1.TabIndex = 61;
+            lbMov1.Text = "mov3";
             // 
-            // panel14
+            // panel5
             // 
-            panel14.BorderStyle = BorderStyle.FixedSingle;
-            panel14.Controls.Add(pbTipoMov1);
-            panel14.Controls.Add(label5);
-            panel14.Controls.Add(lbPotMov1);
-            panel14.Controls.Add(label8);
-            panel14.Controls.Add(lbPrecisionMov1);
-            panel14.Location = new Point(18, 91);
-            panel14.Name = "panel14";
-            panel14.Size = new Size(174, 79);
-            panel14.TabIndex = 69;
+            panel5.BorderStyle = BorderStyle.FixedSingle;
+            panel5.Controls.Add(pbMov1);
+            panel5.Controls.Add(label8);
+            panel5.Controls.Add(lbPotMov1);
+            panel5.Controls.Add(label20);
+            panel5.Controls.Add(lbPreMov1);
+            panel5.Location = new Point(18, 89);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(174, 79);
+            panel5.TabIndex = 77;
             // 
-            // pbTipoMov1
+            // pbMov1
             // 
-            pbTipoMov1.Location = new Point(119, 33);
-            pbTipoMov1.Name = "pbTipoMov1";
-            pbTipoMov1.Size = new Size(43, 37);
-            pbTipoMov1.SizeMode = PictureBoxSizeMode.Zoom;
-            pbTipoMov1.TabIndex = 59;
-            pbTipoMov1.TabStop = false;
+            pbMov1.Location = new Point(118, 26);
+            pbMov1.Name = "pbMov1";
+            pbMov1.Size = new Size(47, 45);
+            pbMov1.SizeMode = PictureBoxSizeMode.Zoom;
+            pbMov1.TabIndex = 85;
+            pbMov1.TabStop = false;
             // 
-            // label5
+            // label8
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label5.Location = new Point(6, 29);
-            label5.Name = "label5";
-            label5.Size = new Size(72, 20);
-            label5.TabIndex = 56;
-            label5.Text = "Potencia:";
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label8.Location = new Point(6, 29);
+            label8.Name = "label8";
+            label8.Size = new Size(72, 20);
+            label8.TabIndex = 56;
+            label8.Text = "Potencia:";
             // 
             // lbPotMov1
             // 
@@ -1188,24 +966,24 @@
             lbPotMov1.TabIndex = 57;
             lbPotMov1.Text = "000";
             // 
-            // label8
+            // label20
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label8.Location = new Point(7, 51);
-            label8.Name = "label8";
-            label8.Size = new Size(74, 20);
-            label8.TabIndex = 54;
-            label8.Text = "Precision:";
+            label20.AutoSize = true;
+            label20.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label20.Location = new Point(7, 51);
+            label20.Name = "label20";
+            label20.Size = new Size(74, 20);
+            label20.TabIndex = 54;
+            label20.Text = "Precision:";
             // 
-            // lbPrecisionMov1
+            // lbPreMov1
             // 
-            lbPrecisionMov1.AutoSize = true;
-            lbPrecisionMov1.Location = new Point(78, 51);
-            lbPrecisionMov1.Name = "lbPrecisionMov1";
-            lbPrecisionMov1.Size = new Size(33, 20);
-            lbPrecisionMov1.TabIndex = 55;
-            lbPrecisionMov1.Text = "000";
+            lbPreMov1.AutoSize = true;
+            lbPreMov1.Location = new Point(78, 51);
+            lbPreMov1.Name = "lbPreMov1";
+            lbPreMov1.Size = new Size(33, 20);
+            lbPreMov1.TabIndex = 55;
+            lbPreMov1.Text = "000";
             // 
             // buttonAtras
             // 
@@ -1220,35 +998,6 @@
             buttonAtras.UseVisualStyleBackColor = false;
             buttonAtras.Click += button1_Click;
             // 
-            // panel21
-            // 
-            panel21.BackColor = Color.FromArgb(255, 222, 0);
-            panel21.Controls.Add(label20);
-            panel21.Controls.Add(lbNombreMov2);
-            panel21.Location = new Point(18, 183);
-            panel21.Name = "panel21";
-            panel21.Size = new Size(174, 36);
-            panel21.TabIndex = 76;
-            // 
-            // label20
-            // 
-            label20.AutoSize = true;
-            label20.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label20.Location = new Point(7, 9);
-            label20.Name = "label20";
-            label20.Size = new Size(69, 20);
-            label20.TabIndex = 60;
-            label20.Text = "Nombre:";
-            // 
-            // lbNombreMov2
-            // 
-            lbNombreMov2.AutoSize = true;
-            lbNombreMov2.Location = new Point(76, 9);
-            lbNombreMov2.Name = "lbNombreMov2";
-            lbNombreMov2.Size = new Size(46, 20);
-            lbNombreMov2.TabIndex = 61;
-            lbNombreMov2.Text = "mov2";
-            // 
             // btSiguiente
             // 
             btSiguiente.BackColor = Color.FromArgb(255, 222, 0);
@@ -1261,35 +1010,6 @@
             btSiguiente.Text = ">";
             btSiguiente.UseVisualStyleBackColor = false;
             btSiguiente.Click += btSiguiente_Click;
-            // 
-            // panel25
-            // 
-            panel25.BackColor = Color.FromArgb(255, 222, 0);
-            panel25.Controls.Add(label22);
-            panel25.Controls.Add(label23);
-            panel25.Location = new Point(18, 73);
-            panel25.Name = "panel25";
-            panel25.Size = new Size(174, 36);
-            panel25.TabIndex = 70;
-            // 
-            // label22
-            // 
-            label22.AutoSize = true;
-            label22.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label22.Location = new Point(7, 9);
-            label22.Name = "label22";
-            label22.Size = new Size(69, 20);
-            label22.TabIndex = 60;
-            label22.Text = "Nombre:";
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Location = new Point(76, 9);
-            label23.Name = "label23";
-            label23.Size = new Size(46, 20);
-            label23.TabIndex = 61;
-            label23.Text = "mov3";
             // 
             // panelMov
             // 
@@ -1304,7 +1024,7 @@
             // 
             label39.AutoSize = true;
             label39.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label39.Location = new Point(44, 10);
+            label39.Location = new Point(41, 10);
             label39.Name = "label39";
             label39.Size = new Size(95, 20);
             label39.TabIndex = 47;
@@ -1313,175 +1033,72 @@
             // panelMov2
             // 
             panelMov2.BackColor = Color.FromArgb(255, 222, 0);
-            panelMov2.Controls.Add(label28);
-            panelMov2.Controls.Add(label29);
-            panelMov2.Location = new Point(18, 183);
+            panelMov2.Controls.Add(label5);
+            panelMov2.Controls.Add(lbMov2);
+            panelMov2.Location = new Point(18, 186);
             panelMov2.Name = "panelMov2";
             panelMov2.Size = new Size(174, 36);
             panelMov2.TabIndex = 72;
             // 
-            // label28
+            // label5
             // 
-            label28.AutoSize = true;
-            label28.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label28.Location = new Point(7, 9);
-            label28.Name = "label28";
-            label28.Size = new Size(69, 20);
-            label28.TabIndex = 60;
-            label28.Text = "Nombre:";
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label5.Location = new Point(9, 8);
+            label5.Name = "label5";
+            label5.Size = new Size(42, 20);
+            label5.TabIndex = 62;
+            label5.Text = "Mov:";
             // 
-            // label29
+            // lbMov2
             // 
-            label29.AutoSize = true;
-            label29.Location = new Point(76, 9);
-            label29.Name = "label29";
-            label29.Size = new Size(46, 20);
-            label29.TabIndex = 61;
-            label29.Text = "mov3";
-            // 
-            // panel29
-            // 
-            panel29.BorderStyle = BorderStyle.FixedSingle;
-            panel29.Controls.Add(pbTipoMov2);
-            panel29.Controls.Add(label59);
-            panel29.Controls.Add(lbPotMov2);
-            panel29.Controls.Add(label61);
-            panel29.Controls.Add(lbPrecisionMov2);
-            panel29.Location = new Point(18, 201);
-            panel29.Name = "panel29";
-            panel29.Size = new Size(174, 79);
-            panel29.TabIndex = 71;
-            // 
-            // pbTipoMov2
-            // 
-            pbTipoMov2.Location = new Point(119, 33);
-            pbTipoMov2.Name = "pbTipoMov2";
-            pbTipoMov2.Size = new Size(43, 37);
-            pbTipoMov2.SizeMode = PictureBoxSizeMode.Zoom;
-            pbTipoMov2.TabIndex = 59;
-            pbTipoMov2.TabStop = false;
-            // 
-            // label59
-            // 
-            label59.AutoSize = true;
-            label59.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label59.Location = new Point(6, 29);
-            label59.Name = "label59";
-            label59.Size = new Size(72, 20);
-            label59.TabIndex = 56;
-            label59.Text = "Potencia:";
-            // 
-            // lbPotMov2
-            // 
-            lbPotMov2.AutoSize = true;
-            lbPotMov2.Location = new Point(77, 29);
-            lbPotMov2.Name = "lbPotMov2";
-            lbPotMov2.Size = new Size(33, 20);
-            lbPotMov2.TabIndex = 57;
-            lbPotMov2.Text = "000";
-            // 
-            // label61
-            // 
-            label61.AutoSize = true;
-            label61.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label61.Location = new Point(7, 51);
-            label61.Name = "label61";
-            label61.Size = new Size(74, 20);
-            label61.TabIndex = 54;
-            label61.Text = "Precision:";
-            // 
-            // lbPrecisionMov2
-            // 
-            lbPrecisionMov2.AutoSize = true;
-            lbPrecisionMov2.Location = new Point(78, 51);
-            lbPrecisionMov2.Name = "lbPrecisionMov2";
-            lbPrecisionMov2.Size = new Size(33, 20);
-            lbPrecisionMov2.TabIndex = 55;
-            lbPrecisionMov2.Text = "000";
-            // 
-            // panel27
-            // 
-            panel27.BorderStyle = BorderStyle.FixedSingle;
-            panel27.Controls.Add(pictureBox2);
-            panel27.Controls.Add(label30);
-            panel27.Controls.Add(lb_potmov3);
-            panel27.Controls.Add(label53);
-            panel27.Controls.Add(label54);
-            panel27.Location = new Point(18, 91);
-            panel27.Name = "panel27";
-            panel27.Size = new Size(174, 79);
-            panel27.TabIndex = 73;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = Properties.Resources.TipoElectrico;
-            pictureBox2.Location = new Point(119, 33);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(43, 37);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 59;
-            pictureBox2.TabStop = false;
-            // 
-            // label30
-            // 
-            label30.AutoSize = true;
-            label30.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label30.Location = new Point(6, 29);
-            label30.Name = "label30";
-            label30.Size = new Size(72, 20);
-            label30.TabIndex = 56;
-            label30.Text = "Potencia:";
-            // 
-            // lb_potmov3
-            // 
-            lb_potmov3.AutoSize = true;
-            lb_potmov3.Location = new Point(77, 29);
-            lb_potmov3.Name = "lb_potmov3";
-            lb_potmov3.Size = new Size(33, 20);
-            lb_potmov3.TabIndex = 57;
-            lb_potmov3.Text = "000";
-            // 
-            // label53
-            // 
-            label53.AutoSize = true;
-            label53.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label53.Location = new Point(7, 51);
-            label53.Name = "label53";
-            label53.Size = new Size(74, 20);
-            label53.TabIndex = 54;
-            label53.Text = "Precision:";
-            // 
-            // label54
-            // 
-            label54.AutoSize = true;
-            label54.Location = new Point(78, 51);
-            label54.Name = "label54";
-            label54.Size = new Size(33, 20);
-            label54.TabIndex = 55;
-            label54.Text = "000";
+            lbMov2.AutoSize = true;
+            lbMov2.Font = new Font("Segoe UI", 9F);
+            lbMov2.Location = new Point(45, 8);
+            lbMov2.Name = "lbMov2";
+            lbMov2.Size = new Size(46, 20);
+            lbMov2.TabIndex = 62;
+            lbMov2.Text = "mov3";
             // 
             // panel28
             // 
             panel28.BorderStyle = BorderStyle.FixedSingle;
-            panel28.Controls.Add(pictureBox7);
+            panel28.Controls.Add(lbPot2);
+            panel28.Controls.Add(lbPre2);
+            panel28.Controls.Add(pbMov2);
             panel28.Controls.Add(label55);
-            panel28.Controls.Add(label56);
             panel28.Controls.Add(label57);
-            panel28.Controls.Add(label58);
             panel28.Location = new Point(18, 201);
             panel28.Name = "panel28";
             panel28.Size = new Size(174, 79);
             panel28.TabIndex = 75;
             // 
-            // pictureBox7
+            // lbPot2
             // 
-            pictureBox7.Image = Properties.Resources.TipoElectrico;
-            pictureBox7.Location = new Point(119, 33);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(43, 37);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 59;
-            pictureBox7.TabStop = false;
+            lbPot2.AutoSize = true;
+            lbPot2.Location = new Point(79, 29);
+            lbPot2.Name = "lbPot2";
+            lbPot2.Size = new Size(33, 20);
+            lbPot2.TabIndex = 87;
+            lbPot2.Text = "000";
+            // 
+            // lbPre2
+            // 
+            lbPre2.AutoSize = true;
+            lbPre2.Location = new Point(80, 51);
+            lbPre2.Name = "lbPre2";
+            lbPre2.Size = new Size(33, 20);
+            lbPre2.TabIndex = 86;
+            lbPre2.Text = "000";
+            // 
+            // pbMov2
+            // 
+            pbMov2.Location = new Point(118, 26);
+            pbMov2.Name = "pbMov2";
+            pbMov2.Size = new Size(47, 45);
+            pbMov2.SizeMode = PictureBoxSizeMode.Zoom;
+            pbMov2.TabIndex = 86;
+            pbMov2.TabStop = false;
             // 
             // label55
             // 
@@ -1493,15 +1110,6 @@
             label55.TabIndex = 56;
             label55.Text = "Potencia:";
             // 
-            // label56
-            // 
-            label56.AutoSize = true;
-            label56.Location = new Point(77, 29);
-            label56.Name = "label56";
-            label56.Size = new Size(33, 20);
-            label56.TabIndex = 57;
-            label56.Text = "000";
-            // 
             // label57
             // 
             label57.AutoSize = true;
@@ -1512,24 +1120,15 @@
             label57.TabIndex = 54;
             label57.Text = "Precision:";
             // 
-            // label58
-            // 
-            label58.AutoSize = true;
-            label58.Location = new Point(78, 51);
-            label58.Name = "label58";
-            label58.Size = new Size(33, 20);
-            label58.TabIndex = 55;
-            label58.Text = "000";
-            // 
             // Stats
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 222, 0);
-            ClientSize = new Size(909, 410);
-            Controls.Add(PanelMov3y4);
+            ClientSize = new Size(911, 410);
             Controls.Add(panel4);
             Controls.Add(panel1);
+            Controls.Add(PanelMov3y4);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
@@ -1548,6 +1147,8 @@
             ((System.ComponentModel.ISupportInitialize)FoticoPokemon).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
+            panelAtt.ResumeLayout(false);
+            panelAtt.PerformLayout();
             panel16.ResumeLayout(false);
             panel12.ResumeLayout(false);
             panel10.ResumeLayout(false);
@@ -1562,44 +1163,24 @@
             panelMov4.PerformLayout();
             panelMov3.ResumeLayout(false);
             panelMov3.PerformLayout();
-            panel15.ResumeLayout(false);
-            panel15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pbTipoMov3).EndInit();
-            panel24.ResumeLayout(false);
-            panel24.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pbTipoMov4).EndInit();
-            panel23.ResumeLayout(false);
-            panel23.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            panelMov1.ResumeLayout(false);
-            panelMov1.PerformLayout();
-            panel20.ResumeLayout(false);
-            panel20.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            panel19.ResumeLayout(false);
-            panel19.PerformLayout();
             panel11.ResumeLayout(false);
             panel11.PerformLayout();
-            panel14.ResumeLayout(false);
-            panel14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pbTipoMov1).EndInit();
-            panel21.ResumeLayout(false);
-            panel21.PerformLayout();
-            panel25.ResumeLayout(false);
-            panel25.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbMov3).EndInit();
+            panel15.ResumeLayout(false);
+            panel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbMov4).EndInit();
+            panelMov1.ResumeLayout(false);
+            panelMov1.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbMov1).EndInit();
             panelMov.ResumeLayout(false);
             panelMov.PerformLayout();
             panelMov2.ResumeLayout(false);
             panelMov2.PerformLayout();
-            panel29.ResumeLayout(false);
-            panel29.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pbTipoMov2).EndInit();
-            panel27.ResumeLayout(false);
-            panel27.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel28.ResumeLayout(false);
             panel28.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbMov2).EndInit();
             ResumeLayout(false);
         }
 
@@ -1635,7 +1216,7 @@
         private Label lbDefensa;
         private Label lbAtaque;
         private Label lbVida;
-        private Label label19;
+        private Label labelAtributos;
         private Label lbAttTotal;
         private Label lbVelocidad;
         private Label lbDefEsp;
@@ -1656,74 +1237,11 @@
         private Panel panelMov;
         private Label label39;
         private Panel panel9;
-        private Panel panelMov4;
-        private Label label33;
-        private Label lbNombreMov4;
-        private Panel panelMov3;
-        private Label label24;
-        private Label lBNombreMov3;
-        private Panel panel15;
-        private PictureBox pbTipoMov3;
-        private Label label26;
-        private Label lbPotMov3;
-        private Label label31;
-        private Label lbPrecisionMov3;
-        private Panel panel24;
-        private PictureBox pbTipoMov4;
-        private Label label48;
-        private Label lbPotMov4;
-        private Label label50;
-        private Label lbPrecisionMov4;
-        private Panel panel23;
-        private PictureBox pictureBox5;
-        private Label label44;
-        private Label label45;
-        private Label label46;
-        private Label label47;
-        private Panel panelMov1;
-        private Label label35;
-        private Label label36;
-        private Panel panel20;
-        private PictureBox pictureBox4;
-        private Label label40;
-        private Label label41;
-        private Label label42;
-        private Label label43;
-        private Panel panel19;
-        private Label label37;
-        private Label label38;
-        private Panel panel11;
-        private Label label2;
-        private Label lbNombreMov1;
-        private Panel panel14;
-        private PictureBox pbTipoMov1;
-        private Label label5;
-        private Label lbPotMov1;
-        private Label label8;
-        private Label lbPrecisionMov1;
         private Button buttonAtras;
-        private Panel panel21;
-        private Label label20;
-        private Label lbNombreMov2;
         private Button btSiguiente;
-        private Panel panel25;
-        private Label label22;
-        private Label label23;
         private Panel panelMov2;
         private Label label28;
         private Label label29;
-        private Panel panel29;
-        private PictureBox pbTipoMov2;
-        private Label label59;
-        private Label lbPotMov2;
-        private Label label61;
-        private Label lbPrecisionMov2;
-        private Panel panel27;
-        private PictureBox pictureBox2;
-        private Label label30;
-        private Label lb_potmov3;
-        private Label label53;
-        private Label label54;
         private Panel panel28;
         private PictureBox pictureBox7;
         private Label label55;
@@ -1735,5 +1253,46 @@
         private Label label11;
         private Label label7;
         private Label label3;
+        private Panel panelAtt;
+        private Panel panelMov1;
+        private Label lbMov1;
+        private Panel panel5;
+        private PictureBox pbTipoMov1;
+        private Label label8;
+        private Label lbPotMov1;
+        private Label label20;
+        private Label lbPreMov1;
+        private Panel panelMov3;
+        private Label label22;
+        private Panel panel11;
+        private PictureBox pictureBox2;
+        private Label label24;
+        private Label label25;
+        private Label label26;
+        private Label label27;
+        private Panel panel15;
+        private PictureBox pictureBox3;
+        private Label label32;
+        private Label label33;
+        private Label label34;
+        private Panel panelMov4;
+        private Label lbMov2;
+        private Label lbMov4;
+        private Label label30;
+        private Label label31;
+        private PictureBox pbMov1;
+        private Label lbPot2;
+        private Label lbPre2;
+        private PictureBox pbMov2;
+        private Label label2;
+        private Label label5;
+        private Label label19;
+        private Label lbMov3;
+        private PictureBox pbMov3;
+        private Label lbPot3;
+        private Label lbPre3;
+        private PictureBox pbMov4;
+        private Label lbPot4;
+        private Label lbPre4;
     }
 }

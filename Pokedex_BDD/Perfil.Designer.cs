@@ -62,6 +62,7 @@
             FotoPerfil = new PictureBox();
             panel7 = new Panel();
             lbNombre = new Label();
+            btVolverAtras = new Button();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Foto1).BeginInit();
             panel1.SuspendLayout();
@@ -463,6 +464,19 @@
             lbNombre.TabIndex = 60;
             lbNombre.Text = "Ash Ketchup";
             // 
+            // btVolverAtras
+            // 
+            btVolverAtras.BackColor = Color.FromArgb(255, 222, 0);
+            btVolverAtras.FlatStyle = FlatStyle.Flat;
+            btVolverAtras.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btVolverAtras.Location = new Point(24, 36);
+            btVolverAtras.Name = "btVolverAtras";
+            btVolverAtras.Size = new Size(38, 36);
+            btVolverAtras.TabIndex = 61;
+            btVolverAtras.Text = "<";
+            btVolverAtras.UseVisualStyleBackColor = false;
+            btVolverAtras.Click += btVolverAtras_Click;
+            // 
             // Perfil
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -470,6 +484,7 @@
             BackgroundImage = Properties.Resources.Tarjeta_Entrenador__1_;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1135, 634);
+            Controls.Add(btVolverAtras);
             Controls.Add(lbNombre);
             Controls.Add(panel7);
             Controls.Add(panel6);
@@ -478,7 +493,9 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(panel4);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "Perfil";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Perfil";
@@ -542,5 +559,6 @@
         private PictureBox FotoPerfil;
         private Panel panel7;
         private Label lbNombre;
+        private Button btVolverAtras;
     }
 }

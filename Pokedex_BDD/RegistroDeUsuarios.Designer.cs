@@ -28,35 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroDeUsuarios));
             pictureBox1 = new PictureBox();
             label1 = new Label();
             panel2 = new Panel();
             label6 = new Label();
             panel1 = new Panel();
+            label5 = new Label();
+            tbRecuperacion = new TextBox();
+            checkContrasena = new CheckBox();
             numericUpDown1 = new NumericUpDown();
             pbFotoUsu = new PictureBox();
-            dUpDoIcono = new DomainUpDown();
             label2 = new Label();
             tbNombre = new TextBox();
-            btVerPass = new Button();
-            lbVerPass = new Label();
             label4 = new Label();
             tbPass = new TextBox();
             label3 = new Label();
             tbUsu = new TextBox();
             btCrearUsu = new Button();
+            panel3 = new Panel();
+            btAtras = new Button();
+            btManual = new Button();
+            toolTip1 = new ToolTip(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbFotoUsu).BeginInit();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.collage;
-            pictureBox1.Location = new Point(-104, -60);
+            pictureBox1.Location = new Point(-104, 3);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(332, 837);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -92,7 +98,7 @@
             label6.AutoSize = true;
             label6.BackColor = Color.FromArgb(204, 0, 0);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(60, 402);
+            label6.Location = new Point(57, 448);
             label6.Name = "label6";
             label6.Size = new Size(187, 20);
             label6.TabIndex = 13;
@@ -101,26 +107,58 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(204, 0, 0);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(tbRecuperacion);
+            panel1.Controls.Add(checkContrasena);
             panel1.Controls.Add(numericUpDown1);
             panel1.Controls.Add(pbFotoUsu);
-            panel1.Controls.Add(dUpDoIcono);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(tbNombre);
-            panel1.Controls.Add(btVerPass);
-            panel1.Controls.Add(lbVerPass);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(tbPass);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(tbUsu);
             panel1.ForeColor = Color.Red;
-            panel1.Location = new Point(20, 122);
+            panel1.Location = new Point(20, 113);
             panel1.Name = "panel1";
             panel1.Size = new Size(370, 478);
             panel1.TabIndex = 4;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.FromArgb(204, 0, 0);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(37, 263);
+            label5.Name = "label5";
+            label5.Size = new Size(222, 20);
+            label5.TabIndex = 28;
+            label5.Text = "Ingrese su frase de recuperación";
+            // 
+            // tbRecuperacion
+            // 
+            tbRecuperacion.Location = new Point(39, 294);
+            tbRecuperacion.Name = "tbRecuperacion";
+            tbRecuperacion.Size = new Size(302, 27);
+            tbRecuperacion.TabIndex = 27;
+            tbRecuperacion.KeyPress += tbRecuperacion_KeyPress;
+            // 
+            // checkContrasena
+            // 
+            checkContrasena.AutoSize = true;
+            checkContrasena.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            checkContrasena.ForeColor = Color.White;
+            checkContrasena.Location = new Point(40, 228);
+            checkContrasena.Name = "checkContrasena";
+            checkContrasena.Size = new Size(117, 21);
+            checkContrasena.TabIndex = 26;
+            checkContrasena.Text = "Ver contraseña";
+            checkContrasena.UseVisualStyleBackColor = true;
+            checkContrasena.CheckedChanged += checkContrasena_CheckedChanged;
+            // 
             // numericUpDown1
             // 
-            numericUpDown1.Location = new Point(193, 406);
+            numericUpDown1.Location = new Point(158, 400);
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(21, 27);
             numericUpDown1.TabIndex = 13;
@@ -129,22 +167,12 @@
             // pbFotoUsu
             // 
             pbFotoUsu.Image = Properties.Resources.ashicon_removebg_preview;
-            pbFotoUsu.Location = new Point(36, 317);
+            pbFotoUsu.Location = new Point(30, 367);
             pbFotoUsu.Name = "pbFotoUsu";
-            pbFotoUsu.Size = new Size(142, 133);
+            pbFotoUsu.Size = new Size(115, 95);
             pbFotoUsu.SizeMode = PictureBoxSizeMode.Zoom;
             pbFotoUsu.TabIndex = 5;
             pbFotoUsu.TabStop = false;
-            // 
-            // dUpDoIcono
-            // 
-            dUpDoIcono.BackColor = Color.White;
-            dUpDoIcono.Location = new Point(191, 373);
-            dUpDoIcono.Name = "dUpDoIcono";
-            dUpDoIcono.Size = new Size(23, 27);
-            dUpDoIcono.TabIndex = 0;
-            dUpDoIcono.Text = "domainUpDown1";
-            dUpDoIcono.SelectedItemChanged += domainUpDown1_SelectedItemChanged;
             // 
             // label2
             // 
@@ -163,34 +191,14 @@
             tbNombre.Name = "tbNombre";
             tbNombre.Size = new Size(302, 27);
             tbNombre.TabIndex = 11;
-            // 
-            // btVerPass
-            // 
-            btVerPass.Location = new Point(44, 239);
-            btVerPass.Name = "btVerPass";
-            btVerPass.Size = new Size(16, 15);
-            btVerPass.TabIndex = 10;
-            btVerPass.UseVisualStyleBackColor = true;
-            btVerPass.Click += btVerPass_Click;
-            // 
-            // lbVerPass
-            // 
-            lbVerPass.AutoSize = true;
-            lbVerPass.BackColor = Color.FromArgb(204, 0, 0);
-            lbVerPass.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbVerPass.ForeColor = Color.White;
-            lbVerPass.Location = new Point(66, 238);
-            lbVerPass.Name = "lbVerPass";
-            lbVerPass.Size = new Size(95, 17);
-            lbVerPass.TabIndex = 9;
-            lbVerPass.Text = "Ver contraseña";
+            tbNombre.KeyPress += tbNombre_KeyPress;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.FromArgb(204, 0, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(40, 163);
+            label4.Location = new Point(34, 163);
             label4.Name = "label4";
             label4.Size = new Size(151, 20);
             label4.TabIndex = 7;
@@ -201,7 +209,7 @@
             tbPass.Location = new Point(37, 193);
             tbPass.Name = "tbPass";
             tbPass.PasswordChar = '*';
-            tbPass.Size = new Size(302, 27);
+            tbPass.Size = new Size(304, 27);
             tbPass.TabIndex = 6;
             tbPass.UseSystemPasswordChar = true;
             // 
@@ -210,7 +218,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.FromArgb(204, 0, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(39, 85);
+            label3.Location = new Point(35, 85);
             label3.Name = "label3";
             label3.Size = new Size(204, 20);
             label3.TabIndex = 5;
@@ -218,16 +226,16 @@
             // 
             // tbUsu
             // 
-            tbUsu.Location = new Point(41, 116);
+            tbUsu.Location = new Point(39, 116);
             tbUsu.Name = "tbUsu";
             tbUsu.Size = new Size(302, 27);
             tbUsu.TabIndex = 0;
+            tbUsu.KeyPress += tbUsu_KeyPress;
             // 
             // btCrearUsu
             // 
             btCrearUsu.BackColor = Color.Red;
-            btCrearUsu.FlatAppearance.BorderColor = Color.Red;
-            btCrearUsu.FlatAppearance.BorderSize = 3;
+            btCrearUsu.FlatAppearance.BorderColor = Color.White;
             btCrearUsu.FlatStyle = FlatStyle.Flat;
             btCrearUsu.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btCrearUsu.ForeColor = Color.White;
@@ -239,11 +247,47 @@
             btCrearUsu.UseVisualStyleBackColor = false;
             btCrearUsu.Click += btCrearUsu_Click;
             // 
+            // panel3
+            // 
+            panel3.BackColor = Color.Red;
+            panel3.Controls.Add(btAtras);
+            panel3.Controls.Add(btManual);
+            panel3.Location = new Point(-2, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(230, 64);
+            panel3.TabIndex = 29;
+            // 
+            // btAtras
+            // 
+            btAtras.BackColor = Color.FromArgb(255, 222, 0);
+            btAtras.FlatStyle = FlatStyle.Flat;
+            btAtras.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btAtras.Location = new Point(14, 9);
+            btAtras.Name = "btAtras";
+            btAtras.Size = new Size(57, 47);
+            btAtras.TabIndex = 34;
+            btAtras.Text = "<<";
+            btAtras.UseVisualStyleBackColor = false;
+            btAtras.Click += btAtras_Click;
+            // 
+            // btManual
+            // 
+            btManual.BackColor = Color.FromArgb(255, 222, 0);
+            btManual.FlatStyle = FlatStyle.Flat;
+            btManual.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btManual.Location = new Point(1039, 14);
+            btManual.Name = "btManual";
+            btManual.Size = new Size(38, 36);
+            btManual.TabIndex = 30;
+            btManual.Text = "?";
+            btManual.UseVisualStyleBackColor = false;
+            // 
             // RegistroDeUsuarios
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(650, 694);
+            ClientSize = new Size(649, 694);
+            Controls.Add(panel3);
             Controls.Add(pictureBox1);
             Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -252,7 +296,6 @@
             Name = "RegistroDeUsuarios";
             StartPosition = FormStartPosition.CenterParent;
             Text = "RegistroDeUsuarios";
-            Load += RegistroDeUsuarios_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
@@ -260,6 +303,7 @@
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbFotoUsu).EndInit();
+            panel3.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -268,8 +312,6 @@
         private Label label1;
         private Panel panel2;
         private Panel panel1;
-        private Button btVerPass;
-        private Label lbVerPass;
         private Button btCrearUsu;
         private Label label4;
         private TextBox tbPass;
@@ -278,8 +320,14 @@
         private Label label2;
         private TextBox tbNombre;
         private Label label6;
-        private DomainUpDown dUpDoIcono;
         private PictureBox pbFotoUsu;
         private NumericUpDown numericUpDown1;
+        private Label label5;
+        private TextBox tbRecuperacion;
+        private CheckBox checkContrasena;
+        private Panel panel3;
+        private Button btManual;
+        private Button btAtras;
+        private ToolTip toolTip1;
     }
 }

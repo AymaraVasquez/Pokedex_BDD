@@ -28,23 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InicioDeSesion));
             label2 = new Label();
             label1 = new Label();
             linkRegistrate = new LinkLabel();
-            btVerPass = new Button();
             tbPass = new TextBox();
-            lbVerPass = new Label();
             tbNombre = new TextBox();
             btIniciarSesion = new Button();
             label4 = new Label();
             label5 = new Label();
             panel1 = new Panel();
+            linkContrasena = new LinkLabel();
+            checkContrasena = new CheckBox();
             panel2 = new Panel();
             pictureBox2 = new PictureBox();
             panel4 = new Panel();
             pictureBox1 = new PictureBox();
             panel3 = new Panel();
+            toolTip1 = new ToolTip(components);
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -56,11 +58,11 @@
             label2.AutoSize = true;
             label2.BackColor = Color.FromArgb(204, 0, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(652, 491);
+            label2.Location = new Point(652, 495);
             label2.Name = "label2";
             label2.Size = new Size(215, 20);
             label2.TabIndex = 3;
-            label2.Text = "¿Todavia no tienes una cuenta?";
+            label2.Text = "¿Todavía no tienes una cuenta?";
             // 
             // label1
             // 
@@ -68,7 +70,7 @@
             label1.BackColor = Color.FromArgb(204, 0, 0);
             label1.Font = new Font("Bahnschrift Condensed", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(717, 103);
+            label1.Location = new Point(716, 103);
             label1.Name = "label1";
             label1.Size = new Size(168, 36);
             label1.TabIndex = 2;
@@ -80,7 +82,7 @@
             linkRegistrate.BackColor = Color.FromArgb(204, 0, 0);
             linkRegistrate.ForeColor = Color.White;
             linkRegistrate.LinkColor = Color.White;
-            linkRegistrate.Location = new Point(867, 491);
+            linkRegistrate.Location = new Point(867, 495);
             linkRegistrate.Name = "linkRegistrate";
             linkRegistrate.Size = new Size(76, 20);
             linkRegistrate.TabIndex = 4;
@@ -88,42 +90,22 @@
             linkRegistrate.Text = "Registrate";
             linkRegistrate.LinkClicked += linkLabel1_LinkClicked;
             // 
-            // btVerPass
-            // 
-            btVerPass.Location = new Point(37, 187);
-            btVerPass.Name = "btVerPass";
-            btVerPass.Size = new Size(16, 15);
-            btVerPass.TabIndex = 24;
-            btVerPass.UseVisualStyleBackColor = true;
-            btVerPass.Click += btVerPass_Click;
-            // 
             // tbPass
             // 
-            tbPass.Location = new Point(33, 142);
+            tbPass.Location = new Point(37, 145);
             tbPass.Name = "tbPass";
             tbPass.PasswordChar = '*';
             tbPass.Size = new Size(302, 27);
             tbPass.TabIndex = 20;
             tbPass.UseSystemPasswordChar = true;
             // 
-            // lbVerPass
-            // 
-            lbVerPass.AutoSize = true;
-            lbVerPass.BackColor = Color.FromArgb(204, 0, 0);
-            lbVerPass.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbVerPass.ForeColor = Color.White;
-            lbVerPass.Location = new Point(59, 186);
-            lbVerPass.Name = "lbVerPass";
-            lbVerPass.Size = new Size(95, 17);
-            lbVerPass.TabIndex = 23;
-            lbVerPass.Text = "Ver contraseña";
-            // 
             // tbNombre
             // 
-            tbNombre.Location = new Point(34, 64);
+            tbNombre.Location = new Point(38, 70);
             tbNombre.Name = "tbNombre";
             tbNombre.Size = new Size(302, 27);
             tbNombre.TabIndex = 18;
+            tbNombre.KeyPress += tbNombre_KeyPress;
             // 
             // btIniciarSesion
             // 
@@ -133,11 +115,11 @@
             btIniciarSesion.FlatStyle = FlatStyle.Flat;
             btIniciarSesion.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btIniciarSesion.ForeColor = Color.Black;
-            btIniciarSesion.Location = new Point(37, 253);
+            btIniciarSesion.Location = new Point(37, 260);
             btIniciarSesion.Name = "btIniciarSesion";
             btIniciarSesion.Size = new Size(304, 57);
             btIniciarSesion.TabIndex = 22;
-            btIniciarSesion.Text = "Iniciar Sesion";
+            btIniciarSesion.Text = "Iniciar Sesión";
             btIniciarSesion.UseVisualStyleBackColor = false;
             btIniciarSesion.Click += btIniciarSesion_Click;
             // 
@@ -146,7 +128,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.FromArgb(204, 0, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(32, 33);
+            label4.Location = new Point(36, 39);
             label4.Name = "label4";
             label4.Size = new Size(204, 20);
             label4.TabIndex = 19;
@@ -157,7 +139,7 @@
             label5.AutoSize = true;
             label5.BackColor = Color.FromArgb(204, 0, 0);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(30, 111);
+            label5.Location = new Point(34, 114);
             label5.Name = "label5";
             label5.Size = new Size(151, 20);
             label5.TabIndex = 21;
@@ -166,17 +148,46 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(204, 0, 0);
-            panel1.Controls.Add(btVerPass);
+            panel1.BackgroundImageLayout = ImageLayout.Zoom;
+            panel1.Controls.Add(linkContrasena);
+            panel1.Controls.Add(checkContrasena);
             panel1.Controls.Add(tbNombre);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(tbPass);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(btIniciarSesion);
-            panel1.Controls.Add(lbVerPass);
-            panel1.Location = new Point(614, 141);
+            panel1.Location = new Point(614, 136);
             panel1.Name = "panel1";
             panel1.Size = new Size(366, 322);
             panel1.TabIndex = 25;
+            // 
+            // linkContrasena
+            // 
+            linkContrasena.AutoSize = true;
+            linkContrasena.BackColor = Color.FromArgb(204, 0, 0);
+            linkContrasena.Font = new Font("Segoe UI", 7.8F);
+            linkContrasena.ForeColor = Color.White;
+            linkContrasena.LinkColor = Color.White;
+            linkContrasena.Location = new Point(182, 215);
+            linkContrasena.Name = "linkContrasena";
+            linkContrasena.Size = new Size(157, 17);
+            linkContrasena.TabIndex = 31;
+            linkContrasena.TabStop = true;
+            linkContrasena.Text = "¿Olvidaste tu contraseña?";
+            linkContrasena.LinkClicked += linkContrasena_LinkClicked;
+            // 
+            // checkContrasena
+            // 
+            checkContrasena.AutoSize = true;
+            checkContrasena.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            checkContrasena.ForeColor = Color.White;
+            checkContrasena.Location = new Point(38, 187);
+            checkContrasena.Name = "checkContrasena";
+            checkContrasena.Size = new Size(117, 21);
+            checkContrasena.TabIndex = 25;
+            checkContrasena.Text = "Ver contraseña";
+            checkContrasena.UseVisualStyleBackColor = true;
+            checkContrasena.CheckedChanged += checkContrasena_CheckedChanged;
             // 
             // panel2
             // 
@@ -233,7 +244,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1013, 694);
+            ClientSize = new Size(1010, 694);
             Controls.Add(panel3);
             Controls.Add(panel2);
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -257,9 +268,7 @@
         private PictureBox pictureBox4;
         private Label label1;
         private LinkLabel linkRegistrate;
-        private Button btVerPass;
         private TextBox tbPass;
-        private Label lbVerPass;
         private TextBox tbNombre;
         private Button btIniciarSesion;
         private Label label4;
@@ -270,5 +279,8 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Panel panel4;
+        private ToolTip toolTip1;
+        private CheckBox checkContrasena;
+        private LinkLabel linkContrasena;
     }
 }

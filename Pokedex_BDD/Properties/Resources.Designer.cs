@@ -10533,6 +10533,56 @@ namespace Pokedex.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gif {
+            get {
+                object obj = ResourceManager.GetObject("gif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconAyma {
+            get {
+                object obj = ResourceManager.GetObject("IconAyma", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconGabo {
+            get {
+                object obj = ResourceManager.GetObject("IconGabo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconIsa {
+            get {
+                object obj = ResourceManager.GetObject("IconIsa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconSergio {
+            get {
+                object obj = ResourceManager.GetObject("IconSergio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Info {
             get {
                 object obj = ResourceManager.GetObject("Info", resourceCulture);
@@ -10563,6 +10613,16 @@ namespace Pokedex.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Mass {
+            get {
+                object obj = ResourceManager.GetObject("Mass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Menos {
             get {
                 object obj = ResourceManager.GetObject("Menos", resourceCulture);
@@ -10573,9 +10633,39 @@ namespace Pokedex.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ojoA {
+            get {
+                object obj = ResourceManager.GetObject("ojoA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ojoC {
+            get {
+                object obj = ResourceManager.GetObject("ojoC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pikachuu {
             get {
                 object obj = ResourceManager.GetObject("pikachuu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pikagif {
+            get {
+                object obj = ResourceManager.GetObject("pikagif", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10693,9 +10783,29 @@ namespace Pokedex.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TipoAceroP {
+            get {
+                object obj = ResourceManager.GetObject("TipoAceroP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TipoAgua {
             get {
                 object obj = ResourceManager.GetObject("TipoAgua", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TipoAguaP {
+            get {
+                object obj = ResourceManager.GetObject("TipoAguaP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10713,9 +10823,29 @@ namespace Pokedex.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TipoBichoP {
+            get {
+                object obj = ResourceManager.GetObject("TipoBichoP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TipoDragon {
             get {
                 object obj = ResourceManager.GetObject("TipoDragon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TipoDragonP {
+            get {
+                object obj = ResourceManager.GetObject("TipoDragonP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10733,9 +10863,29 @@ namespace Pokedex.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TipoElectricoP {
+            get {
+                object obj = ResourceManager.GetObject("TipoElectricoP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TipoFantasma {
             get {
                 object obj = ResourceManager.GetObject("TipoFantasma", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TipoFantasmaP {
+            get {
+                object obj = ResourceManager.GetObject("TipoFantasmaP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10753,9 +10903,29 @@ namespace Pokedex.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TipoFuegoP {
+            get {
+                object obj = ResourceManager.GetObject("TipoFuegoP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TipoHada {
             get {
                 object obj = ResourceManager.GetObject("TipoHada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TipoHadaP {
+            get {
+                object obj = ResourceManager.GetObject("TipoHadaP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10773,9 +10943,29 @@ namespace Pokedex.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TipoHieloP {
+            get {
+                object obj = ResourceManager.GetObject("TipoHieloP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TipoLucha {
             get {
                 object obj = ResourceManager.GetObject("TipoLucha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TipoLuchaP {
+            get {
+                object obj = ResourceManager.GetObject("TipoLuchaP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10793,9 +10983,29 @@ namespace Pokedex.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TipoNormalP {
+            get {
+                object obj = ResourceManager.GetObject("TipoNormalP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TipoPlanta {
             get {
                 object obj = ResourceManager.GetObject("TipoPlanta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TipoPlantaP {
+            get {
+                object obj = ResourceManager.GetObject("TipoPlantaP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10813,9 +11023,29 @@ namespace Pokedex.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TipoPsiquicoP {
+            get {
+                object obj = ResourceManager.GetObject("TipoPsiquicoP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TipoRoca {
             get {
                 object obj = ResourceManager.GetObject("TipoRoca", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TipoRocaP {
+            get {
+                object obj = ResourceManager.GetObject("TipoRocaP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10833,9 +11063,39 @@ namespace Pokedex.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TipoSiniestroP {
+            get {
+                object obj = ResourceManager.GetObject("TipoSiniestroP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TipoTierra {
             get {
                 object obj = ResourceManager.GetObject("TipoTierra", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TipoTierraP {
+            get {
+                object obj = ResourceManager.GetObject("TipoTierraP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TipoVenenoP {
+            get {
+                object obj = ResourceManager.GetObject("TipoVenenoP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -10856,6 +11116,16 @@ namespace Pokedex.Properties {
         internal static System.Drawing.Bitmap TipoVolador {
             get {
                 object obj = ResourceManager.GetObject("TipoVolador", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TipoVoladorP {
+            get {
+                object obj = ResourceManager.GetObject("TipoVoladorP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

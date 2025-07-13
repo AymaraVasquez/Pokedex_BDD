@@ -16,5 +16,15 @@ namespace Pokedex
         {
             InitializeComponent();
         }
+
+        private void btVolverAtras_Click(object sender, EventArgs e)
+        {
+            Form InicioForm = Application.OpenForms["Pokedexx"];
+            if (InicioForm != null)
+            {
+                InicioForm.Show();
+                this.Hide();
+            }
+        }
     }
 }

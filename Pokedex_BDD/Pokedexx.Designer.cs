@@ -31,10 +31,12 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pokedexx));
             panel3 = new Panel();
+            btVolverAtras = new Button();
             pcbPokedex = new PictureBox();
             btManual = new Button();
             panel1 = new Panel();
             panel15 = new Panel();
+            btRefrescar = new Button();
             btSiguiente = new Button();
             btAtras = new Button();
             panel12 = new Panel();
@@ -42,6 +44,7 @@
             btBuscar = new Button();
             tbBarraBusqueda = new TextBox();
             panel5 = new Panel();
+            btAdd8 = new Button();
             btInfo8 = new Button();
             pbTipo8_1 = new PictureBox();
             Foto8 = new PictureBox();
@@ -49,6 +52,7 @@
             lbNombre8 = new Label();
             lbCodigo8 = new Label();
             panel7 = new Panel();
+            btAdd7 = new Button();
             btInfo7 = new Button();
             pbTipo7_1 = new PictureBox();
             Foto7 = new PictureBox();
@@ -56,6 +60,7 @@
             lbNombre7 = new Label();
             lbCodigo7 = new Label();
             panel9 = new Panel();
+            btAdd6 = new Button();
             btInfo6 = new Button();
             pbTipo6_1 = new PictureBox();
             Foto6 = new PictureBox();
@@ -63,6 +68,7 @@
             lbNombre6 = new Label();
             lbCodigo6 = new Label();
             panel11 = new Panel();
+            btAdd5 = new Button();
             btInfo5 = new Button();
             pbTipo5_1 = new PictureBox();
             Foto5 = new PictureBox();
@@ -70,6 +76,7 @@
             lbCodigo5 = new Label();
             lbNombre5 = new Label();
             panel10 = new Panel();
+            btAdd4 = new Button();
             btInfo4 = new Button();
             pbTipo4_1 = new PictureBox();
             Foto4 = new PictureBox();
@@ -77,6 +84,7 @@
             lbNombre4 = new Label();
             lbCodigo4 = new Label();
             panel8 = new Panel();
+            btAdd3 = new Button();
             btInfo3 = new Button();
             pbTipo3_1 = new PictureBox();
             Foto3 = new PictureBox();
@@ -84,6 +92,7 @@
             lbNombre3 = new Label();
             lbCodigo3 = new Label();
             panel6 = new Panel();
+            btAdd2 = new Button();
             btInfo2 = new Button();
             pbTipo2_1 = new PictureBox();
             Foto2 = new PictureBox();
@@ -91,6 +100,7 @@
             lbNombre2 = new Label();
             lbCodigo2 = new Label();
             panel4 = new Panel();
+            btAdd1 = new Button();
             btInfo1 = new Button();
             pbTipo1_1 = new PictureBox();
             pbTipo1_2 = new PictureBox();
@@ -137,6 +147,19 @@
             toolTip16 = new ToolTip(components);
             toolTip17 = new ToolTip(components);
             toolTip18 = new ToolTip(components);
+            toolTip19 = new ToolTip(components);
+            toolTip20 = new ToolTip(components);
+            toolTip21 = new ToolTip(components);
+            toolTip22 = new ToolTip(components);
+            toolTip23 = new ToolTip(components);
+            toolTip24 = new ToolTip(components);
+            toolTip25 = new ToolTip(components);
+            toolTip26 = new ToolTip(components);
+            toolTip27 = new ToolTip(components);
+            toolTip28 = new ToolTip(components);
+            toolTip29 = new ToolTip(components);
+            toolTip30 = new ToolTip(components);
+            toolTip31 = new ToolTip(components);
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pcbPokedex).BeginInit();
             panel1.SuspendLayout();
@@ -182,17 +205,31 @@
             // panel3
             // 
             panel3.BackColor = Color.Red;
+            panel3.Controls.Add(btVolverAtras);
             panel3.Controls.Add(pcbPokedex);
             panel3.Controls.Add(btManual);
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1118, 64);
+            panel3.Size = new Size(1118, 75);
             panel3.TabIndex = 28;
+            // 
+            // btVolverAtras
+            // 
+            btVolverAtras.BackColor = Color.FromArgb(255, 222, 0);
+            btVolverAtras.FlatStyle = FlatStyle.Flat;
+            btVolverAtras.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btVolverAtras.Location = new Point(23, 17);
+            btVolverAtras.Name = "btVolverAtras";
+            btVolverAtras.Size = new Size(55, 36);
+            btVolverAtras.TabIndex = 31;
+            btVolverAtras.Text = "<<";
+            btVolverAtras.UseVisualStyleBackColor = false;
+            btVolverAtras.Click += btVolverAtras_Click;
             // 
             // pcbPokedex
             // 
             pcbPokedex.Image = (Image)resources.GetObject("pcbPokedex.Image");
-            pcbPokedex.Location = new Point(532, 9);
+            pcbPokedex.Location = new Point(532, 13);
             pcbPokedex.Name = "pcbPokedex";
             pcbPokedex.Size = new Size(94, 50);
             pcbPokedex.SizeMode = PictureBoxSizeMode.Zoom;
@@ -205,7 +242,7 @@
             btManual.BackColor = Color.FromArgb(255, 222, 0);
             btManual.FlatStyle = FlatStyle.Flat;
             btManual.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btManual.Location = new Point(1039, 14);
+            btManual.Location = new Point(1040, 18);
             btManual.Name = "btManual";
             btManual.Size = new Size(38, 36);
             btManual.TabIndex = 30;
@@ -227,29 +264,44 @@
             panel1.Controls.Add(panel6);
             panel1.Controls.Add(panel4);
             panel1.Controls.Add(panel2);
-            panel1.Location = new Point(-9, 62);
+            panel1.Location = new Point(-8, 69);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1120, 629);
+            panel1.Size = new Size(1120, 631);
             panel1.TabIndex = 29;
             // 
             // panel15
             // 
             panel15.BackColor = Color.White;
+            panel15.Controls.Add(btRefrescar);
             panel15.Controls.Add(btSiguiente);
             panel15.Controls.Add(btAtras);
-            panel15.Location = new Point(955, 20);
+            panel15.Location = new Point(852, 19);
             panel15.Name = "panel15";
-            panel15.Size = new Size(131, 61);
+            panel15.Size = new Size(234, 61);
             panel15.TabIndex = 38;
+            // 
+            // btRefrescar
+            // 
+            btRefrescar.BackColor = Color.FromArgb(255, 222, 0);
+            btRefrescar.BackgroundImageLayout = ImageLayout.Stretch;
+            btRefrescar.FlatStyle = FlatStyle.Flat;
+            btRefrescar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btRefrescar.Location = new Point(8, 9);
+            btRefrescar.Name = "btRefrescar";
+            btRefrescar.Size = new Size(93, 44);
+            btRefrescar.TabIndex = 37;
+            btRefrescar.Text = "Refrescar";
+            btRefrescar.UseVisualStyleBackColor = false;
+            btRefrescar.Click += btRefrescar_Click;
             // 
             // btSiguiente
             // 
             btSiguiente.BackColor = Color.FromArgb(255, 222, 0);
             btSiguiente.FlatStyle = FlatStyle.Flat;
             btSiguiente.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btSiguiente.Location = new Point(69, 7);
+            btSiguiente.Location = new Point(169, 9);
             btSiguiente.Name = "btSiguiente";
-            btSiguiente.Size = new Size(57, 47);
+            btSiguiente.Size = new Size(57, 44);
             btSiguiente.TabIndex = 34;
             btSiguiente.Text = ">";
             btSiguiente.UseVisualStyleBackColor = false;
@@ -260,9 +312,9 @@
             btAtras.BackColor = Color.FromArgb(255, 222, 0);
             btAtras.FlatStyle = FlatStyle.Flat;
             btAtras.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btAtras.Location = new Point(7, 7);
+            btAtras.Location = new Point(107, 9);
             btAtras.Name = "btAtras";
-            btAtras.Size = new Size(57, 47);
+            btAtras.Size = new Size(57, 44);
             btAtras.TabIndex = 33;
             btAtras.Text = "<";
             btAtras.UseVisualStyleBackColor = false;
@@ -277,7 +329,7 @@
             panel12.ForeColor = Color.Black;
             panel12.Location = new Point(192, 19);
             panel12.Name = "panel12";
-            panel12.Size = new Size(747, 61);
+            panel12.Size = new Size(654, 61);
             panel12.TabIndex = 37;
             // 
             // label17
@@ -297,7 +349,7 @@
             btBuscar.BackgroundImageLayout = ImageLayout.Stretch;
             btBuscar.FlatStyle = FlatStyle.Flat;
             btBuscar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btBuscar.Location = new Point(658, 9);
+            btBuscar.Location = new Point(563, 9);
             btBuscar.Name = "btBuscar";
             btBuscar.Size = new Size(82, 45);
             btBuscar.TabIndex = 36;
@@ -308,14 +360,16 @@
             // tbBarraBusqueda
             // 
             tbBarraBusqueda.BorderStyle = BorderStyle.None;
-            tbBarraBusqueda.Location = new Point(15, 29);
+            tbBarraBusqueda.Location = new Point(11, 31);
             tbBarraBusqueda.Name = "tbBarraBusqueda";
-            tbBarraBusqueda.Size = new Size(675, 20);
+            tbBarraBusqueda.Size = new Size(546, 20);
             tbBarraBusqueda.TabIndex = 34;
+            tbBarraBusqueda.KeyPress += tbBarraBusqueda_KeyPress;
             // 
             // panel5
             // 
             panel5.BackColor = Color.White;
+            panel5.Controls.Add(btAdd8);
             panel5.Controls.Add(btInfo8);
             panel5.Controls.Add(pbTipo8_1);
             panel5.Controls.Add(Foto8);
@@ -327,6 +381,20 @@
             panel5.Size = new Size(215, 249);
             panel5.TabIndex = 7;
             // 
+            // btAdd8
+            // 
+            btAdd8.BackColor = Color.White;
+            btAdd8.BackgroundImage = Properties.Resources.Mass;
+            btAdd8.BackgroundImageLayout = ImageLayout.Stretch;
+            btAdd8.FlatAppearance.BorderColor = Color.White;
+            btAdd8.FlatStyle = FlatStyle.Flat;
+            btAdd8.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btAdd8.Location = new Point(143, 205);
+            btAdd8.Name = "btAdd8";
+            btAdd8.Size = new Size(28, 28);
+            btAdd8.TabIndex = 63;
+            btAdd8.UseVisualStyleBackColor = false;
+            // 
             // btInfo8
             // 
             btInfo8.BackColor = Color.White;
@@ -335,7 +403,7 @@
             btInfo8.FlatAppearance.BorderColor = Color.White;
             btInfo8.FlatStyle = FlatStyle.Flat;
             btInfo8.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btInfo8.Location = new Point(177, 203);
+            btInfo8.Location = new Point(177, 205);
             btInfo8.Name = "btInfo8";
             btInfo8.Size = new Size(26, 28);
             btInfo8.TabIndex = 60;
@@ -395,6 +463,7 @@
             // panel7
             // 
             panel7.BackColor = Color.White;
+            panel7.Controls.Add(btAdd7);
             panel7.Controls.Add(btInfo7);
             panel7.Controls.Add(pbTipo7_1);
             panel7.Controls.Add(Foto7);
@@ -406,6 +475,20 @@
             panel7.Size = new Size(215, 249);
             panel7.TabIndex = 8;
             // 
+            // btAdd7
+            // 
+            btAdd7.BackColor = Color.White;
+            btAdd7.BackgroundImage = Properties.Resources.Mass;
+            btAdd7.BackgroundImageLayout = ImageLayout.Stretch;
+            btAdd7.FlatAppearance.BorderColor = Color.White;
+            btAdd7.FlatStyle = FlatStyle.Flat;
+            btAdd7.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btAdd7.Location = new Point(141, 205);
+            btAdd7.Name = "btAdd7";
+            btAdd7.Size = new Size(28, 28);
+            btAdd7.TabIndex = 60;
+            btAdd7.UseVisualStyleBackColor = false;
+            // 
             // btInfo7
             // 
             btInfo7.BackColor = Color.White;
@@ -414,7 +497,7 @@
             btInfo7.FlatAppearance.BorderColor = Color.White;
             btInfo7.FlatStyle = FlatStyle.Flat;
             btInfo7.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btInfo7.Location = new Point(175, 203);
+            btInfo7.Location = new Point(175, 204);
             btInfo7.Name = "btInfo7";
             btInfo7.Size = new Size(26, 28);
             btInfo7.TabIndex = 59;
@@ -474,6 +557,7 @@
             // panel9
             // 
             panel9.BackColor = Color.White;
+            panel9.Controls.Add(btAdd6);
             panel9.Controls.Add(btInfo6);
             panel9.Controls.Add(pbTipo6_1);
             panel9.Controls.Add(Foto6);
@@ -484,6 +568,20 @@
             panel9.Name = "panel9";
             panel9.Size = new Size(215, 249);
             panel9.TabIndex = 9;
+            // 
+            // btAdd6
+            // 
+            btAdd6.BackColor = Color.White;
+            btAdd6.BackgroundImage = Properties.Resources.Mass;
+            btAdd6.BackgroundImageLayout = ImageLayout.Stretch;
+            btAdd6.FlatAppearance.BorderColor = Color.White;
+            btAdd6.FlatStyle = FlatStyle.Flat;
+            btAdd6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btAdd6.Location = new Point(142, 205);
+            btAdd6.Name = "btAdd6";
+            btAdd6.Size = new Size(28, 28);
+            btAdd6.TabIndex = 59;
+            btAdd6.UseVisualStyleBackColor = false;
             // 
             // btInfo6
             // 
@@ -553,6 +651,7 @@
             // panel11
             // 
             panel11.BackColor = Color.White;
+            panel11.Controls.Add(btAdd5);
             panel11.Controls.Add(btInfo5);
             panel11.Controls.Add(pbTipo5_1);
             panel11.Controls.Add(Foto5);
@@ -563,6 +662,20 @@
             panel11.Name = "panel11";
             panel11.Size = new Size(215, 249);
             panel11.TabIndex = 6;
+            // 
+            // btAdd5
+            // 
+            btAdd5.BackColor = Color.White;
+            btAdd5.BackgroundImage = Properties.Resources.Mass;
+            btAdd5.BackgroundImageLayout = ImageLayout.Stretch;
+            btAdd5.FlatAppearance.BorderColor = Color.White;
+            btAdd5.FlatStyle = FlatStyle.Flat;
+            btAdd5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btAdd5.Location = new Point(142, 205);
+            btAdd5.Name = "btAdd5";
+            btAdd5.Size = new Size(28, 28);
+            btAdd5.TabIndex = 58;
+            btAdd5.UseVisualStyleBackColor = false;
             // 
             // btInfo5
             // 
@@ -632,6 +745,7 @@
             // panel10
             // 
             panel10.BackColor = Color.White;
+            panel10.Controls.Add(btAdd4);
             panel10.Controls.Add(btInfo4);
             panel10.Controls.Add(pbTipo4_1);
             panel10.Controls.Add(Foto4);
@@ -643,6 +757,20 @@
             panel10.Size = new Size(215, 249);
             panel10.TabIndex = 5;
             // 
+            // btAdd4
+            // 
+            btAdd4.BackColor = Color.White;
+            btAdd4.BackgroundImage = Properties.Resources.Mass;
+            btAdd4.BackgroundImageLayout = ImageLayout.Stretch;
+            btAdd4.FlatAppearance.BorderColor = Color.White;
+            btAdd4.FlatStyle = FlatStyle.Flat;
+            btAdd4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btAdd4.Location = new Point(143, 206);
+            btAdd4.Name = "btAdd4";
+            btAdd4.Size = new Size(28, 28);
+            btAdd4.TabIndex = 62;
+            btAdd4.UseVisualStyleBackColor = false;
+            // 
             // btInfo4
             // 
             btInfo4.BackColor = Color.White;
@@ -651,7 +779,7 @@
             btInfo4.FlatAppearance.BorderColor = Color.White;
             btInfo4.FlatStyle = FlatStyle.Flat;
             btInfo4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btInfo4.Location = new Point(177, 202);
+            btInfo4.Location = new Point(177, 207);
             btInfo4.Name = "btInfo4";
             btInfo4.Size = new Size(26, 28);
             btInfo4.TabIndex = 59;
@@ -711,6 +839,7 @@
             // panel8
             // 
             panel8.BackColor = Color.White;
+            panel8.Controls.Add(btAdd3);
             panel8.Controls.Add(btInfo3);
             panel8.Controls.Add(pbTipo3_1);
             panel8.Controls.Add(Foto3);
@@ -721,6 +850,20 @@
             panel8.Name = "panel8";
             panel8.Size = new Size(215, 249);
             panel8.TabIndex = 5;
+            // 
+            // btAdd3
+            // 
+            btAdd3.BackColor = Color.White;
+            btAdd3.BackgroundImage = Properties.Resources.Mass;
+            btAdd3.BackgroundImageLayout = ImageLayout.Stretch;
+            btAdd3.FlatAppearance.BorderColor = Color.White;
+            btAdd3.FlatStyle = FlatStyle.Flat;
+            btAdd3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btAdd3.Location = new Point(141, 206);
+            btAdd3.Name = "btAdd3";
+            btAdd3.Size = new Size(28, 28);
+            btAdd3.TabIndex = 61;
+            btAdd3.UseVisualStyleBackColor = false;
             // 
             // btInfo3
             // 
@@ -790,6 +933,7 @@
             // panel6
             // 
             panel6.BackColor = Color.White;
+            panel6.Controls.Add(btAdd2);
             panel6.Controls.Add(btInfo2);
             panel6.Controls.Add(pbTipo2_1);
             panel6.Controls.Add(Foto2);
@@ -800,6 +944,20 @@
             panel6.Name = "panel6";
             panel6.Size = new Size(215, 249);
             panel6.TabIndex = 5;
+            // 
+            // btAdd2
+            // 
+            btAdd2.BackColor = Color.White;
+            btAdd2.BackgroundImage = Properties.Resources.Mass;
+            btAdd2.BackgroundImageLayout = ImageLayout.Stretch;
+            btAdd2.FlatAppearance.BorderColor = Color.White;
+            btAdd2.FlatStyle = FlatStyle.Flat;
+            btAdd2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btAdd2.Location = new Point(142, 206);
+            btAdd2.Name = "btAdd2";
+            btAdd2.Size = new Size(28, 28);
+            btAdd2.TabIndex = 58;
+            btAdd2.UseVisualStyleBackColor = false;
             // 
             // btInfo2
             // 
@@ -869,6 +1027,7 @@
             // panel4
             // 
             panel4.BackColor = Color.White;
+            panel4.Controls.Add(btAdd1);
             panel4.Controls.Add(btInfo1);
             panel4.Controls.Add(pbTipo1_1);
             panel4.Controls.Add(pbTipo1_2);
@@ -879,6 +1038,20 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(215, 249);
             panel4.TabIndex = 3;
+            // 
+            // btAdd1
+            // 
+            btAdd1.BackColor = Color.White;
+            btAdd1.BackgroundImage = Properties.Resources.Mass;
+            btAdd1.BackgroundImageLayout = ImageLayout.Stretch;
+            btAdd1.FlatAppearance.BorderColor = Color.White;
+            btAdd1.FlatStyle = FlatStyle.Flat;
+            btAdd1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btAdd1.Location = new Point(142, 206);
+            btAdd1.Name = "btAdd1";
+            btAdd1.Size = new Size(28, 28);
+            btAdd1.TabIndex = 57;
+            btAdd1.UseVisualStyleBackColor = false;
             // 
             // btInfo1
             // 
@@ -950,7 +1123,7 @@
             panel2.BackColor = Color.FromArgb(204, 0, 0);
             panel2.Controls.Add(panel14);
             panel2.Controls.Add(panel13);
-            panel2.Location = new Point(2, 0);
+            panel2.Location = new Point(2, -1);
             panel2.Name = "panel2";
             panel2.Size = new Size(186, 640);
             panel2.TabIndex = 0;
@@ -1275,7 +1448,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1098, 691);
+            ClientSize = new Size(1098, 697);
             Controls.Add(panel1);
             Controls.Add(panel3);
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -1447,5 +1620,28 @@
         private PictureBox pbTipo5_2;
         private Label lbCodigo5;
         private Label lbNombre5;
+        private Button btVolverAtras;
+        private ToolTip toolTip19;
+        private ToolTip toolTip20;
+        private ToolTip toolTip21;
+        private ToolTip toolTip22;
+        private Button btRefrescar;
+        private Button btAdd8;
+        private Button btAdd7;
+        private Button btAdd6;
+        private Button btAdd5;
+        private Button btAdd4;
+        private Button btAdd3;
+        private Button btAdd2;
+        private Button btAdd1;
+        private ToolTip toolTip23;
+        private ToolTip toolTip24;
+        private ToolTip toolTip25;
+        private ToolTip toolTip26;
+        private ToolTip toolTip27;
+        private ToolTip toolTip28;
+        private ToolTip toolTip29;
+        private ToolTip toolTip30;
+        private ToolTip toolTip31;
     }
 }

@@ -54,26 +54,41 @@ namespace Pokedex
             }
             else
             {
-                MessageBox.Show("Usuario o Contraseña Invalidos", "Advertencia", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("Usuario o Contraseña Invalidos", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
-        private void btVerPass_Click(object sender, EventArgs e)
+
+        private void checkContrasena_CheckedChanged(object sender, EventArgs e)
         {
-            if (verPass == 0)
+            if (checkContrasena.Checked == true)
             {
                 tbPass.UseSystemPasswordChar = false;
-                lbVerPass.Text = "Ocultar Contraseña";
-                verPass = 1;
+                checkContrasena.Text = "Ocultar Contraseña";
                 tbPass.PasswordChar = '\0';
             }
             else
             {
                 tbPass.UseSystemPasswordChar = true;
-                lbVerPass.Text = "Ver Contraseña";
-                verPass = 0;
+                checkContrasena.Text = "Ver Contraseña";
                 tbPass.PasswordChar = '*';
             }
+        }
+
+        private void tbNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(Char.IsLetter(e.KeyChar) || (Char.IsControl(e.KeyChar))))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void linkContrasena_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            RecuperarContrasena recupContrasenaForm = new RecuperarContrasena();
+            recupContrasenaForm.ShowDialog();
+            this.Show();
         }
     }
 }

@@ -107,6 +107,7 @@
             panel24 = new Panel();
             btElim3_1 = new Button();
             Foto3_1 = new PictureBox();
+            button1 = new Button();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pcbPokedex).BeginInit();
             paEquipo1.SuspendLayout();
@@ -156,6 +157,7 @@
             // panel3
             // 
             panel3.BackColor = Color.Red;
+            panel3.Controls.Add(button1);
             panel3.Controls.Add(pcbPokedex);
             panel3.Controls.Add(btManual);
             panel3.Location = new Point(1, 2);
@@ -166,7 +168,7 @@
             // pcbPokedex
             // 
             pcbPokedex.Image = (Image)resources.GetObject("pcbPokedex.Image");
-            pcbPokedex.Location = new Point(545, 10);
+            pcbPokedex.Location = new Point(546, 8);
             pcbPokedex.Name = "pcbPokedex";
             pcbPokedex.Size = new Size(94, 50);
             pcbPokedex.SizeMode = PictureBoxSizeMode.Zoom;
@@ -178,7 +180,7 @@
             btManual.BackColor = Color.FromArgb(255, 222, 0);
             btManual.FlatStyle = FlatStyle.Flat;
             btManual.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btManual.Location = new Point(1099, 13);
+            btManual.Location = new Point(1070, 14);
             btManual.Name = "btManual";
             btManual.Size = new Size(38, 36);
             btManual.TabIndex = 31;
@@ -211,7 +213,7 @@
             paEquipo1.Controls.Add(panel5);
             paEquipo1.Controls.Add(btAnadir);
             paEquipo1.Controls.Add(panel4);
-            paEquipo1.Location = new Point(33, 86);
+            paEquipo1.Location = new Point(21, 85);
             paEquipo1.Name = "paEquipo1";
             paEquipo1.Size = new Size(1088, 183);
             paEquipo1.TabIndex = 41;
@@ -477,7 +479,7 @@
             panel8.BackColor = Color.White;
             panel8.Controls.Add(btFav1);
             panel8.Controls.Add(lbEquipo1);
-            panel8.Location = new Point(33, 86);
+            panel8.Location = new Point(21, 85);
             panel8.Name = "panel8";
             panel8.Size = new Size(1088, 36);
             panel8.TabIndex = 32;
@@ -509,7 +511,7 @@
             panel1.Controls.Add(panel14);
             panel1.Controls.Add(btAnadir2);
             panel1.Controls.Add(panel15);
-            panel1.Location = new Point(33, 286);
+            panel1.Location = new Point(21, 285);
             panel1.Name = "panel1";
             panel1.Size = new Size(1088, 183);
             panel1.TabIndex = 61;
@@ -777,7 +779,7 @@
             panel16.BackColor = Color.White;
             panel16.Controls.Add(btFav2);
             panel16.Controls.Add(lbEquipo2);
-            panel16.Location = new Point(34, 286);
+            panel16.Location = new Point(22, 285);
             panel16.Name = "panel16";
             panel16.Size = new Size(1085, 36);
             panel16.TabIndex = 43;
@@ -814,7 +816,7 @@
             panel17.BackColor = Color.White;
             panel17.Controls.Add(btFav3);
             panel17.Controls.Add(lbEquipo3);
-            panel17.Location = new Point(33, 486);
+            panel17.Location = new Point(21, 485);
             panel17.Name = "panel17";
             panel17.Size = new Size(1085, 36);
             panel17.TabIndex = 62;
@@ -858,7 +860,7 @@
             panel18.Controls.Add(panel23);
             panel18.Controls.Add(btAnadir3);
             panel18.Controls.Add(panel24);
-            panel18.Location = new Point(32, 486);
+            panel18.Location = new Point(20, 485);
             panel18.Name = "panel18";
             panel18.Size = new Size(1088, 183);
             panel18.TabIndex = 63;
@@ -1121,12 +1123,24 @@
             Foto3_1.TabIndex = 0;
             Foto3_1.TabStop = false;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(255, 222, 0);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(21, 14);
+            button1.Name = "button1";
+            button1.Size = new Size(55, 36);
+            button1.TabIndex = 64;
+            button1.Text = "<<";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // CrearEquipos
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(204, 0, 0);
-            ClientSize = new Size(1151, 689);
+            ClientSize = new Size(1126, 689);
             Controls.Add(panel17);
             Controls.Add(panel18);
             Controls.Add(panel16);
@@ -1135,7 +1149,9 @@
             Controls.Add(paEquipo1);
             Controls.Add(panel3);
             ForeColor = Color.FromArgb(128, 64, 0);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "CrearEquipos";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CrearEquipos";
@@ -1269,5 +1285,6 @@
         private Button btFav1;
         private Button btFav2;
         private Button btFav3;
+        private Button button1;
     }
 }

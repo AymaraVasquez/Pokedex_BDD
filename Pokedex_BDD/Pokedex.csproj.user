@@ -19,6 +19,12 @@
     <Compile Update="Pokedexx.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="RecuperarContrasena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RegistroExitoso.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Stats.cs">
       <SubType>Form</SubType>
     </Compile>

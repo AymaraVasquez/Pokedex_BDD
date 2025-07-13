@@ -40,5 +40,17 @@ namespace Pokedex
             ManualDeUsuario manualForm = new ManualDeUsuario();
             manualForm.ShowDialog();
         }
+
+        
+
+        private void btVolverAtras_Click(object sender, EventArgs e)
+        {
+            Form InicioForm = Application.OpenForms["InicioDeSesion"];
+            if (InicioForm != null)
+            {
+                InicioForm.Show();
+                this.Hide();
+            }
+        }
     }
 }

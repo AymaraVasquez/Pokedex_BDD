@@ -1,5 +1,4 @@
-﻿using CargarBDDPokemon;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CargarBDDPokemon;
 using MySql.Data.MySqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Pokedex
 {
@@ -20,21 +21,7 @@ namespace Pokedex
         public RegistroDeUsuarios()
         {
             InitializeComponent();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RegistroDeUsuarios_Load(object sender, EventArgs e)
-        {
-
+            toolTip1.SetToolTip(this.btAtras, "Volver al Inicio");
         }
 
         private void btCrearUsu_Click(object sender, EventArgs e)
@@ -63,7 +50,7 @@ namespace Pokedex
                 Conexion.desconectar();
                 if (count > 0)
                 {
-                    MessageBox.Show("El usuario ya existe. Por favor, elija otro nombre de usuario.","Advertencia" ,MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("El usuario ya existe. Por favor, elija otro nombre de usuario.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 Conexion.conectar();
@@ -76,17 +63,20 @@ namespace Pokedex
                 try
                 {
                     comando.ExecuteNonQuery();
-                    MessageBox.Show("Usuario creado exitosamente.", "Registros", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    RegistroExitoso registrExiForm = new RegistroExitoso();
+                    registrExiForm.ShowDialog();
+                    this.Close();
+
                     this.Close();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error al crear el usuario: " + ex.Message, "Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBox.Show("Error al crear el usuario: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 Conexion.desconectar();
-                
+
                 Conexion.conectar();
-                string query2 = "SELECT id_usuario from usuarios where usuario = '"+tbUsu.Text+"'"; // Obtener el último ID insertado
+                string query2 = "SELECT id_usuario from usuarios where usuario = '" + tbUsu.Text + "'"; // Obtener el último ID insertado
                 MySqlCommand comando3 = new MySqlCommand(query2, Conex.Coneccion);
                 Conex.Lector = comando3.ExecuteReader();
                 int contador = 0;
@@ -99,10 +89,10 @@ namespace Pokedex
                 Conexion.conectar();
                 MySqlCommand comando2 = new MySqlCommand(query2, Conex.Coneccion);
                 int lastId = Convert.ToInt32(comando2.ExecuteScalar()); // Ejecutar el comando y obtener el ID
-                for (int i =1; i<4; i++)
+                for (int i = 1; i < 4; i++)
                 {
                     Conexion.conectar();
-                    string query1 = "INSERT INTO `equipos`(`id_equipo`, `id_usuario`, `es_favorito`) VALUES ("+contador.ToString()+i.ToString()+","+contador.ToString()+" ,0)";
+                    string query1 = "INSERT INTO `equipos`(`id_equipo`, `id_usuario`, `es_favorito`) VALUES (" + contador.ToString() + i.ToString() + "," + contador.ToString() + " ,0)";
                     MySqlCommand comando1 = new MySqlCommand(query1, Conex.Coneccion);
                     comando1.ExecuteNonQuery();
                     Conexion.desconectar();
@@ -127,38 +117,72 @@ namespace Pokedex
             switch (numericUpDown1.Value)
             {
                 case 0:
-                    //pbFotoUsu.Image = Properties.Resources.foto1;
+                    pbFotoUsu.Image = Properties.Resources.ashicon_removebg_preview;
                     break;
                 case 1:
-                    //pbFotoUsu.Image = Properties.Resources.foto2;
+                    pbFotoUsu.Image = Properties.Resources.IconIsa;
                     break;
                 case 2:
-                    //pbFotoUsu.Image = Properties.Resources.foto3;
+                    pbFotoUsu.Image = Properties.Resources.IconGabo;
                     break;
                 case 3:
-                    //pbFotoUsu.Image = Properties.Resources.foto4;
+                    pbFotoUsu.Image = Properties.Resources.IconSergio;
                     break;
                 case 4:
-                    //pbFotoUsu.Image = Properties.Resources.foto5;
+                    pbFotoUsu.Image = Properties.Resources.IconAyma;
                     break;
             }
         }
 
-        private void btVerPass_Click(object sender, EventArgs e)
+        private void checkContrasena_CheckedChanged(object sender, EventArgs e)
         {
-            if (verPass == 0)
+            if (checkContrasena.Checked == true)
             {
                 tbPass.UseSystemPasswordChar = false;
-                lbVerPass.Text = "Ocultar Contraseña";
-                verPass = 1;
-                tbPass.PasswordChar = '\0'; 
+                checkContrasena.Text = "Ocultar Contraseña";
+                tbPass.PasswordChar = '\0';
             }
             else
             {
                 tbPass.UseSystemPasswordChar = true;
-                lbVerPass.Text = "Ver Contraseña";
-                verPass = 0;
+                checkContrasena.Text = "Ver Contraseña";
                 tbPass.PasswordChar = '*';
+            }
+        }
+
+        private void tbNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(Char.IsLetter(e.KeyChar) || Char.IsControl(e.KeyChar) || e.KeyChar == ' '))
+            {
+                e.Handled = true;
+            }
+
+        }
+
+        private void tbUsu_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(Char.IsLetter(e.KeyChar) || (Char.IsControl(e.KeyChar))))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbRecuperacion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(Char.IsLetter(e.KeyChar) || Char.IsControl(e.KeyChar) || e.KeyChar == ' '))
+            {
+                e.Handled = true;
+            }
+
+        }
+
+        private void btAtras_Click(object sender, EventArgs e)
+        {
+            Form InicioForm = Application.OpenForms["InicioDeSesion"];
+            if (InicioForm != null)
+            {
+                InicioForm.Show();
+                this.Hide();
             }
         }
     }
