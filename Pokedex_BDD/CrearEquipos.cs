@@ -31,7 +31,7 @@ namespace Pokedex
         public CrearEquipos()
         {
             InitializeComponent();
-            
+
 
         }
         public static bool anadirPokemon;
@@ -66,13 +66,48 @@ namespace Pokedex
                         comando1.ExecuteNonQuery();
                         Conexion.desconectar();
                         SesionIniciada.idPokeAniadir = 0;
+
+                        ReestablecerEquipos();
+                        Conexion.conectar();
+                        string consulta = "SELECT po.url_img, po.id_poke, equi.id_equipo from rela_equipos_pokes rela join pokedex_normal po on rela.id_poke = po.id_poke join equipos equi on rela.id_equipo = equi.id_equipo where equi.id_usuario = " + SesionIniciada.IdUsuario;
+                        MySqlCommand comando3 = new MySqlCommand(consulta, Conex.Coneccion);
+                        Conex.Lector = comando3.ExecuteReader();
+                        int contadore1 = 0;
+                        int contadore2 = 0;
+                        int contadore3 = 0;
+                        while (Conex.Lector.Read())
+                        {
+                            char[] strings = Conex.Lector[2].ToString().ToCharArray();
+                            int equipo = Convert.ToInt32(strings[1].ToString());
+                            switch (equipo)
+                            {
+                                case 1:
+                                    Equipo1[contadore1].imagen = BuscarImagen.DeStringAImage(Conex.Lector[1].ToString());
+                                    Equipo1[contadore1].id = Convert.ToInt32(Conex.Lector[1].ToString());
+                                    contadore1++;
+                                    break;
+                                case 2:
+                                    Equipo2[contadore2].imagen = BuscarImagen.DeStringAImage(Conex.Lector[1].ToString());
+                                    Equipo2[contadore1].id = Convert.ToInt32(Conex.Lector[1].ToString());
+                                    contadore2++;
+                                    break;
+                                case 3:
+                                    Equipo3[contadore2].imagen = BuscarImagen.DeStringAImage(Conex.Lector[1].ToString());
+                                    Equipo3[contadore1].id = Convert.ToInt32(Conex.Lector[1].ToString());
+                                    contadore3++;
+                                    break;
+                            }
+                        }
+                        Conexion.desconectar();
+                        CargarImagenes();
+
+
                         return;
                     }
                 }
                 MessageBox.Show("No se pueden añadir mas de 6 pokemons a un equipo", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 SesionIniciada.idPokeAniadir = 0;
             }
-            CargarImagenes();
         }
 
 
@@ -126,13 +161,48 @@ namespace Pokedex
                         comando1.ExecuteNonQuery();
                         Conexion.desconectar();
                         SesionIniciada.idPokeAniadir = 0;
+
+                        ReestablecerEquipos();
+                        Conexion.conectar();
+                        string consulta = "SELECT po.url_img, po.id_poke, equi.id_equipo from rela_equipos_pokes rela join pokedex_normal po on rela.id_poke = po.id_poke join equipos equi on rela.id_equipo = equi.id_equipo where equi.id_usuario = " + SesionIniciada.IdUsuario;
+                        MySqlCommand comando3 = new MySqlCommand(consulta, Conex.Coneccion);
+                        Conex.Lector = comando3.ExecuteReader();
+                        int contadore1 = 0;
+                        int contadore2 = 0;
+                        int contadore3 = 0;
+                        while (Conex.Lector.Read())
+                        {
+                            char[] strings = Conex.Lector[2].ToString().ToCharArray();
+                            int equipo = Convert.ToInt32(strings[1].ToString());
+                            switch (equipo)
+                            {
+                                case 1:
+                                    Equipo1[contadore1].imagen = BuscarImagen.DeStringAImage(Conex.Lector[1].ToString());
+                                    Equipo1[contadore1].id = Convert.ToInt32(Conex.Lector[1].ToString());
+                                    contadore1++;
+                                    break;
+                                case 2:
+                                    Equipo2[contadore2].imagen = BuscarImagen.DeStringAImage(Conex.Lector[1].ToString());
+                                    Equipo2[contadore1].id = Convert.ToInt32(Conex.Lector[1].ToString());
+                                    contadore2++;
+                                    break;
+                                case 3:
+                                    Equipo3[contadore2].imagen = BuscarImagen.DeStringAImage(Conex.Lector[1].ToString());
+                                    Equipo3[contadore1].id = Convert.ToInt32(Conex.Lector[1].ToString());
+                                    contadore3++;
+                                    break;
+                            }
+                        }
+                        Conexion.desconectar();
+                        CargarImagenes();
+
                         return;
                     }
                 }
                 MessageBox.Show("No se pueden añadir mas de 6 pokemons a un equipo", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 SesionIniciada.idPokeAniadir = 0;
             }
-            CargarImagenes();
+            
         }
 
         private void btEditar2_Click(object sender, EventArgs e)
@@ -185,13 +255,45 @@ namespace Pokedex
                         comando1.ExecuteNonQuery();
                         Conexion.desconectar();
                         SesionIniciada.idPokeAniadir = 0;
+                        ReestablecerEquipos();
+                        Conexion.conectar();
+                        string consulta = "SELECT po.url_img, po.id_poke, equi.id_equipo from rela_equipos_pokes rela join pokedex_normal po on rela.id_poke = po.id_poke join equipos equi on rela.id_equipo = equi.id_equipo where equi.id_usuario = " + SesionIniciada.IdUsuario;
+                        MySqlCommand comando3 = new MySqlCommand(consulta, Conex.Coneccion);
+                        Conex.Lector = comando3.ExecuteReader();
+                        int contadore1 = 0;
+                        int contadore2 = 0;
+                        int contadore3 = 0;
+                        while (Conex.Lector.Read())
+                        {
+                            char[] strings = Conex.Lector[2].ToString().ToCharArray();
+                            int equipo = Convert.ToInt32(strings[1].ToString());
+                            switch (equipo)
+                            {
+                                case 1:
+                                    Equipo1[contadore1].imagen = BuscarImagen.DeStringAImage(Conex.Lector[1].ToString());
+                                    Equipo1[contadore1].id = Convert.ToInt32(Conex.Lector[1].ToString());
+                                    contadore1++;
+                                    break;
+                                case 2:
+                                    Equipo2[contadore2].imagen = BuscarImagen.DeStringAImage(Conex.Lector[1].ToString());
+                                    Equipo2[contadore1].id = Convert.ToInt32(Conex.Lector[1].ToString());
+                                    contadore2++;
+                                    break;
+                                case 3:
+                                    Equipo3[contadore2].imagen = BuscarImagen.DeStringAImage(Conex.Lector[1].ToString());
+                                    Equipo3[contadore1].id = Convert.ToInt32(Conex.Lector[1].ToString());
+                                    contadore3++;
+                                    break;
+                            }
+                        }
+                        Conexion.desconectar();
+                        CargarImagenes();
                         return;
                     }
                 }
                 MessageBox.Show("No se pueden añadir mas de 6 pokemons a un equipo", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 SesionIniciada.idPokeAniadir = 0;
             }
-            CargarImagenes();
         }
 
         private void btEditar3_Click(object sender, EventArgs e)
@@ -229,6 +331,12 @@ namespace Pokedex
                 comando.ExecuteNonQuery();
                 Conexion.desconectar();
                 Equipo1 = new PokemonVer[6];
+                Equipo1[0] = new PokemonVer();
+                Equipo1[1] = new PokemonVer();
+                Equipo1[2] = new PokemonVer();
+                Equipo1[3] = new PokemonVer();
+                Equipo1[4] = new PokemonVer();
+                Equipo1[5] = new PokemonVer();
                 CargarImagenes();
             }
             else
@@ -248,6 +356,12 @@ namespace Pokedex
                 comando.ExecuteNonQuery();
                 Conexion.desconectar();
                 Equipo2 = new PokemonVer[6];
+                Equipo2[0] = new PokemonVer();
+                Equipo2[1] = new PokemonVer();
+                Equipo2[2] = new PokemonVer();
+                Equipo2[3] = new PokemonVer();
+                Equipo2[4] = new PokemonVer();
+                Equipo2[5] = new PokemonVer();
                 CargarImagenes();
             }
             else
@@ -267,6 +381,12 @@ namespace Pokedex
                 comando.ExecuteNonQuery();
                 Conexion.desconectar();
                 Equipo3 = new PokemonVer[6];
+                Equipo3[0] = new PokemonVer();
+                Equipo3[1] = new PokemonVer();
+                Equipo3[2] = new PokemonVer();
+                Equipo3[3] = new PokemonVer();
+                Equipo3[4] = new PokemonVer();
+                Equipo3[5] = new PokemonVer();
                 CargarImagenes();
             }
             else
@@ -452,75 +572,147 @@ namespace Pokedex
             {
                 Foto1_1.Image = Equipo1[0].imagen;
             }
+            else
+            {
+                Foto1_1.Image = Resources.pokebola;
+            }
             if (Equipo1[1].imagen != null)
             {
                 Foto1_2.Image = Equipo1[1].imagen;
+            }
+            else
+            {
+                Foto1_2.Image = Resources.pokebola;
             }
             if (Equipo1[2].imagen != null)
             {
                 Foto1_3.Image = Equipo1[2].imagen;
             }
+            else
+            {
+                Foto1_3.Image = Resources.pokebola;
+            }
             if (Equipo1[3].imagen != null)
             {
                 Foto1_4.Image = Equipo1[3].imagen;
+            }
+            else
+            {
+                Foto1_4.Image = Resources.pokebola;
             }
             if (Equipo1[4].imagen != null)
             {
                 Foto1_5.Image = Equipo1[4].imagen;
             }
+            else
+            {
+                Foto1_5.Image = Resources.pokebola;
+            }
             if (Equipo1[5].imagen != null)
             {
                 Foto1_6.Image = Equipo1[5].imagen;
+            }
+            else
+            {
+                Foto1_6.Image = Resources.pokebola;
             }
 
             if (Equipo2[0].imagen != null)
             {
                 Foto2_1.Image = Equipo2[0].imagen;
             }
+            else
+            {
+                Foto2_1.Image = Resources.pokebola;
+            }
             if (Equipo2[1].imagen != null)
             {
                 Foto2_2.Image = Equipo2[1].imagen;
+            }
+            else
+            {
+                Foto2_2.Image = Resources.pokebola;
             }
             if (Equipo2[2].imagen != null)
             {
                 Foto2_3.Image = Equipo2[2].imagen;
             }
+            else
+            {
+                Foto2_3.Image = Resources.pokebola;
+            }
             if (Equipo2[3].imagen != null)
             {
                 Foto2_4.Image = Equipo2[3].imagen;
+            }
+            else
+            {
+                Foto2_4.Image = Resources.pokebola;
             }
             if (Equipo2[4].imagen != null)
             {
                 Foto2_5.Image = Equipo2[4].imagen;
             }
+            else
+            {
+                Foto2_5.Image = Resources.pokebola;
+            }
             if (Equipo2[5].imagen != null)
             {
                 Foto2_6.Image = Equipo2[5].imagen;
+            }
+            else
+            {
+                Foto2_6.Image = Resources.pokebola;
             }
 
             if (Equipo3[0].imagen != null)
             {
                 Foto3_1.Image = Equipo3[0].imagen;
             }
+            else
+            {
+                Foto3_1.Image = Resources.pokebola;
+            }
             if (Equipo3[1].imagen != null)
             {
                 Foto3_2.Image = Equipo3[1].imagen;
+            }
+            else
+            {
+                Foto3_2.Image = Resources.pokebola;
             }
             if (Equipo3[2].imagen != null)
             {
                 Foto3_3.Image = Equipo3[2].imagen;
             }
+            else
+            {
+                Foto3_3.Image = Resources.pokebola;
+            }
             if (Equipo3[3].imagen != null)
             {
                 Foto3_4.Image = Equipo3[3].imagen;
+            }
+            else
+            {
+                Foto3_4.Image = Resources.pokebola;
             }
             if (Equipo3[4].imagen != null)
             {
                 Foto3_5.Image = Equipo3[4].imagen;
             }
+            else
+            {
+                Foto3_5.Image = Resources.pokebola;
+            }
             if (Equipo3[5].imagen != null)
             {
                 Foto3_6.Image = Equipo3[5].imagen;
+            }
+            else
+            {
+                Foto3_6.Image = Resources.pokebola;
             }
         }
 
@@ -863,6 +1055,16 @@ namespace Pokedex
                 InicioForm.Show();
                 this.Hide();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btManual_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

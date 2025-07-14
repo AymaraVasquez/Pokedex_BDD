@@ -55,7 +55,7 @@ namespace Pokedex
             toolTip18.SetToolTip(this.btVolador, "Tipo Volador");
 
             // Imagenes og
-            imagenesOg[btAcero] = Properties.Resources. TipoAcero;
+            imagenesOg[btAcero] = Properties.Resources.TipoAcero;
             imagenesOg[btAgua] = Properties.Resources.TipoAgua;
             imagenesOg[btBicho] = Properties.Resources.TipoBicho;
             imagenesOg[btDragon] = Properties.Resources.TipoDragon;
@@ -93,7 +93,7 @@ namespace Pokedex
             imagenesCk[btTierra] = Properties.Resources.TipoTierraP;
             imagenesCk[btVenenoso] = Properties.Resources.TipoVenenoP;
             imagenesCk[btVolador] = Properties.Resources.TipoVoladorP;
-           
+
             btAcero.Click += Button_Click;
             btAgua.Click += Button_Click;
             btBicho.Click += Button_Click;
@@ -113,7 +113,7 @@ namespace Pokedex
             btVenenoso.Click += Button_Click;
             btVolador.Click += Button_Click;
 
-            
+
 
             PokemonsAVer[0] = new PokemonVer();
             PokemonsAVer[1] = new PokemonVer();
@@ -134,7 +134,7 @@ namespace Pokedex
             botonesClick.Add(btn);
             contadorClicks++;
 
-            
+
             if (contadorClicks > 2)
             {
                 foreach (var foticop in imagenesOg)
@@ -406,7 +406,7 @@ namespace Pokedex
                 pbTipo2_1.Image = Properties.Resources.questi;
                 pbTipo2_2.Image = Properties.Resources.questi;
                 btInfo2.Visible = false;
-               
+
                 if (CrearEquipos.anadirPokemonn == true)
                 {
                     btAdd2.Visible = true;
@@ -424,7 +424,7 @@ namespace Pokedex
                 pbTipo2_1.Image = PokemonsAVer[1].Tipo1;
                 pbTipo2_2.Image = PokemonsAVer[1].Tipo2;
                 btInfo2.Visible = true;
-               
+
                 if (CrearEquipos.anadirPokemonn == true)
                 {
                     btAdd2.Visible = true;
@@ -452,7 +452,7 @@ namespace Pokedex
                 pbTipo3_1.Image = Properties.Resources.questi;
                 pbTipo3_2.Image = Properties.Resources.questi;
                 btInfo3.Visible = false;
-                
+
                 if (CrearEquipos.anadirPokemonn == true)
                 {
                     btAdd3.Visible = true;
@@ -1255,13 +1255,61 @@ namespace Pokedex
             refrescar();
         }
 
-      
+
         private void tbBarraBusqueda_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!(Char.IsLetter(e.KeyChar) || Char.IsControl(e.KeyChar) || e.KeyChar == ' '))
             {
                 e.Handled = true;
             }
+        }
+
+        private void btAdd1_Click(object sender, EventArgs e)
+        {
+            SesionIniciada.idPokeAniadir = PokemonsAVer[0].id;
+            this.Close();
+        }
+
+        private void btAdd2_Click(object sender, EventArgs e)
+        {
+            SesionIniciada.idPokeAniadir = PokemonsAVer[1].id;
+            this.Close();
+        }
+
+        private void btAdd3_Click(object sender, EventArgs e)
+        {
+            SesionIniciada.idPokeAniadir = PokemonsAVer[2].id;
+            this.Close();
+        }
+
+        private void btAdd4_Click(object sender, EventArgs e)
+        {
+            SesionIniciada.idPokeAniadir = PokemonsAVer[3].id;
+            this.Close();
+        }
+
+        private void btAdd5_Click(object sender, EventArgs e)
+        {
+            SesionIniciada.idPokeAniadir = PokemonsAVer[4].id;
+            this.Close();
+        }
+
+        private void btAdd6_Click(object sender, EventArgs e)
+        {
+            SesionIniciada.idPokeAniadir = PokemonsAVer[5].id;
+            this.Close();
+        }
+
+        private void btAdd7_Click(object sender, EventArgs e)
+        {
+            SesionIniciada.idPokeAniadir = PokemonsAVer[6].id;
+            this.Close();
+        }
+
+        private void btAdd8_Click(object sender, EventArgs e)
+        {
+            SesionIniciada.idPokeAniadir = PokemonsAVer[7].id;
+            this.Close();
         }
     }
 

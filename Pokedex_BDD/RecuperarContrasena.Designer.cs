@@ -33,6 +33,8 @@
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
             panel1 = new Panel();
+            lbNombreUsuario = new Label();
+            tbNombreUsuario = new TextBox();
             checkVer2 = new CheckBox();
             label3 = new Label();
             tbConfirmacion = new TextBox();
@@ -77,6 +79,8 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(204, 0, 0);
+            panel1.Controls.Add(lbNombreUsuario);
+            panel1.Controls.Add(tbNombreUsuario);
             panel1.Controls.Add(checkVer2);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(tbConfirmacion);
@@ -91,12 +95,30 @@
             panel1.Size = new Size(370, 440);
             panel1.TabIndex = 4;
             // 
+            // lbNombreUsuario
+            // 
+            lbNombreUsuario.AutoSize = true;
+            lbNombreUsuario.BackColor = Color.FromArgb(204, 0, 0);
+            lbNombreUsuario.ForeColor = Color.White;
+            lbNombreUsuario.Location = new Point(38, 22);
+            lbNombreUsuario.Name = "lbNombreUsuario";
+            lbNombreUsuario.Size = new Size(209, 20);
+            lbNombreUsuario.TabIndex = 31;
+            lbNombreUsuario.Text = "Ingrese su nombre de Usuario:";
+            // 
+            // tbNombreUsuario
+            // 
+            tbNombreUsuario.Location = new Point(40, 53);
+            tbNombreUsuario.Name = "tbNombreUsuario";
+            tbNombreUsuario.Size = new Size(302, 27);
+            tbNombreUsuario.TabIndex = 30;
+            // 
             // checkVer2
             // 
             checkVer2.AutoSize = true;
             checkVer2.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             checkVer2.ForeColor = Color.White;
-            checkVer2.Location = new Point(38, 272);
+            checkVer2.Location = new Point(40, 336);
             checkVer2.Name = "checkVer2";
             checkVer2.Size = new Size(117, 21);
             checkVer2.TabIndex = 29;
@@ -108,7 +130,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.FromArgb(204, 0, 0);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(32, 207);
+            label3.Location = new Point(34, 271);
             label3.Name = "label3";
             label3.Size = new Size(207, 20);
             label3.TabIndex = 28;
@@ -116,8 +138,7 @@
             // 
             // tbConfirmacion
             // 
-            tbConfirmacion.Enabled = false;
-            tbConfirmacion.Location = new Point(35, 237);
+            tbConfirmacion.Location = new Point(37, 301);
             tbConfirmacion.Name = "tbConfirmacion";
             tbConfirmacion.PasswordChar = '*';
             tbConfirmacion.Size = new Size(304, 27);
@@ -129,7 +150,7 @@
             checkContrasena.AutoSize = true;
             checkContrasena.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             checkContrasena.ForeColor = Color.White;
-            checkContrasena.Location = new Point(40, 172);
+            checkContrasena.Location = new Point(42, 236);
             checkContrasena.Name = "checkContrasena";
             checkContrasena.Size = new Size(117, 21);
             checkContrasena.TabIndex = 26;
@@ -141,7 +162,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.FromArgb(204, 0, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(37, 29);
+            label2.Location = new Point(39, 93);
             label2.Name = "label2";
             label2.Size = new Size(222, 20);
             label2.TabIndex = 12;
@@ -149,7 +170,7 @@
             // 
             // tbFraseRecup
             // 
-            tbFraseRecup.Location = new Point(39, 60);
+            tbFraseRecup.Location = new Point(41, 124);
             tbFraseRecup.Name = "tbFraseRecup";
             tbFraseRecup.Size = new Size(302, 27);
             tbFraseRecup.TabIndex = 11;
@@ -160,7 +181,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.FromArgb(204, 0, 0);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(34, 107);
+            label4.Location = new Point(36, 171);
             label4.Name = "label4";
             label4.Size = new Size(194, 20);
             label4.TabIndex = 7;
@@ -168,8 +189,7 @@
             // 
             // tbPass
             // 
-            tbPass.Enabled = false;
-            tbPass.Location = new Point(37, 137);
+            tbPass.Location = new Point(39, 201);
             tbPass.Name = "tbPass";
             tbPass.PasswordChar = '*';
             tbPass.Size = new Size(304, 27);
@@ -201,6 +221,7 @@
             btCambiarCont.TabIndex = 8;
             btCambiarCont.Text = "Cambiar contraseña";
             btCambiarCont.UseVisualStyleBackColor = false;
+            btCambiarCont.Click += btCambiarCont_Click;
             // 
             // panel3
             // 
@@ -279,5 +300,7 @@
         private Button btAtras;
         private Button btManual;
         private ToolTip toolTip1;
+        private Label lbNombreUsuario;
+        private TextBox tbNombreUsuario;
     }
 }

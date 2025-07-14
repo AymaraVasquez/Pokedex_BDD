@@ -154,3 +154,5 @@ C:\Users\gabri\Desktop\Pokedex\Principal - copia - copia\Pokedex_BDD\Pokedex_BDD
 C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.ManualDeUsuario.resources
 C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.RegistroExitoso.resources
 C:\Users\aymar\OneDrive\Desktop\Pokedex\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.RecuperarContrasena.resources
+C:\Users\gabri\Desktop\Pokedex\Principal - copia - copia\Pokedex_BDD\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.RecuperarContrasena.resources
+C:\Users\gabri\Desktop\Pokedex\Principal - copia - copia\Pokedex_BDD\Pokedex_BDD\obj\Debug\net8.0-windows\Pokedex.RegistroExitoso.resources

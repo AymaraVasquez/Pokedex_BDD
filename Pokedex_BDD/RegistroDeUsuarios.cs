@@ -38,7 +38,7 @@ namespace Pokedex
                 return;
             }
 
-            if (tbUsu.Text != "" && tbPass.Text != "" && tbNombre.Text != "")
+            if (tbUsu.Text != "" && tbPass.Text != "" && tbNombre.Text != "" && tbRecuperacion.Text != "")
             {
                 fotoUsuario = (int)numericUpDown1.Value;
                 Conexion.conectar();
@@ -54,12 +54,13 @@ namespace Pokedex
                     return;
                 }
                 Conexion.conectar();
-                string query = "INSERT INTO usuarios (id_usuario, nombre, usuario, contrasena, foto_perfil) VALUES (null, @nombre,@usuario, @contrasena, @foto_perfil)";
+                string query = "INSERT INTO usuarios (id_usuario, nombre, usuario, contrasena, foto_perfil, recuperacion) VALUES (null, @nombre,@usuario, @contrasena, @foto_perfil, @recuperacion)";
                 MySqlCommand comando = new MySqlCommand(query, Conex.Coneccion);
                 comando.Parameters.AddWithValue("@nombre", tbNombre.Text);
                 comando.Parameters.AddWithValue("@usuario", tbUsu.Text);
                 comando.Parameters.AddWithValue("@contrasena", tbPass.Text);
                 comando.Parameters.AddWithValue("@foto_perfil", fotoUsuario);
+                comando.Parameters.AddWithValue("@recuperacion", tbRecuperacion.Text);
                 try
                 {
                     comando.ExecuteNonQuery();

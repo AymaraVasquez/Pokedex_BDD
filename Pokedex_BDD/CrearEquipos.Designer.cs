@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearEquipos));
             panel3 = new Panel();
+            button1 = new Button();
             pcbPokedex = new PictureBox();
             btManual = new Button();
             btAnadir = new Button();
@@ -107,7 +108,6 @@
             panel24 = new Panel();
             btElim3_1 = new Button();
             Foto3_1 = new PictureBox();
-            button1 = new Button();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pcbPokedex).BeginInit();
             paEquipo1.SuspendLayout();
@@ -165,6 +165,19 @@
             panel3.Size = new Size(1156, 64);
             panel3.TabIndex = 29;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(255, 222, 0);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(21, 14);
+            button1.Name = "button1";
+            button1.Size = new Size(55, 36);
+            button1.TabIndex = 64;
+            button1.Text = "<<";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // pcbPokedex
             // 
             pcbPokedex.Image = (Image)resources.GetObject("pcbPokedex.Image");
@@ -186,6 +199,7 @@
             btManual.TabIndex = 31;
             btManual.Text = "?";
             btManual.UseVisualStyleBackColor = false;
+            btManual.Click += btManual_Click;
             // 
             // btAnadir
             // 
@@ -1122,18 +1136,6 @@
             Foto3_1.SizeMode = PictureBoxSizeMode.Zoom;
             Foto3_1.TabIndex = 0;
             Foto3_1.TabStop = false;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(255, 222, 0);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(21, 14);
-            button1.Name = "button1";
-            button1.Size = new Size(55, 36);
-            button1.TabIndex = 64;
-            button1.Text = "<<";
-            button1.UseVisualStyleBackColor = false;
             // 
             // CrearEquipos
             // 

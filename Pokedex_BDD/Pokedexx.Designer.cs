@@ -394,6 +394,7 @@
             btAdd8.Size = new Size(28, 28);
             btAdd8.TabIndex = 63;
             btAdd8.UseVisualStyleBackColor = false;
+            btAdd8.Click += btAdd8_Click;
             // 
             // btInfo8
             // 
@@ -488,6 +489,7 @@
             btAdd7.Size = new Size(28, 28);
             btAdd7.TabIndex = 60;
             btAdd7.UseVisualStyleBackColor = false;
+            btAdd7.Click += btAdd7_Click;
             // 
             // btInfo7
             // 
@@ -582,6 +584,7 @@
             btAdd6.Size = new Size(28, 28);
             btAdd6.TabIndex = 59;
             btAdd6.UseVisualStyleBackColor = false;
+            btAdd6.Click += btAdd6_Click;
             // 
             // btInfo6
             // 
@@ -676,6 +679,7 @@
             btAdd5.Size = new Size(28, 28);
             btAdd5.TabIndex = 58;
             btAdd5.UseVisualStyleBackColor = false;
+            btAdd5.Click += btAdd5_Click;
             // 
             // btInfo5
             // 
@@ -770,6 +774,7 @@
             btAdd4.Size = new Size(28, 28);
             btAdd4.TabIndex = 62;
             btAdd4.UseVisualStyleBackColor = false;
+            btAdd4.Click += btAdd4_Click;
             // 
             // btInfo4
             // 
@@ -864,6 +869,7 @@
             btAdd3.Size = new Size(28, 28);
             btAdd3.TabIndex = 61;
             btAdd3.UseVisualStyleBackColor = false;
+            btAdd3.Click += btAdd3_Click;
             // 
             // btInfo3
             // 
@@ -958,6 +964,7 @@
             btAdd2.Size = new Size(28, 28);
             btAdd2.TabIndex = 58;
             btAdd2.UseVisualStyleBackColor = false;
+            btAdd2.Click += btAdd2_Click;
             // 
             // btInfo2
             // 
@@ -1052,6 +1059,7 @@
             btAdd1.Size = new Size(28, 28);
             btAdd1.TabIndex = 57;
             btAdd1.UseVisualStyleBackColor = false;
+            btAdd1.Click += btAdd1_Click;
             // 
             // btInfo1
             // 
