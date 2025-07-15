@@ -143,6 +143,8 @@ namespace Pokedex
                 }
                 botonesClick.Clear();
                 contadorClicks = 0;
+                whereconsulta = "";
+                refrescar();
             }
         }
 
@@ -301,6 +303,8 @@ namespace Pokedex
         }
         private void Pokedexx_Load(object sender, EventArgs e)
         {
+            Opciones.vista = 3;
+
             if (CrearEquipos.anadirPokemonn == true)
             {
                 btAdd1.Visible = true;
@@ -361,7 +365,7 @@ namespace Pokedex
                 btInfo1.Visible = false;
                 if (CrearEquipos.anadirPokemonn == true)
                 {
-                    btAdd1.Visible = true;
+                    btAdd1.Visible = false;
                 }
                 else
                 {
@@ -409,7 +413,7 @@ namespace Pokedex
 
                 if (CrearEquipos.anadirPokemonn == true)
                 {
-                    btAdd2.Visible = true;
+                    btAdd2.Visible = false;
                 }
                 else
                 {
@@ -455,7 +459,7 @@ namespace Pokedex
 
                 if (CrearEquipos.anadirPokemonn == true)
                 {
-                    btAdd3.Visible = true;
+                    btAdd3.Visible = false;
                 }
                 else
                 {
@@ -499,7 +503,7 @@ namespace Pokedex
                 btInfo4.Visible = false;
                 if (CrearEquipos.anadirPokemonn == true)
                 {
-                    btAdd4.Visible = true;
+                    btAdd4.Visible = false;
                 }
                 else
                 {
@@ -517,7 +521,7 @@ namespace Pokedex
                 btInfo4.Visible = true;
                 if (CrearEquipos.anadirPokemonn == true)
                 {
-                    btAdd4.Visible = true;
+                    btAdd4.Visible = false;
                 }
                 else
                 {
@@ -544,7 +548,7 @@ namespace Pokedex
                 btInfo5.Visible = false;
                 if (CrearEquipos.anadirPokemonn == true)
                 {
-                    btAdd5.Visible = true;
+                    btAdd5.Visible = false;
                 }
                 else
                 {
@@ -589,7 +593,7 @@ namespace Pokedex
                 btInfo6.Visible = false;
                 if (CrearEquipos.anadirPokemonn == true)
                 {
-                    btAdd6.Visible = true;
+                    btAdd6.Visible = false;
                 }
                 else
                 {
@@ -635,7 +639,7 @@ namespace Pokedex
                 btInfo7.Visible = false;
                 if (CrearEquipos.anadirPokemonn == true)
                 {
-                    btAdd7.Visible = true;
+                    btAdd7.Visible = false;
                 }
                 else
                 {
@@ -680,7 +684,7 @@ namespace Pokedex
                 btInfo8.Visible = false;
                 if (CrearEquipos.anadirPokemonn == true)
                 {
-                    btAdd8.Visible = true;
+                    btAdd8.Visible = false;
                 }
                 else
                 {
@@ -1187,6 +1191,11 @@ namespace Pokedex
 
         public void refrescar()
         {
+            foreach (var foticop in imagenesOg)
+            {
+                foticop.Key.BackgroundImage = foticop.Value;
+            }
+            LimpiarPokemons();
             foreach (var foticop in imagenesOg)
             {
                 foticop.Key.BackgroundImage = foticop.Value;

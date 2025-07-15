@@ -36,11 +36,11 @@
             btCrear = new Button();
             btVerPerfil = new Button();
             panel3 = new Panel();
+            pcbPokedex = new PictureBox();
             btVolverAtras = new Button();
             btManual = new Button();
             label1 = new Label();
             toolTip1 = new ToolTip(components);
-            pcbPokedex = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
@@ -130,6 +130,16 @@
             panel3.Size = new Size(804, 89);
             panel3.TabIndex = 7;
             // 
+            // pcbPokedex
+            // 
+            pcbPokedex.Image = (Image)resources.GetObject("pcbPokedex.Image");
+            pcbPokedex.Location = new Point(365, 40);
+            pcbPokedex.Name = "pcbPokedex";
+            pcbPokedex.Size = new Size(86, 42);
+            pcbPokedex.SizeMode = PictureBoxSizeMode.Zoom;
+            pcbPokedex.TabIndex = 31;
+            pcbPokedex.TabStop = false;
+            // 
             // btVolverAtras
             // 
             btVolverAtras.BackColor = Color.FromArgb(255, 222, 0);
@@ -168,16 +178,6 @@
             label1.TabIndex = 4;
             label1.Text = "Ahora escoge\r\n¿Qué quieres hacer primero?";
             // 
-            // pcbPokedex
-            // 
-            pcbPokedex.Image = (Image)resources.GetObject("pcbPokedex.Image");
-            pcbPokedex.Location = new Point(365, 40);
-            pcbPokedex.Name = "pcbPokedex";
-            pcbPokedex.Size = new Size(86, 42);
-            pcbPokedex.SizeMode = PictureBoxSizeMode.Zoom;
-            pcbPokedex.TabIndex = 31;
-            pcbPokedex.TabStop = false;
-            // 
             // Opciones
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -190,6 +190,7 @@
             Name = "Opciones";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Opciones";
+            Load += Opciones_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

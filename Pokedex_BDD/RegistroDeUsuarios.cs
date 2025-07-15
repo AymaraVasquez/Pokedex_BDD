@@ -66,9 +66,7 @@ namespace Pokedex
                     comando.ExecuteNonQuery();
                     RegistroExitoso registrExiForm = new RegistroExitoso();
                     registrExiForm.ShowDialog();
-                    this.Close();
 
-                    this.Close();
                 }
                 catch (Exception ex)
                 {
@@ -98,6 +96,7 @@ namespace Pokedex
                     comando1.ExecuteNonQuery();
                     Conexion.desconectar();
                 }
+                this.Close();
             }
             else
             {
@@ -162,7 +161,7 @@ namespace Pokedex
 
         private void tbUsu_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(Char.IsLetter(e.KeyChar) || (Char.IsControl(e.KeyChar))))
+            if (!(Char.IsLetter(e.KeyChar) || Char.IsDigit(e.KeyChar) || Char.IsControl(e.KeyChar)))
             {
                 e.Handled = true;
             }
@@ -170,11 +169,10 @@ namespace Pokedex
 
         private void tbRecuperacion_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(Char.IsLetter(e.KeyChar) || Char.IsControl(e.KeyChar) || e.KeyChar == ' '))
+            if (!(Char.IsLetter(e.KeyChar) || Char.IsDigit(e.KeyChar) || Char.IsControl(e.KeyChar) || e.KeyChar == ' '))
             {
                 e.Handled = true;
             }
-
         }
 
         private void btAtras_Click(object sender, EventArgs e)
@@ -184,6 +182,14 @@ namespace Pokedex
             {
                 InicioForm.Show();
                 this.Hide();
+            }
+        }
+
+        private void tbPass_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(Char.IsLetter(e.KeyChar) || Char.IsDigit(e.KeyChar) || Char.IsControl(e.KeyChar)))
+            {
+                e.Handled = true;
             }
         }
     }

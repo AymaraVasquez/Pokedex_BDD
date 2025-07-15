@@ -77,7 +77,7 @@ namespace Pokedex
 
         private void tbNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(Char.IsLetter(e.KeyChar) || (Char.IsControl(e.KeyChar))))
+            if (!(Char.IsLetter(e.KeyChar) || Char.IsDigit(e.KeyChar) || (Char.IsControl(e.KeyChar))))
             {
                 e.Handled = true;
             }
@@ -89,6 +89,14 @@ namespace Pokedex
             RecuperarContrasena recupContrasenaForm = new RecuperarContrasena();
             recupContrasenaForm.ShowDialog();
             this.Show();
+        }
+
+        private void tbPass_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(Char.IsLetter(e.KeyChar) || Char.IsDigit(e.KeyChar) || (Char.IsControl(e.KeyChar))))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

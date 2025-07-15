@@ -212,6 +212,7 @@
             tbPass.Size = new Size(304, 27);
             tbPass.TabIndex = 6;
             tbPass.UseSystemPasswordChar = true;
+            tbPass.KeyPress += tbPass_KeyPress;
             // 
             // label3
             // 

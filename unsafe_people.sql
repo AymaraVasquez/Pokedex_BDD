@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-07-2025 a las 03:56:44
+-- Tiempo de generación: 15-07-2025 a las 03:48:42
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -1032,7 +1032,22 @@ INSERT INTO `equipos` (`id_equipo`, `id_usuario`, `es_favorito`) VALUES
 (13, 1, 0),
 (81, 8, 0),
 (82, 8, 0),
-(83, 8, 0);
+(83, 8, 0),
+(141, 14, 0),
+(142, 14, 0),
+(143, 14, 0),
+(151, 15, 1),
+(152, 15, 0),
+(153, 15, 0),
+(161, 16, 0),
+(162, 16, 0),
+(163, 16, 0),
+(171, 17, 0),
+(172, 17, 0),
+(173, 17, 0),
+(181, 18, 1),
+(182, 18, 0),
+(183, 18, 0);
 
 -- --------------------------------------------------------
 
@@ -6555,7 +6570,19 @@ INSERT INTO `rela_equipos_pokes` (`id_rela_equipos`, `id_equipo`, `id_poke`) VAL
 (11, 11, 3841),
 (12, 11, 4721),
 (13, 11, 1491),
-(14, 11, 3342);
+(14, 11, 3342),
+(102, 151, 1341),
+(103, 151, 1341),
+(104, 151, 1341),
+(105, 151, 1341),
+(106, 151, 1341),
+(107, 151, 1341),
+(109, 181, 62),
+(112, 181, 3851),
+(113, 181, 1081),
+(114, 181, 251),
+(117, 181, 1431),
+(118, 181, 8691);
 
 -- --------------------------------------------------------
 
@@ -14806,7 +14833,12 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`id_usuario`, `nombre`, `usuario`, `contrasena`, `foto_perfil`, `recuperacion`) VALUES
 (1, 'Gabriel Vivas', 'GabrielVior', 'Pokedex', 2, 'maximanota'),
-(8, 'Daniel', 'asd', '123456789', 0, 'asd1234');
+(8, 'Daniel', 'asd', '123456789', 0, 'asd1234'),
+(14, 'alberto', 'alberto', '12345678', 0, 'Aas'),
+(15, 'sebastian', 'alident', '12345', 0, 'sebastian'),
+(16, 'Sebastian', 'alidents', '12345678', 0, 'dick'),
+(17, 'Aymara Vasquez', 'Maraa', 'pikachuu', 4, 'pikapika'),
+(18, 'Jeon Jungkook', 'TaekookFan', '12345678', 0, 'snorlax');
 
 --
 -- Índices para tablas volcadas
@@ -14911,7 +14943,7 @@ ALTER TABLE `datos_generales_pokes`
 -- AUTO_INCREMENT de la tabla `equipos`
 --
 ALTER TABLE `equipos`
-  MODIFY `id_equipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
+  MODIFY `id_equipo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=184;
 
 --
 -- AUTO_INCREMENT de la tabla `estadisticas_pokes`
@@ -14941,7 +14973,7 @@ ALTER TABLE `pokedex_normal`
 -- AUTO_INCREMENT de la tabla `rela_equipos_pokes`
 --
 ALTER TABLE `rela_equipos_pokes`
-  MODIFY `id_rela_equipos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_rela_equipos` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=120;
 
 --
 -- AUTO_INCREMENT de la tabla `rela_pokes_tipo`
@@ -14971,7 +15003,7 @@ ALTER TABLE `tipos`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- Restricciones para tablas volcadas

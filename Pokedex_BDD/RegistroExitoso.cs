@@ -19,15 +19,18 @@ namespace Pokedex
 
         private void btIniciarSesion_Click(object sender, EventArgs e)
         {
-            InicioDeSesion inicioForm = new InicioDeSesion();
-            inicioForm.ShowDialog();
-            this.Close();
+           
+            Form InicioForm = Application.OpenForms["InicioDeSesion"];
+            if (InicioForm != null)
+            {
+                InicioForm.Show();
+                this.Hide();
+            }
         }
 
         private void RegistroExitoso_FormClosed(object sender, FormClosedEventArgs e)
         {
-            InicioDeSesion inicioForm = new InicioDeSesion();
-            inicioForm.ShowDialog();
+           
         }
     }
 }

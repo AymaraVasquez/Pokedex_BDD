@@ -29,35 +29,80 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManualDeUsuario));
-            pictureBox1 = new PictureBox();
+            pictureVista = new PictureBox();
             panel1 = new Panel();
+            btSiguiente = new Button();
+            btAtras = new Button();
+            textDescrip = new TextBox();
             panel3 = new Panel();
             pcbPokedex = new PictureBox();
             btVolverAtras = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureVista).BeginInit();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pcbPokedex).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // pictureVista
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(207, 118);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(408, 280);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            pictureVista.Image = Properties.Resources.VistaOpciones;
+            pictureVista.Location = new Point(120, 86);
+            pictureVista.Name = "pictureVista";
+            pictureVista.Size = new Size(879, 367);
+            pictureVista.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureVista.TabIndex = 0;
+            pictureVista.TabStop = false;
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(204, 0, 0);
+            panel1.Controls.Add(btSiguiente);
+            panel1.Controls.Add(btAtras);
+            panel1.Controls.Add(textDescrip);
+            panel1.Controls.Add(pictureVista);
             panel1.Controls.Add(panel3);
             panel1.Location = new Point(-3, -5);
             panel1.Name = "panel1";
-            panel1.Size = new Size(806, 568);
+            panel1.Size = new Size(1106, 704);
             panel1.TabIndex = 1;
+            // 
+            // btSiguiente
+            // 
+            btSiguiente.BackColor = Color.FromArgb(255, 222, 0);
+            btSiguiente.FlatStyle = FlatStyle.Flat;
+            btSiguiente.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btSiguiente.Location = new Point(1021, 630);
+            btSiguiente.Name = "btSiguiente";
+            btSiguiente.Size = new Size(57, 44);
+            btSiguiente.TabIndex = 36;
+            btSiguiente.Text = ">";
+            btSiguiente.UseVisualStyleBackColor = false;
+            btSiguiente.Click += btSiguiente_Click;
+            // 
+            // btAtras
+            // 
+            btAtras.BackColor = Color.FromArgb(255, 222, 0);
+            btAtras.FlatStyle = FlatStyle.Flat;
+            btAtras.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btAtras.Location = new Point(29, 630);
+            btAtras.Name = "btAtras";
+            btAtras.Size = new Size(57, 44);
+            btAtras.TabIndex = 35;
+            btAtras.Text = "<";
+            btAtras.UseVisualStyleBackColor = false;
+            btAtras.Click += btAtras_Click;
+            // 
+            // textDescrip
+            // 
+            textDescrip.BackColor = Color.Red;
+            textDescrip.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textDescrip.ForeColor = Color.White;
+            textDescrip.Location = new Point(120, 477);
+            textDescrip.Multiline = true;
+            textDescrip.Name = "textDescrip";
+            textDescrip.Size = new Size(879, 197);
+            textDescrip.TabIndex = 8;
+            textDescrip.Text = "Testeo de tipografia y color";
             // 
             // panel3
             // 
@@ -66,13 +111,13 @@
             panel3.Controls.Add(btVolverAtras);
             panel3.Location = new Point(-1, -28);
             panel3.Name = "panel3";
-            panel3.Size = new Size(804, 89);
+            panel3.Size = new Size(1107, 89);
             panel3.TabIndex = 7;
             // 
             // pcbPokedex
             // 
             pcbPokedex.Image = (Image)resources.GetObject("pcbPokedex.Image");
-            pcbPokedex.Location = new Point(365, 40);
+            pcbPokedex.Location = new Point(533, 36);
             pcbPokedex.Name = "pcbPokedex";
             pcbPokedex.Size = new Size(86, 42);
             pcbPokedex.SizeMode = PictureBoxSizeMode.Zoom;
@@ -96,8 +141,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(pictureBox1);
+            ClientSize = new Size(1098, 697);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -105,8 +149,10 @@
             Name = "ManualDeUsuario";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ManualDeUsuario";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Load += ManualDeUsuario_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureVista).EndInit();
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pcbPokedex).EndInit();
             ResumeLayout(false);
@@ -114,10 +160,13 @@
 
         #endregion
 
-        private PictureBox pictureBox1;
+        private PictureBox pictureVista;
         private Panel panel1;
         private Panel panel3;
         private PictureBox pcbPokedex;
         private Button btVolverAtras;
+        private TextBox textDescrip;
+        private Button btSiguiente;
+        private Button btAtras;
     }
 }

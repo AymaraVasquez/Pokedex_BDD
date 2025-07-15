@@ -88,7 +88,7 @@
             panel4.Controls.Add(Foto1);
             panel4.Location = new Point(390, 160);
             panel4.Name = "panel4";
-            panel4.Size = new Size(215, 199);
+            panel4.Size = new Size(215, 208);
             panel4.TabIndex = 4;
             // 
             // btInfo1
@@ -99,7 +99,7 @@
             btInfo1.FlatAppearance.BorderColor = Color.White;
             btInfo1.FlatStyle = FlatStyle.Flat;
             btInfo1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btInfo1.Location = new Point(176, 158);
+            btInfo1.Location = new Point(176, 171);
             btInfo1.Name = "btInfo1";
             btInfo1.Size = new Size(26, 28);
             btInfo1.TabIndex = 56;
@@ -111,7 +111,7 @@
             lbCodigo1.AutoSize = true;
             lbCodigo1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbCodigo1.ForeColor = SystemColors.GrayText;
-            lbCodigo1.Location = new Point(16, 163);
+            lbCodigo1.Location = new Point(13, 155);
             lbCodigo1.Name = "lbCodigo1";
             lbCodigo1.Size = new Size(54, 20);
             lbCodigo1.TabIndex = 2;
@@ -120,11 +120,11 @@
             // lbNombre1
             // 
             lbNombre1.AutoSize = true;
-            lbNombre1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbNombre1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbNombre1.ForeColor = SystemColors.GrayText;
-            lbNombre1.Location = new Point(71, 160);
+            lbNombre1.Location = new Point(18, 176);
             lbNombre1.Name = "lbNombre1";
-            lbNombre1.Size = new Size(79, 25);
+            lbNombre1.Size = new Size(63, 20);
             lbNombre1.TabIndex = 1;
             lbNombre1.Text = "Pikachu";
             // 
@@ -147,7 +147,7 @@
             panel1.Controls.Add(Foto2);
             panel1.Location = new Point(638, 160);
             panel1.Name = "panel1";
-            panel1.Size = new Size(215, 199);
+            panel1.Size = new Size(215, 212);
             panel1.TabIndex = 57;
             // 
             // btInfo2
@@ -158,7 +158,7 @@
             btInfo2.FlatAppearance.BorderColor = Color.White;
             btInfo2.FlatStyle = FlatStyle.Flat;
             btInfo2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btInfo2.Location = new Point(176, 158);
+            btInfo2.Location = new Point(176, 171);
             btInfo2.Name = "btInfo2";
             btInfo2.Size = new Size(26, 28);
             btInfo2.TabIndex = 56;
@@ -170,7 +170,7 @@
             lbCodigo2.AutoSize = true;
             lbCodigo2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbCodigo2.ForeColor = SystemColors.GrayText;
-            lbCodigo2.Location = new Point(16, 163);
+            lbCodigo2.Location = new Point(13, 155);
             lbCodigo2.Name = "lbCodigo2";
             lbCodigo2.Size = new Size(54, 20);
             lbCodigo2.TabIndex = 2;
@@ -179,11 +179,11 @@
             // lbNombre2
             // 
             lbNombre2.AutoSize = true;
-            lbNombre2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbNombre2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbNombre2.ForeColor = SystemColors.GrayText;
-            lbNombre2.Location = new Point(71, 160);
+            lbNombre2.Location = new Point(18, 176);
             lbNombre2.Name = "lbNombre2";
-            lbNombre2.Size = new Size(79, 25);
+            lbNombre2.Size = new Size(63, 20);
             lbNombre2.TabIndex = 1;
             lbNombre2.Text = "Pikachu";
             // 
@@ -206,7 +206,7 @@
             panel2.Controls.Add(Foto3);
             panel2.Location = new Point(881, 160);
             panel2.Name = "panel2";
-            panel2.Size = new Size(215, 199);
+            panel2.Size = new Size(215, 212);
             panel2.TabIndex = 57;
             // 
             // btInfo3
@@ -217,7 +217,7 @@
             btInfo3.FlatAppearance.BorderColor = Color.White;
             btInfo3.FlatStyle = FlatStyle.Flat;
             btInfo3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btInfo3.Location = new Point(176, 158);
+            btInfo3.Location = new Point(176, 171);
             btInfo3.Name = "btInfo3";
             btInfo3.Size = new Size(26, 28);
             btInfo3.TabIndex = 56;
@@ -229,7 +229,7 @@
             lbCodigo3.AutoSize = true;
             lbCodigo3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbCodigo3.ForeColor = SystemColors.GrayText;
-            lbCodigo3.Location = new Point(16, 163);
+            lbCodigo3.Location = new Point(13, 155);
             lbCodigo3.Name = "lbCodigo3";
             lbCodigo3.Size = new Size(54, 20);
             lbCodigo3.TabIndex = 2;
@@ -238,11 +238,11 @@
             // lbNombre3
             // 
             lbNombre3.AutoSize = true;
-            lbNombre3.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbNombre3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbNombre3.ForeColor = SystemColors.GrayText;
-            lbNombre3.Location = new Point(71, 160);
+            lbNombre3.Location = new Point(18, 176);
             lbNombre3.Name = "lbNombre3";
-            lbNombre3.Size = new Size(79, 25);
+            lbNombre3.Size = new Size(63, 20);
             lbNombre3.TabIndex = 1;
             lbNombre3.Text = "Pikachu";
             // 
@@ -265,7 +265,7 @@
             panel3.Controls.Add(Foto4);
             panel3.Location = new Point(390, 396);
             panel3.Name = "panel3";
-            panel3.Size = new Size(215, 199);
+            panel3.Size = new Size(215, 208);
             panel3.TabIndex = 57;
             // 
             // btInfo4
@@ -276,7 +276,7 @@
             btInfo4.FlatAppearance.BorderColor = Color.White;
             btInfo4.FlatStyle = FlatStyle.Flat;
             btInfo4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btInfo4.Location = new Point(176, 158);
+            btInfo4.Location = new Point(176, 171);
             btInfo4.Name = "btInfo4";
             btInfo4.Size = new Size(26, 28);
             btInfo4.TabIndex = 56;
@@ -288,7 +288,7 @@
             lbCodigo4.AutoSize = true;
             lbCodigo4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbCodigo4.ForeColor = SystemColors.GrayText;
-            lbCodigo4.Location = new Point(16, 163);
+            lbCodigo4.Location = new Point(13, 155);
             lbCodigo4.Name = "lbCodigo4";
             lbCodigo4.Size = new Size(54, 20);
             lbCodigo4.TabIndex = 2;
@@ -297,11 +297,11 @@
             // lbNombre4
             // 
             lbNombre4.AutoSize = true;
-            lbNombre4.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbNombre4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbNombre4.ForeColor = SystemColors.GrayText;
-            lbNombre4.Location = new Point(71, 160);
+            lbNombre4.Location = new Point(18, 176);
             lbNombre4.Name = "lbNombre4";
-            lbNombre4.Size = new Size(79, 25);
+            lbNombre4.Size = new Size(63, 20);
             lbNombre4.TabIndex = 1;
             lbNombre4.Text = "Pikachu";
             // 
@@ -324,7 +324,7 @@
             panel5.Controls.Add(Foto5);
             panel5.Location = new Point(638, 396);
             panel5.Name = "panel5";
-            panel5.Size = new Size(215, 199);
+            panel5.Size = new Size(215, 208);
             panel5.TabIndex = 57;
             // 
             // btInfo5
@@ -335,7 +335,7 @@
             btInfo5.FlatAppearance.BorderColor = Color.White;
             btInfo5.FlatStyle = FlatStyle.Flat;
             btInfo5.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btInfo5.Location = new Point(176, 158);
+            btInfo5.Location = new Point(176, 171);
             btInfo5.Name = "btInfo5";
             btInfo5.Size = new Size(26, 28);
             btInfo5.TabIndex = 56;
@@ -347,7 +347,7 @@
             lbCodigo5.AutoSize = true;
             lbCodigo5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbCodigo5.ForeColor = SystemColors.GrayText;
-            lbCodigo5.Location = new Point(16, 163);
+            lbCodigo5.Location = new Point(13, 155);
             lbCodigo5.Name = "lbCodigo5";
             lbCodigo5.Size = new Size(54, 20);
             lbCodigo5.TabIndex = 2;
@@ -356,11 +356,11 @@
             // lbNombre5
             // 
             lbNombre5.AutoSize = true;
-            lbNombre5.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbNombre5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbNombre5.ForeColor = SystemColors.GrayText;
-            lbNombre5.Location = new Point(71, 160);
+            lbNombre5.Location = new Point(18, 176);
             lbNombre5.Name = "lbNombre5";
-            lbNombre5.Size = new Size(79, 25);
+            lbNombre5.Size = new Size(63, 20);
             lbNombre5.TabIndex = 1;
             lbNombre5.Text = "Pikachu";
             // 
@@ -383,7 +383,7 @@
             panel6.Controls.Add(Foto6);
             panel6.Location = new Point(881, 396);
             panel6.Name = "panel6";
-            panel6.Size = new Size(215, 199);
+            panel6.Size = new Size(215, 208);
             panel6.TabIndex = 57;
             // 
             // btInfo6
@@ -394,7 +394,7 @@
             btInfo6.FlatAppearance.BorderColor = Color.White;
             btInfo6.FlatStyle = FlatStyle.Flat;
             btInfo6.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btInfo6.Location = new Point(176, 158);
+            btInfo6.Location = new Point(176, 171);
             btInfo6.Name = "btInfo6";
             btInfo6.Size = new Size(26, 28);
             btInfo6.TabIndex = 56;
@@ -406,7 +406,7 @@
             lbCodigo6.AutoSize = true;
             lbCodigo6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbCodigo6.ForeColor = SystemColors.GrayText;
-            lbCodigo6.Location = new Point(16, 163);
+            lbCodigo6.Location = new Point(13, 155);
             lbCodigo6.Name = "lbCodigo6";
             lbCodigo6.Size = new Size(54, 20);
             lbCodigo6.TabIndex = 2;
@@ -415,11 +415,11 @@
             // lbNombre6
             // 
             lbNombre6.AutoSize = true;
-            lbNombre6.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbNombre6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbNombre6.ForeColor = SystemColors.GrayText;
-            lbNombre6.Location = new Point(71, 160);
+            lbNombre6.Location = new Point(18, 176);
             lbNombre6.Name = "lbNombre6";
-            lbNombre6.Size = new Size(79, 25);
+            lbNombre6.Size = new Size(63, 20);
             lbNombre6.TabIndex = 1;
             lbNombre6.Text = "Pikachu";
             // 

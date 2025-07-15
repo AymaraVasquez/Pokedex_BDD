@@ -17,16 +17,21 @@ namespace Pokedex
             InitializeComponent();
         }
 
+        public static int vista;
+
         private void btCrear_Click(object sender, EventArgs e)
         {
             CrearEquipos crearEquipoForm = new CrearEquipos();
             crearEquipoForm.ShowDialog();
+            vista = 1;
+
         }
 
         private void btPokedex_Click(object sender, EventArgs e)
         {
             Pokedexx pokedexForm = new Pokedexx();
             pokedexForm.ShowDialog();
+            vista = 1;
         }
 
         private void btVerPerfil_Click(object sender, EventArgs e)
@@ -41,7 +46,7 @@ namespace Pokedex
             manualForm.ShowDialog();
         }
 
-        
+
 
         private void btVolverAtras_Click(object sender, EventArgs e)
         {
@@ -51,6 +56,11 @@ namespace Pokedex
                 InicioForm.Show();
                 this.Hide();
             }
+        }
+
+        private void Opciones_Load(object sender, EventArgs e)
+        {
+            vista = 1;
         }
     }
 }

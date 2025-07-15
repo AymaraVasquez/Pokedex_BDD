@@ -65,7 +65,7 @@ namespace Pokedex
             Conexion.desconectar();
 
             Conexion.conectar();
-            string consultaEquipo = "SELECT id_poke, nombre_poke FROM pokedex_normal WHERE id_poke IN (SELECT id_poke FROM rela_equipos_pokes WHERE id_equipo in (SELECT id_equipo from equipos where id_usuario = " + SesionIniciada.IdUsuario + " and es_favorito = 1) );";
+            string consultaEquipo = "SELECT po.id_poke, po.nombre_poke from rela_equipos_pokes rela join pokedex_normal po on rela.id_poke = po.id_poke join equipos equi on rela.id_equipo = equi.id_equipo WHERE equi.id_equipo in (SELECT id_equipo from equipos where id_usuario = " + SesionIniciada.IdUsuario + " and equi.es_favorito = 1)";
             MySqlCommand comandoEquipo = new MySqlCommand(consultaEquipo, Conex.Coneccion);
             Conex.Lector = comandoEquipo.ExecuteReader();
 

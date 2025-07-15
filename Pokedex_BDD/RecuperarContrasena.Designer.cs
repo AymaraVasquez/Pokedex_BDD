@@ -112,6 +112,7 @@
             tbNombreUsuario.Name = "tbNombreUsuario";
             tbNombreUsuario.Size = new Size(302, 27);
             tbNombreUsuario.TabIndex = 30;
+            tbNombreUsuario.KeyPress += tbNombreUsuario_KeyPress;
             // 
             // checkVer2
             // 
@@ -124,6 +125,7 @@
             checkVer2.TabIndex = 29;
             checkVer2.Text = "Ver contraseña";
             checkVer2.UseVisualStyleBackColor = true;
+            checkVer2.CheckedChanged += checkVer2_CheckedChanged;
             // 
             // label3
             // 
@@ -144,6 +146,7 @@
             tbConfirmacion.Size = new Size(304, 27);
             tbConfirmacion.TabIndex = 27;
             tbConfirmacion.UseSystemPasswordChar = true;
+            tbConfirmacion.KeyPress += tbConfirmacion_KeyPress;
             // 
             // checkContrasena
             // 
@@ -156,6 +159,7 @@
             checkContrasena.TabIndex = 26;
             checkContrasena.Text = "Ver contraseña";
             checkContrasena.UseVisualStyleBackColor = true;
+            checkContrasena.CheckedChanged += checkContrasena_CheckedChanged;
             // 
             // label2
             // 
@@ -195,6 +199,7 @@
             tbPass.Size = new Size(304, 27);
             tbPass.TabIndex = 6;
             tbPass.UseSystemPasswordChar = true;
+            tbPass.KeyPress += tbPass_KeyPress;
             // 
             // label1
             // 
