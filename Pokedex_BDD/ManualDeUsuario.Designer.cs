@@ -100,6 +100,7 @@
             textDescrip.Location = new Point(120, 477);
             textDescrip.Multiline = true;
             textDescrip.Name = "textDescrip";
+            textDescrip.ReadOnly = true;
             textDescrip.Size = new Size(879, 197);
             textDescrip.TabIndex = 8;
             textDescrip.Text = "Testeo de tipografia y color";

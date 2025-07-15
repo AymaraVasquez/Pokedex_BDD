@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|c:\\users\\aymar\\onedrive\\desktop\\pokedex\\pokedex_bdd\\manualdeusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:manualdeusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|c:\\users\\aymar\\onedrive\\desktop\\pokedex\\pokedex_bdd\\pokedexx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:pokedexx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,15 +39,15 @@
       "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:recuperarcontrasena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|c:\\users\\aymar\\onedrive\\desktop\\pokedex\\pokedex_bdd\\registroexitoso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\registroexitoso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:registroexitoso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|c:\\users\\aymar\\onedrive\\desktop\\pokedex\\pokedex_bdd\\recuperarcontrasena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\recuperarcontrasena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:recuperarcontrasena.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|c:\\users\\aymar\\onedrive\\desktop\\pokedex\\pokedex_bdd\\iniciodesesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\iniciodesesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{AD0135C6-7A33-462D-A4C4-7E45F0E324EF}|Pokedex.csproj|solutionrelative:iniciodesesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -54,23 +58,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "ManualDeUsuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\ManualDeUsuario.cs",
+              "RelativeDocumentMoniker": "ManualDeUsuario.cs",
+              "ToolTip": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\ManualDeUsuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ManualDeUsuario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T01:54:44.844Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CrearEquipos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\CrearEquipos.cs",
               "RelativeDocumentMoniker": "CrearEquipos.cs",
               "ToolTip": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\CrearEquipos.cs [Dise\u00F1o]",
               "RelativeToolTip": "CrearEquipos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T16:38:54.433Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-07-14T16:38:54.433Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Stats.cs",
               "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\Stats.cs",
               "RelativeDocumentMoniker": "Stats.cs",
@@ -83,19 +98,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Stats.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\Stats.cs",
               "RelativeDocumentMoniker": "Stats.cs",
               "ToolTip": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\Stats.cs [Dise\u00F1o]",
               "RelativeToolTip": "Stats.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T19:55:16.168Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-07-14T19:55:16.168Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "RegistroExitoso.cs",
               "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\RegistroExitoso.cs",
               "RelativeDocumentMoniker": "RegistroExitoso.cs",
@@ -108,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "InicioDeSesion.cs",
               "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\InicioDeSesion.cs",
               "RelativeDocumentMoniker": "InicioDeSesion.cs",
@@ -121,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "RecuperarContrasena.cs",
               "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\RecuperarContrasena.cs",
               "RelativeDocumentMoniker": "RecuperarContrasena.cs",
@@ -134,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Pokedexx.cs",
               "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\Pokedexx.cs",
               "RelativeDocumentMoniker": "Pokedexx.cs",
@@ -147,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CrearEquipos.cs",
               "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\CrearEquipos.cs",
               "RelativeDocumentMoniker": "CrearEquipos.cs",
@@ -155,44 +169,40 @@
               "RelativeToolTip": "CrearEquipos.cs",
               "ViewState": "AgIAAJcAAAAAAAAAAAAlwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T01:39:39.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-15T01:39:39.371Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "RecuperarContrasena.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\RecuperarContrasena.cs",
               "RelativeDocumentMoniker": "RecuperarContrasena.cs",
               "ToolTip": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\RecuperarContrasena.cs [Dise\u00F1o]",
               "RelativeToolTip": "RecuperarContrasena.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T01:17:06.703Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-07-15T01:17:06.703Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "InicioDeSesion.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\InicioDeSesion.cs",
               "RelativeDocumentMoniker": "InicioDeSesion.cs",
               "ToolTip": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\InicioDeSesion.cs [Dise\u00F1o]",
               "RelativeToolTip": "InicioDeSesion.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T01:05:02.758Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-07-15T01:05:02.758Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "RegistroExitoso.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\RegistroExitoso.cs",
               "RelativeDocumentMoniker": "RegistroExitoso.cs",
               "ToolTip": "C:\\Users\\aymar\\OneDrive\\Desktop\\Pokedex\\Pokedex_BDD\\RegistroExitoso.cs [Dise\u00F1o]",
               "RelativeToolTip": "RegistroExitoso.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T01:27:02.089Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-07-15T01:27:02.089Z"
             }
           ]
         }
